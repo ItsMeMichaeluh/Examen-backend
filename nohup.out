@@ -1,0 +1,84 @@
+CompileCommand: exclude com/intellij/openapi/vfs/impl/FilePartNodeRoot.trieDescend bool exclude = true
+2025-06-03 10:36:15,218 [    808]   WARN - #c.i.o.e.c.i.EditorColorsManagerImpl - resource not found: colorSchemes/DqlAddonsDefault.xml
+2025-06-03 10:36:15,229 [    819]   WARN - #c.i.o.e.c.i.EditorColorsManagerImpl - resource not found: colorSchemes/DqlAddonsDarcula.xml
+2025-06-03 10:36:15,359 [    949]   WARN - #c.i.s.ComponentManagerImpl - com.intellij.platform.ide.menu.GlobalMenuLinux <clinit> requests com.intellij.openapi.application.Experiments instance. Class initialization must not depend on services. Consider using instance of the service on-demand instead.
+2025-06-03 10:36:17,667 [   3257]   WARN - #c.i.i.s.i.StartupManagerImpl - Migrate Ţஜ to ProjectActivity [Plugin: izhangzhihao.rainbow.brackets]
+com.intellij.diagnostic.PluginException: Migrate Ţஜ to ProjectActivity [Plugin: izhangzhihao.rainbow.brackets]
+	at com.intellij.ide.startup.impl.StartupManagerImpl.runPostStartupActivities(StartupManagerImpl.kt:276)
+	at com.intellij.ide.startup.impl.StartupManagerImpl.access$runPostStartupActivities(StartupManagerImpl.kt:68)
+	at com.intellij.ide.startup.impl.StartupManagerImpl$runPostStartupActivities$3$2.invokeSuspend(StartupManagerImpl.kt:191)
+	at com.intellij.ide.startup.impl.StartupManagerImpl$runPostStartupActivities$3$2.invoke(StartupManagerImpl.kt)
+	at com.intellij.ide.startup.impl.StartupManagerImpl$runPostStartupActivities$3$2.invoke(StartupManagerImpl.kt)
+	at kotlinx.coroutines.intrinsics.UndispatchedKt.startUndispatchedOrReturn(Undispatched.kt:78)
+	at kotlinx.coroutines.BuildersKt__Builders_commonKt.withContext(Builders.common.kt:167)
+	at kotlinx.coroutines.BuildersKt.withContext(Unknown Source)
+	at com.intellij.ide.startup.impl.StartupManagerImpl$runPostStartupActivities$3.invokeSuspend(StartupManagerImpl.kt:190)
+	at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:33)
+	at kotlinx.coroutines.DispatchedTask.run(DispatchedTask.kt:108)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler.runSafely(CoroutineScheduler.kt:584)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.executeTask(CoroutineScheduler.kt:793)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.runWorker(CoroutineScheduler.kt:697)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.run(CoroutineScheduler.kt:684)
+2025-06-03 10:36:17,674 [   3264]   WARN - #c.i.i.s.i.StartupManagerImpl - Migrate dev.ekvedaras.laravelquery.services.Startup to ProjectActivity [Plugin: dev.ekvedaras.laravelquery]
+com.intellij.diagnostic.PluginException: Migrate dev.ekvedaras.laravelquery.services.Startup to ProjectActivity [Plugin: dev.ekvedaras.laravelquery]
+	at com.intellij.ide.startup.impl.StartupManagerImpl.runPostStartupActivities(StartupManagerImpl.kt:276)
+	at com.intellij.ide.startup.impl.StartupManagerImpl.access$runPostStartupActivities(StartupManagerImpl.kt:68)
+	at com.intellij.ide.startup.impl.StartupManagerImpl$runPostStartupActivities$3$2.invokeSuspend(StartupManagerImpl.kt:191)
+	at com.intellij.ide.startup.impl.StartupManagerImpl$runPostStartupActivities$3$2.invoke(StartupManagerImpl.kt)
+	at com.intellij.ide.startup.impl.StartupManagerImpl$runPostStartupActivities$3$2.invoke(StartupManagerImpl.kt)
+	at kotlinx.coroutines.intrinsics.UndispatchedKt.startUndispatchedOrReturn(Undispatched.kt:78)
+	at kotlinx.coroutines.BuildersKt__Builders_commonKt.withContext(Builders.common.kt:167)
+	at kotlinx.coroutines.BuildersKt.withContext(Unknown Source)
+	at com.intellij.ide.startup.impl.StartupManagerImpl$runPostStartupActivities$3.invokeSuspend(StartupManagerImpl.kt:190)
+	at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:33)
+	at kotlinx.coroutines.DispatchedTask.run(DispatchedTask.kt:108)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler.runSafely(CoroutineScheduler.kt:584)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.executeTask(CoroutineScheduler.kt:793)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.runWorker(CoroutineScheduler.kt:697)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.run(CoroutineScheduler.kt:684)
+2025-06-03 10:36:17,680 [   3270]   WARN - #c.i.i.s.i.StartupManagerImpl - Migrate fr.adrienbrault.idea.symfony2plugin.webDeployment.WebDeploymentProjectComponent$PostStartupActivity to ProjectActivity [Plugin: fr.adrienbrault.idea.symfony2plugin]
+com.intellij.diagnostic.PluginException: Migrate fr.adrienbrault.idea.symfony2plugin.webDeployment.WebDeploymentProjectComponent$PostStartupActivity to ProjectActivity [Plugin: fr.adrienbrault.idea.symfony2plugin]
+	at com.intellij.ide.startup.impl.StartupManagerImpl.runPostStartupActivities(StartupManagerImpl.kt:276)
+	at com.intellij.ide.startup.impl.StartupManagerImpl.access$runPostStartupActivities(StartupManagerImpl.kt:68)
+	at com.intellij.ide.startup.impl.StartupManagerImpl$runPostStartupActivities$3$2.invokeSuspend(StartupManagerImpl.kt:191)
+	at com.intellij.ide.startup.impl.StartupManagerImpl$runPostStartupActivities$3$2.invoke(StartupManagerImpl.kt)
+	at com.intellij.ide.startup.impl.StartupManagerImpl$runPostStartupActivities$3$2.invoke(StartupManagerImpl.kt)
+	at kotlinx.coroutines.intrinsics.UndispatchedKt.startUndispatchedOrReturn(Undispatched.kt:78)
+	at kotlinx.coroutines.BuildersKt__Builders_commonKt.withContext(Builders.common.kt:167)
+	at kotlinx.coroutines.BuildersKt.withContext(Unknown Source)
+	at com.intellij.ide.startup.impl.StartupManagerImpl$runPostStartupActivities$3.invokeSuspend(StartupManagerImpl.kt:190)
+	at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:33)
+	at kotlinx.coroutines.DispatchedTask.run(DispatchedTask.kt:108)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler.runSafely(CoroutineScheduler.kt:584)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.executeTask(CoroutineScheduler.kt:793)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.runWorker(CoroutineScheduler.kt:697)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.run(CoroutineScheduler.kt:684)
+2025-06-03 10:36:17,699 [   3289]   WARN - #c.i.i.s.i.StartupManagerImpl - Migrate ڣП to ProjectActivity [Plugin: izhangzhihao.rainbow.brackets]
+com.intellij.diagnostic.PluginException: Migrate ڣП to ProjectActivity [Plugin: izhangzhihao.rainbow.brackets]
+	at com.intellij.ide.startup.impl.StartupManagerImpl.runPostStartupActivities(StartupManagerImpl.kt:276)
+	at com.intellij.ide.startup.impl.StartupManagerImpl.access$runPostStartupActivities(StartupManagerImpl.kt:68)
+	at com.intellij.ide.startup.impl.StartupManagerImpl$runPostStartupActivities$3$2.invokeSuspend(StartupManagerImpl.kt:191)
+	at com.intellij.ide.startup.impl.StartupManagerImpl$runPostStartupActivities$3$2.invoke(StartupManagerImpl.kt)
+	at com.intellij.ide.startup.impl.StartupManagerImpl$runPostStartupActivities$3$2.invoke(StartupManagerImpl.kt)
+	at kotlinx.coroutines.intrinsics.UndispatchedKt.startUndispatchedOrReturn(Undispatched.kt:78)
+	at kotlinx.coroutines.BuildersKt__Builders_commonKt.withContext(Builders.common.kt:167)
+	at kotlinx.coroutines.BuildersKt.withContext(Unknown Source)
+	at com.intellij.ide.startup.impl.StartupManagerImpl$runPostStartupActivities$3.invokeSuspend(StartupManagerImpl.kt:190)
+	at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:33)
+	at kotlinx.coroutines.DispatchedTask.run(DispatchedTask.kt:108)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler.runSafely(CoroutineScheduler.kt:584)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.executeTask(CoroutineScheduler.kt:793)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.runWorker(CoroutineScheduler.kt:697)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.run(CoroutineScheduler.kt:684)
+2025-06-03 10:36:32,642 [  18232]   WARN - #org.editorconfig.language.schema.parser.EditorConfigJsonSchemaParser - Found illegal descriptor: {}
+2025-06-03 10:36:32,642 [  18232]   WARN - #org.editorconfig.language.schema.parser.EditorConfigJsonSchemaParser - Found illegal descriptor: {}
+2025-06-03 10:36:32,657 [  18247]   WARN - #org.editorconfig.language.schema.parser.EditorConfigJsonSchemaParser - Found illegal descriptor: {}
+2025-06-03 10:36:32,659 [  18249]   WARN - #org.editorconfig.language.schema.parser.EditorConfigJsonSchemaParser - Found illegal descriptor: {}
+2025-06-03 10:36:32,661 [  18251]   WARN - #org.editorconfig.language.schema.parser.EditorConfigJsonSchemaParser - Found illegal descriptor: {}
+2025-06-03 10:36:32,661 [  18251]   WARN - #org.editorconfig.language.schema.parser.EditorConfigJsonSchemaParser - Found illegal descriptor: {}
+2025-06-03 10:36:32,661 [  18251]   WARN - #org.editorconfig.language.schema.parser.EditorConfigJsonSchemaParser - Found illegal descriptor: {}
+2025-06-03 10:36:32,661 [  18251]   WARN - #org.editorconfig.language.schema.parser.EditorConfigJsonSchemaParser - Found illegal descriptor: {}
+2025-06-03 10:36:50,596 [  36186]   WARN - #c.i.u.x.Binding - No accessors for com.jetbrains.php.testFramework.PhpTestFrameworkType. This means that state class cannot be serialized properly. Please see https://jb.gg/ij-psoc
+2025-06-03 10:37:14,773 [  60363]   WARN - #c.i.u.x.Binding - No accessors for com.intellij.toolWindow.ToolWindowLayoutStorageManagerState. This means that state class cannot be serialized properly. Please see https://jb.gg/ij-psoc
+2025-06-03 10:37:14,777 [  60367]   WARN - #c.i.u.x.Binding - No accessors for com.intellij.ide.util.TipsUsageManager$State. This means that state class cannot be serialized properly. Please see https://jb.gg/ij-psoc
+2025-06-03 10:37:18,528 [  64118]   WARN - #c.i.o.v.n.p.FSRecords - Attribute FileAttribute[PhpExtensionStubsMetadataProvider]{version: 2, fixedSize: false, shouldEnumerate: false} value is quite large: 167872 b > warn threshold(102400) -> please, do not use VFS file attributes for huge blobs of data. Consider using GistManager or GistStorage.

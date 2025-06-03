@@ -560,3 +560,4 @@ java.nio.file.FileSystemException: /opt/PhpStorm-241.18034.69/plugins/javascript
 2025-06-03 14:37:28,310 [14473900]   WARN - #c.i.o.o.e.ConfigurableCardPanel - auto-dispose 'PHP' id=reference.webide.settings.project.settings.php
 2025-06-03 14:37:28,311 [14473901]   WARN - #c.i.o.o.e.ConfigurableCardPanel - auto-dispose 'Plugins' id=preferences.pluginManager
 2025-06-03 15:00:49,526 [15875116]   WARN - #git4idea.annotate.GitAnnotationProvider - Git annotations are empty for file /home/bogota/Desktop/examen/aardata/src/Entity/.gitignore in revision eda58301e4a0fef8a254995000a073919f0c867f
+2025-06-03 15:15:33,775 [16759365]   WARN - #c.i.s.ComponentManagerImpl - com.intellij.usages.UsageNodePresentation <clinit> requests com.intellij.usageView.UsageTreeColorsScheme instance. Class initialization must not depend on services. Consider using instance of the service on-demand instead.

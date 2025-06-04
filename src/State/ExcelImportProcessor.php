@@ -6,6 +6,7 @@ use ApiPlatform\Metadata\Operation;
 use ApiPlatform\State\ProcessorInterface;
 
 use App\Dto\ExcelFileDto;
+use App\Dto\ExcelImportDto;
 use App\Entity\Attendance;
 use App\Entity\MediaObject;
 use App\Entity\Student;
@@ -70,7 +71,7 @@ final readonly class ExcelImportProcessor implements ProcessorInterface
         $spreadsheet = IOFactory::load($fileName, IReader::READ_DATA_ONLY, $formats);
         $worksheet = $spreadsheet->getActiveSheet();
 
-        $data = [];
+        $sheetData = [];
         foreach ($worksheet->getRowIterator(2) as $row) {
             $rowData = [];
             $cellIterator = $row->getCellIterator();
@@ -90,6 +91,29 @@ final readonly class ExcelImportProcessor implements ProcessorInterface
         }
 
         foreach ($sheetData as $row) {
+            $errorMessages = [];
+            $dto = new ExcelImportDto();
+            $dto->studentNumber = $row['student_number'];
+            $dto->year = $row['year'];
+            $dto->week = $row['week'];
+            $dto->scheduled = $row['scheduled'];
+            $dto->logged = $row['logged'];
+
+            $errors = $this->validator->validate($dto);
+
+            $skipRow = false;
+            if ($errors->count() > 0) {
+                foreach ($errors as $error) {
+                    $errorMessages[] = $error->getPropertyPath() . ': ' . $error->getMessage();
+                }
+                $skipRow = true;
+            }
+
+            if ($skipRow) {
+                dump($errorMessages);
+                continue;
+            }
+
             if (!$this->studentRepository->findOneBy(['studentNumber' => $row['student_number']])) {
                 $student = new Student();
                 $student->setStudentNumber($row['student_number']);

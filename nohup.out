@@ -82,3 +82,482 @@ com.intellij.diagnostic.PluginException: Migrate ڣП to ProjectActivity [Plugin
 2025-06-03 10:37:14,773 [  60363]   WARN - #c.i.u.x.Binding - No accessors for com.intellij.toolWindow.ToolWindowLayoutStorageManagerState. This means that state class cannot be serialized properly. Please see https://jb.gg/ij-psoc
 2025-06-03 10:37:14,777 [  60367]   WARN - #c.i.u.x.Binding - No accessors for com.intellij.ide.util.TipsUsageManager$State. This means that state class cannot be serialized properly. Please see https://jb.gg/ij-psoc
 2025-06-03 10:37:18,528 [  64118]   WARN - #c.i.o.v.n.p.FSRecords - Attribute FileAttribute[PhpExtensionStubsMetadataProvider]{version: 2, fixedSize: false, shouldEnumerate: false} value is quite large: 167872 b > warn threshold(102400) -> please, do not use VFS file attributes for huge blobs of data. Consider using GistManager or GistStorage.
+2025-06-03 11:17:34,676 [2480266]   WARN - #c.i.u.x.Binding - No accessors for com.intellij.platform.feedback.impl.state.DontShowAgainFeedbackState. This means that state class cannot be serialized properly. Please see https://jb.gg/ij-psoc
+2025-06-03 11:17:34,685 [2480275]   WARN - #c.i.u.x.Binding - No accessors for com.intellij.platform.feedback.impl.state.CommonFeedbackSurveysState. This means that state class cannot be serialized properly. Please see https://jb.gg/ij-psoc
+2025-06-03 14:35:58,852 [14384442]   WARN - #c.i.o.o.e.ConfigurableExtensionPointUtil - ignore deprecated groupId: appearance for id: AtomSettingsConfigurable
+2025-06-03 14:35:58,852 [14384442]   WARN - #c.i.o.o.e.ConfigurableExtensionPointUtil - ignore deprecated groupId: appearance for id: AtomSelectConfig
+2025-06-03 14:36:01,303 [14386893]   WARN - #com.mallowigi.tree.HollowFoldersDecorator - null
+2025-06-03 14:36:02,539 [14388129]   WARN - #c.i.o.o.e.ConfigurableExtensionPointUtil - ignore deprecated groupId: appearance for id: AtomSettingsConfigurable
+2025-06-03 14:36:02,539 [14388129]   WARN - #c.i.o.o.e.ConfigurableExtensionPointUtil - ignore deprecated groupId: appearance for id: AtomSelectConfig
+2025-06-03 14:36:13,800 [14399390]   WARN - #com.github.weisj.jsvg.parser.NodeMap - unsupported RDF
+2025-06-03 14:36:13,801 [14399391]   WARN - #com.github.weisj.jsvg.parser.NodeMap - unsupported namedview
+2025-06-03 14:36:13,832 [14399422]   WARN - #com.github.weisj.jsvg.parser.NodeMap - unsupported RDF
+2025-06-03 14:36:13,832 [14399422]   WARN - #com.github.weisj.jsvg.parser.NodeMap - unsupported namedview
+2025-06-03 14:36:13,854 [14399444]   WARN - #com.github.weisj.jsvg.parser.NodeMap - unsupported RDF
+2025-06-03 14:36:13,868 [14399458]   WARN - #com.github.weisj.jsvg.parser.NodeMap - unsupported namedview
+2025-06-03 14:36:13,868 [14399458]   WARN - #com.github.weisj.jsvg.parser.NodeMap - unsupported RDF
+2025-06-03 14:36:13,881 [14399471]   WARN - com.github.weisj.jsvg.parser.css.impl.SimpleCssParser - Expected 'CURLY_OPEN' but got 'Token{type=EOF, data='null'}'
+2025-06-03 14:36:13,887 [14399477]   WARN - com.github.weisj.jsvg.parser.css.impl.SimpleCssParser - Expected 'CURLY_OPEN' but got 'Token{type=EOF, data='null'}'
+2025-06-03 14:36:14,412 [14400002]   WARN - #com.github.weisj.jsvg.parser.NodeMap - unsupported namedview
+2025-06-03 14:36:18,889 [14404479]   WARN - #c.i.i.p.n.PluginLogo - Cannot load plugin icon (file=/opt/PhpStorm-241.18034.69/plugins/javascript-cucumber/lib/cucumberjs_formatter_v7.js/META-INF/pluginIcon.svg)
+java.nio.file.FileSystemException: /opt/PhpStorm-241.18034.69/plugins/javascript-cucumber/lib/cucumberjs_formatter_v7.js/META-INF/pluginIcon.svg: Not a directory
+	at java.base/sun.nio.fs.UnixException.translateToIOException(UnixException.java:100)
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:106)
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:111)
+	at java.base/sun.nio.fs.UnixFileSystemProvider.newByteChannel(UnixFileSystemProvider.java:218)
+	at java.base/java.nio.file.Files.newByteChannel(Files.java:380)
+	at java.base/java.nio.file.Files.newByteChannel(Files.java:432)
+	at java.base/java.nio.file.Files.readAllBytes(Files.java:3288)
+	at com.intellij.ide.plugins.newui.PluginLogoKt.tryLoadIcon(PluginLogo.kt:339)
+	at com.intellij.ide.plugins.newui.PluginLogoKt.tryLoadDirIcons(PluginLogo.kt:252)
+	at com.intellij.ide.plugins.newui.PluginLogoKt.loadPluginIconsFromFile(PluginLogo.kt:235)
+	at com.intellij.ide.plugins.newui.PluginLogoKt.access$loadPluginIconsFromFile(PluginLogo.kt:1)
+	at com.intellij.ide.plugins.newui.PluginLogoLoader$schedulePluginIconLoading$1$1.invokeSuspend(PluginLogo.kt:385)
+	at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:33)
+	at kotlinx.coroutines.DispatchedTask.run(DispatchedTask.kt:108)
+	at kotlinx.coroutines.internal.LimitedDispatcher$Worker.run(LimitedDispatcher.kt:115)
+	at kotlinx.coroutines.scheduling.TaskImpl.run(Tasks.kt:103)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler.runSafely(CoroutineScheduler.kt:584)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.executeTask(CoroutineScheduler.kt:793)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.runWorker(CoroutineScheduler.kt:697)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.run(CoroutineScheduler.kt:684)
+2025-06-03 14:36:18,890 [14404480]   WARN - #c.i.i.p.n.PluginLogo - Cannot load plugin icon (file=/opt/PhpStorm-241.18034.69/plugins/javascript-cucumber/lib/cucumberjs_formatter_v7.js/META-INF/pluginIcon_dark.svg)
+java.nio.file.FileSystemException: /opt/PhpStorm-241.18034.69/plugins/javascript-cucumber/lib/cucumberjs_formatter_v7.js/META-INF/pluginIcon_dark.svg: Not a directory
+	at java.base/sun.nio.fs.UnixException.translateToIOException(UnixException.java:100)
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:106)
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:111)
+	at java.base/sun.nio.fs.UnixFileSystemProvider.newByteChannel(UnixFileSystemProvider.java:218)
+	at java.base/java.nio.file.Files.newByteChannel(Files.java:380)
+	at java.base/java.nio.file.Files.newByteChannel(Files.java:432)
+	at java.base/java.nio.file.Files.readAllBytes(Files.java:3288)
+	at com.intellij.ide.plugins.newui.PluginLogoKt.tryLoadIcon(PluginLogo.kt:339)
+	at com.intellij.ide.plugins.newui.PluginLogoKt.tryLoadDirIcons(PluginLogo.kt:253)
+	at com.intellij.ide.plugins.newui.PluginLogoKt.loadPluginIconsFromFile(PluginLogo.kt:235)
+	at com.intellij.ide.plugins.newui.PluginLogoKt.access$loadPluginIconsFromFile(PluginLogo.kt:1)
+	at com.intellij.ide.plugins.newui.PluginLogoLoader$schedulePluginIconLoading$1$1.invokeSuspend(PluginLogo.kt:385)
+	at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:33)
+	at kotlinx.coroutines.DispatchedTask.run(DispatchedTask.kt:108)
+	at kotlinx.coroutines.internal.LimitedDispatcher$Worker.run(LimitedDispatcher.kt:115)
+	at kotlinx.coroutines.scheduling.TaskImpl.run(Tasks.kt:103)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler.runSafely(CoroutineScheduler.kt:584)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.executeTask(CoroutineScheduler.kt:793)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.runWorker(CoroutineScheduler.kt:697)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.run(CoroutineScheduler.kt:684)
+2025-06-03 14:36:18,890 [14404480]   WARN - #c.i.i.p.n.PluginLogo - Cannot load plugin icon (file=/opt/PhpStorm-241.18034.69/plugins/javascript-cucumber/lib/cucumberjs_formatter_v2.js/META-INF/pluginIcon.svg)
+java.nio.file.FileSystemException: /opt/PhpStorm-241.18034.69/plugins/javascript-cucumber/lib/cucumberjs_formatter_v2.js/META-INF/pluginIcon.svg: Not a directory
+	at java.base/sun.nio.fs.UnixException.translateToIOException(UnixException.java:100)
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:106)
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:111)
+	at java.base/sun.nio.fs.UnixFileSystemProvider.newByteChannel(UnixFileSystemProvider.java:218)
+	at java.base/java.nio.file.Files.newByteChannel(Files.java:380)
+	at java.base/java.nio.file.Files.newByteChannel(Files.java:432)
+	at java.base/java.nio.file.Files.readAllBytes(Files.java:3288)
+	at com.intellij.ide.plugins.newui.PluginLogoKt.tryLoadIcon(PluginLogo.kt:339)
+	at com.intellij.ide.plugins.newui.PluginLogoKt.tryLoadDirIcons(PluginLogo.kt:252)
+	at com.intellij.ide.plugins.newui.PluginLogoKt.loadPluginIconsFromFile(PluginLogo.kt:235)
+	at com.intellij.ide.plugins.newui.PluginLogoKt.access$loadPluginIconsFromFile(PluginLogo.kt:1)
+	at com.intellij.ide.plugins.newui.PluginLogoLoader$schedulePluginIconLoading$1$1.invokeSuspend(PluginLogo.kt:385)
+	at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:33)
+	at kotlinx.coroutines.DispatchedTask.run(DispatchedTask.kt:108)
+	at kotlinx.coroutines.internal.LimitedDispatcher$Worker.run(LimitedDispatcher.kt:115)
+	at kotlinx.coroutines.scheduling.TaskImpl.run(Tasks.kt:103)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler.runSafely(CoroutineScheduler.kt:584)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.executeTask(CoroutineScheduler.kt:793)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.runWorker(CoroutineScheduler.kt:697)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.run(CoroutineScheduler.kt:684)
+2025-06-03 14:36:18,891 [14404481]   WARN - #c.i.i.p.n.PluginLogo - Cannot load plugin icon (file=/opt/PhpStorm-241.18034.69/plugins/javascript-cucumber/lib/cucumberjs_formatter_v2.js/META-INF/pluginIcon_dark.svg)
+java.nio.file.FileSystemException: /opt/PhpStorm-241.18034.69/plugins/javascript-cucumber/lib/cucumberjs_formatter_v2.js/META-INF/pluginIcon_dark.svg: Not a directory
+	at java.base/sun.nio.fs.UnixException.translateToIOException(UnixException.java:100)
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:106)
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:111)
+	at java.base/sun.nio.fs.UnixFileSystemProvider.newByteChannel(UnixFileSystemProvider.java:218)
+	at java.base/java.nio.file.Files.newByteChannel(Files.java:380)
+	at java.base/java.nio.file.Files.newByteChannel(Files.java:432)
+	at java.base/java.nio.file.Files.readAllBytes(Files.java:3288)
+	at com.intellij.ide.plugins.newui.PluginLogoKt.tryLoadIcon(PluginLogo.kt:339)
+	at com.intellij.ide.plugins.newui.PluginLogoKt.tryLoadDirIcons(PluginLogo.kt:253)
+	at com.intellij.ide.plugins.newui.PluginLogoKt.loadPluginIconsFromFile(PluginLogo.kt:235)
+	at com.intellij.ide.plugins.newui.PluginLogoKt.access$loadPluginIconsFromFile(PluginLogo.kt:1)
+	at com.intellij.ide.plugins.newui.PluginLogoLoader$schedulePluginIconLoading$1$1.invokeSuspend(PluginLogo.kt:385)
+	at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:33)
+	at kotlinx.coroutines.DispatchedTask.run(DispatchedTask.kt:108)
+	at kotlinx.coroutines.internal.LimitedDispatcher$Worker.run(LimitedDispatcher.kt:115)
+	at kotlinx.coroutines.scheduling.TaskImpl.run(Tasks.kt:103)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler.runSafely(CoroutineScheduler.kt:584)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.executeTask(CoroutineScheduler.kt:793)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.runWorker(CoroutineScheduler.kt:697)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.run(CoroutineScheduler.kt:684)
+2025-06-03 14:36:18,892 [14404482]   WARN - #c.i.i.p.n.PluginLogo - Cannot load plugin icon (file=/opt/PhpStorm-241.18034.69/plugins/javascript-cucumber/lib/cucumberjs_formatter_v3.js/META-INF/pluginIcon.svg)
+java.nio.file.FileSystemException: /opt/PhpStorm-241.18034.69/plugins/javascript-cucumber/lib/cucumberjs_formatter_v3.js/META-INF/pluginIcon.svg: Not a directory
+	at java.base/sun.nio.fs.UnixException.translateToIOException(UnixException.java:100)
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:106)
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:111)
+	at java.base/sun.nio.fs.UnixFileSystemProvider.newByteChannel(UnixFileSystemProvider.java:218)
+	at java.base/java.nio.file.Files.newByteChannel(Files.java:380)
+	at java.base/java.nio.file.Files.newByteChannel(Files.java:432)
+	at java.base/java.nio.file.Files.readAllBytes(Files.java:3288)
+	at com.intellij.ide.plugins.newui.PluginLogoKt.tryLoadIcon(PluginLogo.kt:339)
+	at com.intellij.ide.plugins.newui.PluginLogoKt.tryLoadDirIcons(PluginLogo.kt:252)
+	at com.intellij.ide.plugins.newui.PluginLogoKt.loadPluginIconsFromFile(PluginLogo.kt:235)
+	at com.intellij.ide.plugins.newui.PluginLogoKt.access$loadPluginIconsFromFile(PluginLogo.kt:1)
+	at com.intellij.ide.plugins.newui.PluginLogoLoader$schedulePluginIconLoading$1$1.invokeSuspend(PluginLogo.kt:385)
+	at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:33)
+	at kotlinx.coroutines.DispatchedTask.run(DispatchedTask.kt:108)
+	at kotlinx.coroutines.internal.LimitedDispatcher$Worker.run(LimitedDispatcher.kt:115)
+	at kotlinx.coroutines.scheduling.TaskImpl.run(Tasks.kt:103)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler.runSafely(CoroutineScheduler.kt:584)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.executeTask(CoroutineScheduler.kt:793)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.runWorker(CoroutineScheduler.kt:697)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.run(CoroutineScheduler.kt:684)
+2025-06-03 14:36:18,892 [14404482]   WARN - #c.i.i.p.n.PluginLogo - Cannot load plugin icon (file=/opt/PhpStorm-241.18034.69/plugins/javascript-cucumber/lib/cucumberjs_formatter_v3.js/META-INF/pluginIcon_dark.svg)
+java.nio.file.FileSystemException: /opt/PhpStorm-241.18034.69/plugins/javascript-cucumber/lib/cucumberjs_formatter_v3.js/META-INF/pluginIcon_dark.svg: Not a directory
+	at java.base/sun.nio.fs.UnixException.translateToIOException(UnixException.java:100)
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:106)
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:111)
+	at java.base/sun.nio.fs.UnixFileSystemProvider.newByteChannel(UnixFileSystemProvider.java:218)
+	at java.base/java.nio.file.Files.newByteChannel(Files.java:380)
+	at java.base/java.nio.file.Files.newByteChannel(Files.java:432)
+	at java.base/java.nio.file.Files.readAllBytes(Files.java:3288)
+	at com.intellij.ide.plugins.newui.PluginLogoKt.tryLoadIcon(PluginLogo.kt:339)
+	at com.intellij.ide.plugins.newui.PluginLogoKt.tryLoadDirIcons(PluginLogo.kt:253)
+	at com.intellij.ide.plugins.newui.PluginLogoKt.loadPluginIconsFromFile(PluginLogo.kt:235)
+	at com.intellij.ide.plugins.newui.PluginLogoKt.access$loadPluginIconsFromFile(PluginLogo.kt:1)
+	at com.intellij.ide.plugins.newui.PluginLogoLoader$schedulePluginIconLoading$1$1.invokeSuspend(PluginLogo.kt:385)
+	at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:33)
+	at kotlinx.coroutines.DispatchedTask.run(DispatchedTask.kt:108)
+	at kotlinx.coroutines.internal.LimitedDispatcher$Worker.run(LimitedDispatcher.kt:115)
+	at kotlinx.coroutines.scheduling.TaskImpl.run(Tasks.kt:103)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler.runSafely(CoroutineScheduler.kt:584)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.executeTask(CoroutineScheduler.kt:793)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.runWorker(CoroutineScheduler.kt:697)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.run(CoroutineScheduler.kt:684)
+2025-06-03 14:36:18,893 [14404483]   WARN - #c.i.i.p.n.PluginLogo - Cannot load plugin icon (file=/opt/PhpStorm-241.18034.69/plugins/javascript-cucumber/lib/cucumberjs_formatter.js/META-INF/pluginIcon.svg)
+java.nio.file.FileSystemException: /opt/PhpStorm-241.18034.69/plugins/javascript-cucumber/lib/cucumberjs_formatter.js/META-INF/pluginIcon.svg: Not a directory
+	at java.base/sun.nio.fs.UnixException.translateToIOException(UnixException.java:100)
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:106)
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:111)
+	at java.base/sun.nio.fs.UnixFileSystemProvider.newByteChannel(UnixFileSystemProvider.java:218)
+	at java.base/java.nio.file.Files.newByteChannel(Files.java:380)
+	at java.base/java.nio.file.Files.newByteChannel(Files.java:432)
+	at java.base/java.nio.file.Files.readAllBytes(Files.java:3288)
+	at com.intellij.ide.plugins.newui.PluginLogoKt.tryLoadIcon(PluginLogo.kt:339)
+	at com.intellij.ide.plugins.newui.PluginLogoKt.tryLoadDirIcons(PluginLogo.kt:252)
+	at com.intellij.ide.plugins.newui.PluginLogoKt.loadPluginIconsFromFile(PluginLogo.kt:235)
+	at com.intellij.ide.plugins.newui.PluginLogoKt.access$loadPluginIconsFromFile(PluginLogo.kt:1)
+	at com.intellij.ide.plugins.newui.PluginLogoLoader$schedulePluginIconLoading$1$1.invokeSuspend(PluginLogo.kt:385)
+	at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:33)
+	at kotlinx.coroutines.DispatchedTask.run(DispatchedTask.kt:108)
+	at kotlinx.coroutines.internal.LimitedDispatcher$Worker.run(LimitedDispatcher.kt:115)
+	at kotlinx.coroutines.scheduling.TaskImpl.run(Tasks.kt:103)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler.runSafely(CoroutineScheduler.kt:584)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.executeTask(CoroutineScheduler.kt:793)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.runWorker(CoroutineScheduler.kt:697)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.run(CoroutineScheduler.kt:684)
+2025-06-03 14:36:18,894 [14404484]   WARN - #c.i.i.p.n.PluginLogo - Cannot load plugin icon (file=/opt/PhpStorm-241.18034.69/plugins/javascript-cucumber/lib/cucumberjs_formatter.js/META-INF/pluginIcon_dark.svg)
+java.nio.file.FileSystemException: /opt/PhpStorm-241.18034.69/plugins/javascript-cucumber/lib/cucumberjs_formatter.js/META-INF/pluginIcon_dark.svg: Not a directory
+	at java.base/sun.nio.fs.UnixException.translateToIOException(UnixException.java:100)
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:106)
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:111)
+	at java.base/sun.nio.fs.UnixFileSystemProvider.newByteChannel(UnixFileSystemProvider.java:218)
+	at java.base/java.nio.file.Files.newByteChannel(Files.java:380)
+	at java.base/java.nio.file.Files.newByteChannel(Files.java:432)
+	at java.base/java.nio.file.Files.readAllBytes(Files.java:3288)
+	at com.intellij.ide.plugins.newui.PluginLogoKt.tryLoadIcon(PluginLogo.kt:339)
+	at com.intellij.ide.plugins.newui.PluginLogoKt.tryLoadDirIcons(PluginLogo.kt:253)
+	at com.intellij.ide.plugins.newui.PluginLogoKt.loadPluginIconsFromFile(PluginLogo.kt:235)
+	at com.intellij.ide.plugins.newui.PluginLogoKt.access$loadPluginIconsFromFile(PluginLogo.kt:1)
+	at com.intellij.ide.plugins.newui.PluginLogoLoader$schedulePluginIconLoading$1$1.invokeSuspend(PluginLogo.kt:385)
+	at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:33)
+	at kotlinx.coroutines.DispatchedTask.run(DispatchedTask.kt:108)
+	at kotlinx.coroutines.internal.LimitedDispatcher$Worker.run(LimitedDispatcher.kt:115)
+	at kotlinx.coroutines.scheduling.TaskImpl.run(Tasks.kt:103)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler.runSafely(CoroutineScheduler.kt:584)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.executeTask(CoroutineScheduler.kt:793)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.runWorker(CoroutineScheduler.kt:697)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.run(CoroutineScheduler.kt:684)
+2025-06-03 14:36:18,894 [14404484]   WARN - #c.i.i.p.n.PluginLogo - Cannot load plugin icon (file=/opt/PhpStorm-241.18034.69/plugins/javascript-cucumber/lib/cucumberjs_formatter_common.js/META-INF/pluginIcon.svg)
+java.nio.file.FileSystemException: /opt/PhpStorm-241.18034.69/plugins/javascript-cucumber/lib/cucumberjs_formatter_common.js/META-INF/pluginIcon.svg: Not a directory
+	at java.base/sun.nio.fs.UnixException.translateToIOException(UnixException.java:100)
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:106)
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:111)
+	at java.base/sun.nio.fs.UnixFileSystemProvider.newByteChannel(UnixFileSystemProvider.java:218)
+	at java.base/java.nio.file.Files.newByteChannel(Files.java:380)
+	at java.base/java.nio.file.Files.newByteChannel(Files.java:432)
+	at java.base/java.nio.file.Files.readAllBytes(Files.java:3288)
+	at com.intellij.ide.plugins.newui.PluginLogoKt.tryLoadIcon(PluginLogo.kt:339)
+	at com.intellij.ide.plugins.newui.PluginLogoKt.tryLoadDirIcons(PluginLogo.kt:252)
+	at com.intellij.ide.plugins.newui.PluginLogoKt.loadPluginIconsFromFile(PluginLogo.kt:235)
+	at com.intellij.ide.plugins.newui.PluginLogoKt.access$loadPluginIconsFromFile(PluginLogo.kt:1)
+	at com.intellij.ide.plugins.newui.PluginLogoLoader$schedulePluginIconLoading$1$1.invokeSuspend(PluginLogo.kt:385)
+	at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:33)
+	at kotlinx.coroutines.DispatchedTask.run(DispatchedTask.kt:108)
+	at kotlinx.coroutines.internal.LimitedDispatcher$Worker.run(LimitedDispatcher.kt:115)
+	at kotlinx.coroutines.scheduling.TaskImpl.run(Tasks.kt:103)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler.runSafely(CoroutineScheduler.kt:584)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.executeTask(CoroutineScheduler.kt:793)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.runWorker(CoroutineScheduler.kt:697)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.run(CoroutineScheduler.kt:684)
+2025-06-03 14:36:18,895 [14404485]   WARN - #c.i.i.p.n.PluginLogo - Cannot load plugin icon (file=/opt/PhpStorm-241.18034.69/plugins/javascript-cucumber/lib/cucumberjs_formatter_common.js/META-INF/pluginIcon_dark.svg)
+java.nio.file.FileSystemException: /opt/PhpStorm-241.18034.69/plugins/javascript-cucumber/lib/cucumberjs_formatter_common.js/META-INF/pluginIcon_dark.svg: Not a directory
+	at java.base/sun.nio.fs.UnixException.translateToIOException(UnixException.java:100)
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:106)
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:111)
+	at java.base/sun.nio.fs.UnixFileSystemProvider.newByteChannel(UnixFileSystemProvider.java:218)
+	at java.base/java.nio.file.Files.newByteChannel(Files.java:380)
+	at java.base/java.nio.file.Files.newByteChannel(Files.java:432)
+	at java.base/java.nio.file.Files.readAllBytes(Files.java:3288)
+	at com.intellij.ide.plugins.newui.PluginLogoKt.tryLoadIcon(PluginLogo.kt:339)
+	at com.intellij.ide.plugins.newui.PluginLogoKt.tryLoadDirIcons(PluginLogo.kt:253)
+	at com.intellij.ide.plugins.newui.PluginLogoKt.loadPluginIconsFromFile(PluginLogo.kt:235)
+	at com.intellij.ide.plugins.newui.PluginLogoKt.access$loadPluginIconsFromFile(PluginLogo.kt:1)
+	at com.intellij.ide.plugins.newui.PluginLogoLoader$schedulePluginIconLoading$1$1.invokeSuspend(PluginLogo.kt:385)
+	at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:33)
+	at kotlinx.coroutines.DispatchedTask.run(DispatchedTask.kt:108)
+	at kotlinx.coroutines.internal.LimitedDispatcher$Worker.run(LimitedDispatcher.kt:115)
+	at kotlinx.coroutines.scheduling.TaskImpl.run(Tasks.kt:103)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler.runSafely(CoroutineScheduler.kt:584)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.executeTask(CoroutineScheduler.kt:793)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.runWorker(CoroutineScheduler.kt:697)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.run(CoroutineScheduler.kt:684)
+2025-06-03 14:36:25,395 [14410985]   WARN - #c.i.o.k.i.u.ActionsTreeUtil - No text in 'Database.KeymapGroup' template presentation. Showing its action-id instead
+2025-06-03 14:36:25,396 [14410986]   WARN - #c.i.o.k.i.u.ActionsTreeUtil - No text in 'Console.TableResult.Group.Common.Last' template presentation. Showing its action-id instead
+2025-06-03 14:36:25,396 [14410986]   WARN - #c.i.o.k.i.u.ActionsTreeUtil - No text in 'DatabaseView.FindUsagesActionGroup' template presentation. Showing its action-id instead
+2025-06-03 14:36:25,396 [14410986]   WARN - #c.i.o.k.i.u.ActionsTreeUtil - No text in 'Console.TableResult.PopupGroup.DatabaseCellActions' template presentation. Showing its action-id instead
+2025-06-03 14:36:25,396 [14410986]   WARN - #c.i.o.k.i.u.ActionsTreeUtil - No text in 'Console.TableResult.NavigationAndEditing.ChangeSampleSize.Group' template presentation. Showing its action-id instead
+2025-06-03 14:36:25,396 [14410986]   WARN - #c.i.o.k.i.u.ActionsTreeUtil - No text in 'Console.TableResult.Group' template presentation. Showing its action-id instead
+2025-06-03 14:36:25,396 [14410986]   WARN - #c.i.o.k.i.u.ActionsTreeUtil - No text in 'Console.TableResult.Database.GoTo' template presentation. Showing its action-id instead
+2025-06-03 14:36:25,397 [14410987]   WARN - #c.i.o.k.i.u.ActionsTreeUtil - No text in 'DatabaseView.MoreOptions' template presentation. Showing its action-id instead
+2025-06-03 14:36:25,397 [14410987]   WARN - #c.i.o.k.i.u.ActionsTreeUtil - No text in 'Console.TableResult.AutoRefresh' template presentation. Showing its action-id instead
+2025-06-03 14:36:25,401 [14410991]   WARN - #c.i.o.k.i.u.ActionsTreeUtil - No text in 'GenerateDbObjectGroup' template presentation. Showing its action-id instead
+2025-06-03 14:36:25,401 [14410991]   WARN - #c.i.o.k.i.u.ActionsTreeUtil - No text in 'Console.TableResult.PopupGroup.Database.QuickDoc' template presentation. Showing its action-id instead
+2025-06-03 14:36:25,401 [14410991]   WARN - #c.i.o.k.i.u.ActionsTreeUtil - No text in 'Console.Jdbc.Common' template presentation. Showing its action-id instead
+2025-06-03 14:36:25,402 [14410992]   WARN - #c.i.o.k.i.u.ActionsTreeUtil - No text in 'SqlGenerateGroup' template presentation. Showing its action-id instead
+2025-06-03 14:36:25,402 [14410992]   WARN - #c.i.o.k.i.u.ActionsTreeUtil - No text in 'Console.Jdbc.Right' template presentation. Showing its action-id instead
+2025-06-03 14:36:25,402 [14410992]   WARN - #c.i.o.k.i.u.ActionsTreeUtil - No text in 'Console.TabPopupGroup.Embedded' template presentation. Showing its action-id instead
+2025-06-03 14:36:25,402 [14410992]   WARN - #c.i.o.k.i.u.ActionsTreeUtil - No text in 'Console.InEditorTableResult.Horizontal.PreviewAndSubmit.Group' template presentation. Showing its action-id instead
+2025-06-03 14:36:25,402 [14410992]   WARN - #c.i.o.k.i.u.ActionsTreeUtil - No text in 'Database.EditorTabPopupMenu' template presentation. Showing its action-id instead
+2025-06-03 14:36:25,402 [14410992]   WARN - #c.i.o.k.i.u.ActionsTreeUtil - No text in 'Console.File.Resolve.Mode' template presentation. Showing its action-id instead
+2025-06-03 14:36:25,402 [14410992]   WARN - #c.i.o.k.i.u.ActionsTreeUtil - No text in 'FileEditor.ImportToDatabase.Group' template presentation. Showing its action-id instead
+2025-06-03 14:36:25,403 [14410993]   WARN - #c.i.o.k.i.u.ActionsTreeUtil - No text in 'Console.Jdbc.Left' template presentation. Showing its action-id instead
+2025-06-03 14:36:25,403 [14410993]   WARN - #c.i.o.k.i.u.ActionsTreeUtil - No text in 'Console.Transaction.TxSettings' template presentation. Showing its action-id instead
+2025-06-03 14:36:25,403 [14410993]   WARN - #c.i.o.k.i.u.ActionsTreeUtil - No text in 'Console.TableResult.PopupGroup.OtherDatabaseActions' template presentation. Showing its action-id instead
+2025-06-03 14:36:25,403 [14410993]   WARN - #c.i.o.k.i.u.ActionsTreeUtil - No text in 'Console.TableResult.PopupGroup.OpenDataEditor' template presentation. Showing its action-id instead
+2025-06-03 14:36:25,403 [14410993]   WARN - #c.i.o.k.i.u.ActionsTreeUtil - No text in 'Console.TableResult.PopupGroup.Database' template presentation. Showing its action-id instead
+2025-06-03 14:36:25,403 [14410993]   WARN - #c.i.o.k.i.u.ActionsTreeUtil - No text in 'Console.InEditorTableResult.Vertical.Group' template presentation. Showing its action-id instead
+2025-06-03 14:36:25,403 [14410993]   WARN - #c.i.o.k.i.u.ActionsTreeUtil - No text in '<anonymous-group-8>' template presentation. Showing its action-id instead
+2025-06-03 14:36:25,403 [14410993]   WARN - #c.i.o.k.i.u.ActionsTreeUtil - No text in '<anonymous-group-9>' template presentation. Showing its action-id instead
+2025-06-03 14:36:25,403 [14410993]   WARN - #c.i.o.k.i.u.ActionsTreeUtil - No text in 'DatabaseView.AddActionGroup' template presentation. Showing its action-id instead
+2025-06-03 14:36:25,403 [14410993]   WARN - #c.i.o.k.i.u.ActionsTreeUtil - No text in 'Console.TableResult.NavigationAndEditing.Last.Group' template presentation. Showing its action-id instead
+2025-06-03 14:36:25,403 [14410993]   WARN - #c.i.o.k.i.u.ActionsTreeUtil - No text in 'Console.TableResult.Group.Secondary.Top' template presentation. Showing its action-id instead
+2025-06-03 14:36:25,403 [14410993]   WARN - #c.i.o.k.i.u.ActionsTreeUtil - No text in 'Console.TableResult.PopupGroup.Whatever' template presentation. Showing its action-id instead
+2025-06-03 14:36:25,404 [14410994]   WARN - #c.i.o.k.i.u.ActionsTreeUtil - No text in 'DatabaseView.VcsWrapperGroup' template presentation. Showing its action-id instead
+2025-06-03 14:36:25,404 [14410994]   WARN - #c.i.o.k.i.u.ActionsTreeUtil - No text in 'Console.TableResult.Data' template presentation. Showing its action-id instead
+2025-06-03 14:36:25,404 [14410994]   WARN - #c.i.o.k.i.u.ActionsTreeUtil - No text in 'Database.KeymapGroup.Hidden' template presentation. Showing its action-id instead
+2025-06-03 14:36:25,404 [14410994]   WARN - #c.i.o.k.i.u.ActionsTreeUtil - No text in 'DatabaseView.NewGroup' template presentation. Showing its action-id instead
+2025-06-03 14:36:25,404 [14410994]   WARN - #c.i.o.k.i.u.ActionsTreeUtil - No text in 'DatabaseView.Ddl.AddObject' template presentation. Showing its action-id instead
+2025-06-03 14:36:25,404 [14410994]   WARN - #c.i.o.k.i.u.ActionsTreeUtil - No text in 'Console.TableResult.Options.Bottom' template presentation. Showing its action-id instead
+2025-06-03 14:36:25,404 [14410994]   WARN - #c.i.o.k.i.u.ActionsTreeUtil - No text in 'Console.Jdbc.RunContextGroup' template presentation. Showing its action-id instead
+2025-06-03 14:36:25,404 [14410994]   WARN - #c.i.o.k.i.u.ActionsTreeUtil - No text in 'Console.TableResult.NavigationAndEditing.JdbcCancel.Group' template presentation. Showing its action-id instead
+2025-06-03 14:36:25,411 [14411001]   WARN - #c.i.o.k.i.u.ActionsTreeUtil - No text in 'AsyncGroup' template presentation. Showing its action-id instead
+2025-06-03 14:36:25,412 [14411002]   WARN - #c.i.o.k.i.u.ActionsTreeUtil - No text in 'AsyncDiagnosticGroup' template presentation. Showing its action-id instead
+2025-06-03 14:36:25,412 [14411002]   WARN - #c.i.o.k.i.u.ActionsTreeUtil - No text in 'LetsPlot.Charts.Toolbar.Actions' template presentation. Showing its action-id instead
+2025-06-03 14:36:25,412 [14411002]   WARN - #c.i.o.k.i.u.ActionsTreeUtil - No text in 'Charts.Toolbar.Actions' template presentation. Showing its action-id instead
+2025-06-03 14:36:25,413 [14411003]   WARN - #c.i.o.k.i.u.ActionsTreeUtil - No text in 'CodeWithMeTabActionGroup' template presentation. Showing its action-id instead
+2025-06-03 14:36:25,413 [14411003]   WARN - #c.i.o.k.i.u.ActionsTreeUtil - No text in 'CodeWithMeMainMenuGroup' template presentation. Showing its action-id instead
+2025-06-03 14:36:25,413 [14411003]   WARN - #c.i.o.k.i.u.ActionsTreeUtil - No text in 'HostCWMManageLicenseGroup' template presentation. Showing its action-id instead
+2025-06-03 14:36:25,413 [14411003]   WARN - #c.i.o.k.i.u.ActionsTreeUtil - No text in 'CodeWithMeNavbarGroup' template presentation. Showing its action-id instead
+2025-06-03 14:36:25,413 [14411003]   WARN - #c.i.o.k.i.u.ActionsTreeUtil - No text in 'CWMCallSplitButtonActionGroup' template presentation. Showing its action-id instead
+2025-06-03 14:36:25,413 [14411003]   WARN - #c.i.o.k.i.u.ActionsTreeUtil - No text in 'CodeWithMeMainGroup' template presentation. Showing its action-id instead
+2025-06-03 14:36:25,414 [14411004]   WARN - #c.i.o.k.i.u.ActionsTreeUtil - No text in 'CodeWithMeUsersGroup' template presentation. Showing its action-id instead
+2025-06-03 14:36:25,414 [14411004]   WARN - #c.i.o.k.i.u.ActionsTreeUtil - No text in 'HostCodeWithMeMainGroup' template presentation. Showing its action-id instead
+2025-06-03 14:36:25,414 [14411004]   WARN - #c.i.o.k.i.u.ActionsTreeUtil - No text in 'UnattendedHostDropdownGroup' template presentation. Showing its action-id instead
+2025-06-03 14:36:25,414 [14411004]   WARN - #c.i.o.k.i.u.ActionsTreeUtil - No text in 'TerminalShareGroup' template presentation. Showing its action-id instead
+2025-06-03 14:36:25,414 [14411004]   WARN - #c.i.o.k.i.u.ActionsTreeUtil - No text in 'CodeWithMeHeaderMenuGroup' template presentation. Showing its action-id instead
+2025-06-03 14:36:25,415 [14411005]   WARN - #c.i.o.k.i.u.ActionsTreeUtil - No text in 'ForwardPortAndNavigateInBrowser' template presentation. Showing its action-id instead
+2025-06-03 14:36:25,415 [14411005]   WARN - #c.i.o.k.i.u.ActionsTreeUtil - No text in 'CodeWithMeGroup' template presentation. Showing its action-id instead
+2025-06-03 14:36:25,415 [14411005]   WARN - #c.i.o.k.i.u.ActionsTreeUtil - No text in 'NavigateInBrowser' template presentation. Showing its action-id instead
+2025-06-03 14:36:25,417 [14411007]   WARN - #c.i.o.k.i.u.ActionsTreeUtil - No text in 'CodeWithMeHeaderMenuAdditionalGroup' template presentation. Showing its action-id instead
+2025-06-03 14:36:25,417 [14411007]   WARN - #c.i.o.k.i.u.ActionsTreeUtil - No text in 'HostCodeWithMeCallMainGroup' template presentation. Showing its action-id instead
+2025-06-03 14:36:25,417 [14411007]   WARN - #c.i.o.k.i.u.ActionsTreeUtil - No text in 'UnattendedHostImportantActionsGroup' template presentation. Showing its action-id instead
+2025-06-03 14:36:25,418 [14411008]   WARN - #c.i.o.k.i.u.ActionsTreeUtil - No text in 'CWMTelephonyGroup' template presentation. Showing its action-id instead
+2025-06-03 14:36:25,418 [14411008]   WARN - #c.i.o.k.i.u.ActionsTreeUtil - No text in 'EnableVoiceCallAction' template presentation. Showing its action-id instead
+2025-06-03 14:36:25,419 [14411009]   WARN - #c.i.o.k.i.u.ActionsTreeUtil - No text in 'StopForwardingAction' template presentation. Showing its action-id instead
+2025-06-03 14:36:25,419 [14411009]   WARN - #c.i.o.k.i.u.ActionsTreeUtil - No text in 'HostCodeWithMeSubMenuGroup' template presentation. Showing its action-id instead
+2025-06-03 14:36:25,419 [14411009]   WARN - #c.i.o.k.i.u.ActionsTreeUtil - No text in 'PortForwardingSuggestionGroup' template presentation. Showing its action-id instead
+2025-06-03 14:36:25,419 [14411009]   WARN - #c.i.o.k.i.u.ActionsTreeUtil - No text in 'CodeWithMeToolbarGroup' template presentation. Showing its action-id instead
+2025-06-03 14:36:25,419 [14411009]   WARN - #c.i.o.k.i.u.ActionsTreeUtil - No text in 'PortForwardingPortGroup' template presentation. Showing its action-id instead
+2025-06-03 14:36:25,419 [14411009]   WARN - #c.i.o.k.i.u.ActionsTreeUtil - No text in 'ForwardPortAction' template presentation. Showing its action-id instead
+2025-06-03 14:36:25,420 [14411010]   WARN - #c.i.o.k.i.u.ActionsTreeUtil - No text in 'CallLabelAction' template presentation. Showing its action-id instead
+2025-06-03 14:36:25,422 [14411012]   WARN - #c.i.o.k.i.u.ActionsTreeUtil - No text in 'Console.TableResult.EditMaximized.Record.Group' template presentation. Showing its action-id instead
+2025-06-03 14:36:25,422 [14411012]   WARN - #c.i.o.k.i.u.ActionsTreeUtil - No text in 'Console.InEditorTableResult.Horizontal.Group' template presentation. Showing its action-id instead
+2025-06-03 14:36:25,423 [14411013]   WARN - #c.i.o.k.i.u.ActionsTreeUtil - No text in 'Console.TableResult.NavigationAndEditing.Group' template presentation. Showing its action-id instead
+2025-06-03 14:36:25,423 [14411013]   WARN - #c.i.o.k.i.u.ActionsTreeUtil - No text in 'Console.TableResult.Pagination.Group' template presentation. Showing its action-id instead
+2025-06-03 14:36:25,423 [14411013]   WARN - #c.i.o.k.i.u.ActionsTreeUtil - No text in 'Console.TableResult.ScriptedExtractors.Group' template presentation. Showing its action-id instead
+2025-06-03 14:36:25,423 [14411013]   WARN - #c.i.o.k.i.u.ActionsTreeUtil - No text in 'Console.TableResult.Navigate.Group' template presentation. Showing its action-id instead
+2025-06-03 14:36:25,423 [14411013]   WARN - #c.i.o.k.i.u.ActionsTreeUtil - No text in 'Console.TableResult.ChooseAggregators.ScriptedGroup' template presentation. Showing its action-id instead
+2025-06-03 14:36:25,423 [14411013]   WARN - #c.i.o.k.i.u.ActionsTreeUtil - No text in 'Console.TableResult.BuiltInExtractor.Group' template presentation. Showing its action-id instead
+2025-06-03 14:36:25,423 [14411013]   WARN - #c.i.o.k.i.u.ActionsTreeUtil - No text in 'Console.TableResult.EditMaximized.Aggregates.Group' template presentation. Showing its action-id instead
+2025-06-03 14:36:25,423 [14411013]   WARN - #c.i.o.k.i.u.ActionsTreeUtil - No text in 'Console.TableResult.Csv.PreviewPopupGroup' template presentation. Showing its action-id instead
+2025-06-03 14:36:25,423 [14411013]   WARN - #c.i.o.k.i.u.ActionsTreeUtil - No text in 'Console.TableResult.EditMaximized.Chart.Group' template presentation. Showing its action-id instead
+2025-06-03 14:36:25,423 [14411013]   WARN - #c.i.o.k.i.u.ActionsTreeUtil - No text in 'Console.AggregateView.PopupGroup' template presentation. Showing its action-id instead
+2025-06-03 14:36:25,423 [14411013]   WARN - #c.i.o.k.i.u.ActionsTreeUtil - No text in 'Console.TableResult.Group.Common' template presentation. Showing its action-id instead
+2025-06-03 14:36:25,423 [14411013]   WARN - #c.i.o.k.i.u.ActionsTreeUtil - No text in 'Console.TableResult.Csv.PreviewColumnHeaderPopup' template presentation. Showing its action-id instead
+2025-06-03 14:36:25,423 [14411013]   WARN - #c.i.o.k.i.u.ActionsTreeUtil - No text in 'Console.TableResult.PopupGroup.CellActions' template presentation. Showing its action-id instead
+2025-06-03 14:36:25,423 [14411013]   WARN - #c.i.o.k.i.u.ActionsTreeUtil - No text in '<anonymous-group-2>' template presentation. Showing its action-id instead
+2025-06-03 14:36:25,423 [14411013]   WARN - #c.i.o.k.i.u.ActionsTreeUtil - No text in '<anonymous-group-4>' template presentation. Showing its action-id instead
+2025-06-03 14:36:25,423 [14411013]   WARN - #c.i.o.k.i.u.ActionsTreeUtil - No text in '<anonymous-group-3>' template presentation. Showing its action-id instead
+2025-06-03 14:36:25,423 [14411013]   WARN - #c.i.o.k.i.u.ActionsTreeUtil - No text in 'Console.TableResult.ColumnActions' template presentation. Showing its action-id instead
+2025-06-03 14:36:25,423 [14411013]   WARN - #c.i.o.k.i.u.ActionsTreeUtil - No text in '<anonymous-group-5>' template presentation. Showing its action-id instead
+2025-06-03 14:36:25,423 [14411013]   WARN - #c.i.o.k.i.u.ActionsTreeUtil - No text in 'Console.TableResult.EditMaximized.Value.Group' template presentation. Showing its action-id instead
+2025-06-03 14:36:25,423 [14411013]   WARN - #c.i.o.k.i.u.ActionsTreeUtil - No text in 'Console.TableResult.Inlay.Chart' template presentation. Showing its action-id instead
+2025-06-03 14:36:25,424 [14411014]   WARN - #c.i.o.k.i.u.ActionsTreeUtil - No text in 'Console.TableResult.Group.Secondary' template presentation. Showing its action-id instead
+2025-06-03 14:36:25,424 [14411014]   WARN - #c.i.o.k.i.u.ActionsTreeUtil - No text in 'Console.TableResult.CsvExtractors.Group' template presentation. Showing its action-id instead
+2025-06-03 14:36:25,424 [14411014]   WARN - #c.i.o.k.i.u.ActionsTreeUtil - No text in 'Uml.NodeCellEditorPopup' template presentation. Showing its action-id instead
+2025-06-03 14:36:25,424 [14411014]   WARN - #c.i.o.k.i.u.ActionsTreeUtil - No text in 'Diagram.DefaultGraphToolbar' template presentation. Showing its action-id instead
+2025-06-03 14:36:25,424 [14411014]   WARN - #c.i.o.k.i.u.ActionsTreeUtil - No text in 'UML.DefaultGraphPopup' template presentation. Showing its action-id instead
+2025-06-03 14:36:25,425 [14411015]   WARN - #c.i.o.k.i.u.ActionsTreeUtil - No text in 'Uml.PsiElement.Actions' template presentation. Showing its action-id instead
+2025-06-03 14:36:25,425 [14411015]   WARN - #c.i.o.k.i.u.ActionsTreeUtil - No text in 'Docker.RemoteServersViewPopup' template presentation. Showing its action-id instead
+2025-06-03 14:36:25,425 [14411015]   WARN - #c.i.o.k.i.u.ActionsTreeUtil - No text in 'Docker.RemoteServersViewToolbar.Top' template presentation. Showing its action-id instead
+2025-06-03 14:36:25,426 [14411016]   WARN - #c.i.o.k.i.u.ActionsTreeUtil - No text in 'Docker.RegistryViewToolbar' template presentation. Showing its action-id instead
+2025-06-03 14:36:25,427 [14411017]   WARN - #c.i.o.k.i.u.ActionsTreeUtil - No text in 'Docker.RemoteServers.ComposeUp' template presentation. Showing its action-id instead
+2025-06-03 14:36:25,428 [14411018]   WARN - #c.i.o.k.i.u.ActionsTreeUtil - No text in 'PublishGroup.Base' template presentation. Showing its action-id instead
+2025-06-03 14:36:25,429 [14411019]   WARN - #c.i.o.k.i.u.ActionsTreeUtil - No text in 'DeploymentGroup.Basic' template presentation. Showing its action-id instead
+2025-06-03 14:36:25,429 [14411019]   WARN - #c.i.o.k.i.u.ActionsTreeUtil - No text in 'RemoteHostViewPopupMenu' template presentation. Showing its action-id instead
+2025-06-03 14:36:25,432 [14411022]   WARN - #c.i.o.k.i.u.ActionsTreeUtil - No text in 'Git.Experimental.Branch.Popup.Actions' template presentation. Showing its action-id instead
+2025-06-03 14:36:25,434 [14411024]   WARN - #c.i.o.k.i.u.ActionsTreeUtil - No text in 'Git.BranchOperationGroup' template presentation. Showing its action-id instead
+2025-06-03 14:36:25,434 [14411024]   WARN - #c.i.o.k.i.u.ActionsTreeUtil - No text in 'Git.MainMenu.FileActions' template presentation. Showing its action-id instead
+2025-06-03 14:36:25,435 [14411025]   WARN - #c.i.o.k.i.u.ActionsTreeUtil - No text in 'Git.Stage.Toolbar' template presentation. Showing its action-id instead
+2025-06-03 14:36:25,435 [14411025]   WARN - #c.i.o.k.i.u.ActionsTreeUtil - No text in 'Git.Hosting.Copy.Link.Group' template presentation. Showing its action-id instead
+2025-06-03 14:36:25,436 [14411026]   WARN - #c.i.o.k.i.u.ActionsTreeUtil - No text in 'Git.Log.ContextMenu' template presentation. Showing its action-id instead
+2025-06-03 14:36:25,436 [14411026]   WARN - #c.i.o.k.i.u.ActionsTreeUtil - No text in 'Git.Stage.Local.File.Menu' template presentation. Showing its action-id instead
+2025-06-03 14:36:25,436 [14411026]   WARN - #c.i.o.k.i.u.ActionsTreeUtil - No text in 'Git.ChangesView.Conflicts' template presentation. Showing its action-id instead
+2025-06-03 14:36:25,437 [14411027]   WARN - #c.i.o.k.i.u.ActionsTreeUtil - No text in 'Git.Hosting.Open.In.Browser.Group' template presentation. Showing its action-id instead
+2025-06-03 14:36:25,437 [14411027]   WARN - #c.i.o.k.i.u.ActionsTreeUtil - No text in 'Git.Branch' template presentation. Showing its action-id instead
+2025-06-03 14:36:25,437 [14411027]   WARN - #c.i.o.k.i.u.ActionsTreeUtil - No text in 'GitMainToolbarQuickActions' template presentation. Showing its action-id instead
+2025-06-03 14:36:25,438 [14411028]   WARN - #c.i.o.k.i.u.ActionsTreeUtil - No text in 'GitMergeRebaseWidgetGroup' template presentation. Showing its action-id instead
+2025-06-03 14:36:25,438 [14411028]   WARN - #c.i.o.k.i.u.ActionsTreeUtil - No text in 'Vcs.ToolbarWidget.CreateRepository' template presentation. Showing its action-id instead
+2025-06-03 14:36:25,438 [14411028]   WARN - #c.i.o.k.i.u.ActionsTreeUtil - No text in 'Git.FileHistory.ContextMenu' template presentation. Showing its action-id instead
+2025-06-03 14:36:25,439 [14411029]   WARN - #c.i.o.k.i.u.ActionsTreeUtil - No text in 'Git.Ongoing.Rebase.Actions' template presentation. Showing its action-id instead
+2025-06-03 14:36:25,440 [14411030]   WARN - #c.i.o.k.i.u.ActionsTreeUtil - No text in 'GitRepositoryActions' template presentation. Showing its action-id instead
+2025-06-03 14:36:25,441 [14411031]   WARN - #c.i.o.k.i.u.ActionsTreeUtil - No text in 'Git.Stash.ChangesBrowser.ContextMenu' template presentation. Showing its action-id instead
+2025-06-03 14:36:25,442 [14411032]   WARN - #c.i.o.k.i.u.ActionsTreeUtil - No text in 'Git.Stage.Tree.Menu' template presentation. Showing its action-id instead
+2025-06-03 14:36:25,442 [14411032]   WARN - #c.i.o.k.i.u.ActionsTreeUtil - No text in 'Git.Reword.ToolbarActions' template presentation. Showing its action-id instead
+2025-06-03 14:36:25,442 [14411032]   WARN - #c.i.o.k.i.u.ActionsTreeUtil - No text in 'Git.Branches.Popup.SpeedSearch' template presentation. Showing its action-id instead
+2025-06-03 14:36:25,443 [14411033]   WARN - #c.i.o.k.i.u.ActionsTreeUtil - No text in 'Git.Log.ContextMenu.CheckoutBrowse' template presentation. Showing its action-id instead
+2025-06-03 14:36:25,443 [14411033]   WARN - #c.i.o.k.i.u.ActionsTreeUtil - No text in 'Git.LogContextMenu' template presentation. Showing its action-id instead
+2025-06-03 14:36:25,443 [14411033]   WARN - #c.i.o.k.i.u.ActionsTreeUtil - No text in 'Git.FileActions' template presentation. Showing its action-id instead
+2025-06-03 14:36:25,443 [14411033]   WARN - #c.i.o.k.i.u.ActionsTreeUtil - No text in 'Git.Log.Toolbar' template presentation. Showing its action-id instead
+2025-06-03 14:36:25,443 [14411033]   WARN - #c.i.o.a.ActionStub - ActionGroup should be registered using <group> tag: id="GitBranchesTreePopupFilterSeparatorWithText" class="git4idea.ui.branch.popup.GitBranchesTreePopupFilterSeparatorWithText"
+2025-06-03 14:36:25,443 [14411033]   WARN - #c.i.o.k.i.u.ActionsTreeUtil - No text in 'GitBranchesTreePopupFilterSeparatorWithText' template presentation. Showing its action-id instead
+2025-06-03 14:36:25,444 [14411034]   WARN - #c.i.o.k.i.u.ActionsTreeUtil - No text in 'Git.Stash.Operations.ContextMenu' template presentation. Showing its action-id instead
+2025-06-03 14:36:25,444 [14411034]   WARN - #c.i.o.k.i.u.ActionsTreeUtil - No text in 'Git.MainMenu' template presentation. Showing its action-id instead
+2025-06-03 14:36:25,444 [14411034]   WARN - #c.i.o.k.i.u.ActionsTreeUtil - No text in 'Git.Branches.List' template presentation. Showing its action-id instead
+2025-06-03 14:36:25,445 [14411035]   WARN - #c.i.o.k.i.u.ActionsTreeUtil - No text in 'MainToolbarQuickActions.VCS' template presentation. Showing its action-id instead
+2025-06-03 14:36:25,447 [14411037]   WARN - #c.i.o.k.i.u.ActionsTreeUtil - No text in 'Github.PullRequest.ToolWindow.List.Popup' template presentation. Showing its action-id instead
+2025-06-03 14:36:25,447 [14411037]   WARN - #c.i.o.k.i.u.ActionsTreeUtil - No text in 'Github.PullRequest.Changes.Toolbar' template presentation. Showing its action-id instead
+2025-06-03 14:36:25,447 [14411037]   WARN - #c.i.o.k.i.u.ActionsTreeUtil - No text in 'Github.PullRequest.Details.Popup' template presentation. Showing its action-id instead
+2025-06-03 14:36:25,448 [14411038]   WARN - #c.i.o.k.i.u.ActionsTreeUtil - No text in 'Github.PullRequest.Timeline.Popup' template presentation. Showing its action-id instead
+2025-06-03 14:36:25,448 [14411038]   WARN - #c.i.o.k.i.u.ActionsTreeUtil - No text in 'Github.PullRequest.Changes.Popup' template presentation. Showing its action-id instead
+2025-06-03 14:36:25,448 [14411038]   WARN - #c.i.o.k.i.u.ActionsTreeUtil - No text in 'Github.Pull.Request.Branch.Popup.Actions' template presentation. Showing its action-id instead
+2025-06-03 14:36:25,450 [14411040]   WARN - #c.i.o.k.i.u.ActionsTreeUtil - No text in 'GitLab.Merge.Request.Details.Popup' template presentation. Showing its action-id instead
+2025-06-03 14:36:25,450 [14411040]   WARN - #c.i.o.k.i.u.ActionsTreeUtil - No text in 'GitLab.Merge.Request.Changes.Popup' template presentation. Showing its action-id instead
+2025-06-03 14:36:25,450 [14411040]   WARN - #c.i.o.k.i.u.ActionsTreeUtil - No text in 'GitLab.Merge.Request.Timeline.Popup' template presentation. Showing its action-id instead
+2025-06-03 14:36:25,450 [14411040]   WARN - #c.i.o.k.i.u.ActionsTreeUtil - No text in 'GitLab.Merge.Request.Timeline.Error.Popup' template presentation. Showing its action-id instead
+2025-06-03 14:36:25,451 [14411041]   WARN - #c.i.o.k.i.u.ActionsTreeUtil - No text in 'GitLab.Merge.Request.List.Actions' template presentation. Showing its action-id instead
+2025-06-03 14:36:25,451 [14411041]   WARN - #c.i.o.k.i.u.ActionsTreeUtil - No text in 'GitLab.Merge.Request.Review.Editor.Branch.Popup.Actions' template presentation. Showing its action-id instead
+2025-06-03 14:36:25,451 [14411041]   WARN - #c.i.o.k.i.u.ActionsTreeUtil - No text in 'HTTPClient.Toolbar.ProvidedActions' template presentation. Showing its action-id instead
+2025-06-03 14:36:25,452 [14411042]   WARN - #c.i.o.k.i.u.ActionsTreeUtil - No text in 'IdeaVim.ReloadVimRc.reload' template presentation. Showing its action-id instead
+2025-06-03 14:36:25,452 [14411042]   WARN - #c.i.o.k.i.u.ActionsTreeUtil - No text in 'IdeaVim.ReloadVimRc.group' template presentation. Showing its action-id instead
+2025-06-03 14:36:25,452 [14411042]   WARN - #c.i.o.k.i.u.ActionsTreeUtil - No text in 'Images.ThumbnailViewActions' template presentation. Showing its action-id instead
+2025-06-03 14:36:25,452 [14411042]   WARN - #c.i.o.k.i.u.ActionsTreeUtil - No text in 'Images.ImageViewActions' template presentation. Showing its action-id instead
+2025-06-03 14:36:25,452 [14411042]   WARN - #c.i.o.k.i.u.ActionsTreeUtil - No text in 'Images.EditorToolbar' template presentation. Showing its action-id instead
+2025-06-03 14:36:25,452 [14411042]   WARN - #c.i.o.k.i.u.ActionsTreeUtil - No text in 'Images.ThumbnailsPopupMenu' template presentation. Showing its action-id instead
+2025-06-03 14:36:25,452 [14411042]   WARN - #c.i.o.k.i.u.ActionsTreeUtil - No text in 'Images.ThumbnailsToolbar' template presentation. Showing its action-id instead
+2025-06-03 14:36:25,452 [14411042]   WARN - #c.i.o.k.i.u.ActionsTreeUtil - No text in 'Images.EditorPopupMenu' template presentation. Showing its action-id instead
+2025-06-03 14:36:25,452 [14411042]   WARN - #c.i.o.k.i.u.ActionsTreeUtil - No text in 'JavaScriptDebugger.HideActionsGroup' template presentation. Showing its action-id instead
+2025-06-03 14:36:25,455 [14411045]   WARN - #c.i.o.k.i.u.ActionsTreeUtil - No text in 'ShowJsbtTasks' template presentation. Showing its action-id instead
+2025-06-03 14:36:25,458 [14411048]   WARN - #c.i.o.k.i.u.ActionsTreeUtil - No text in 'JSTestRunLineMarkersAdditionalActionGroup' template presentation. Showing its action-id instead
+2025-06-03 14:36:25,458 [14411048]   WARN - #c.i.o.k.i.u.ActionsTreeUtil - No text in 'JsTestFrameworkCodeGeneratorGroup' template presentation. Showing its action-id instead
+2025-06-03 14:36:25,459 [14411049]   WARN - #c.i.o.k.i.u.ActionsTreeUtil - No text in 'HttpClient.LLM.Actions' template presentation. Showing its action-id instead
+2025-06-03 14:36:25,459 [14411049]   WARN - #c.i.o.k.i.u.ActionsTreeUtil - No text in 'AIAssistant.StatusBar.Toolbar' template presentation. Showing its action-id instead
+2025-06-03 14:36:25,459 [14411049]   WARN - #c.i.o.k.i.u.ActionsTreeUtil - No text in 'AIAssistant.ToolWindow.Chat.Message.User.ContextActions' template presentation. Showing its action-id instead
+2025-06-03 14:36:25,459 [14411049]   WARN - #c.i.o.k.i.u.ActionsTreeUtil - No text in 'AIAssistant.ToolWindow.Chat.SecondaryGearActions' template presentation. Showing its action-id instead
+2025-06-03 14:36:25,459 [14411049]   WARN - #c.i.o.k.i.u.ActionsTreeUtil - No text in 'AIAssistant.ToolWindow.Message.Toolbar.User' template presentation. Showing its action-id instead
+2025-06-03 14:36:25,459 [14411049]   WARN - #c.i.o.k.i.u.ActionsTreeUtil - No text in 'AIAssistant.ToolWindow.Message.Toolbar.Assistant' template presentation. Showing its action-id instead
+2025-06-03 14:36:25,461 [14411051]   WARN - #c.i.o.k.i.u.ActionsTreeUtil - No text in 'AIAssistant.ToolWindow.Chat.Input.PromptList' template presentation. Showing its action-id instead
+2025-06-03 14:36:25,461 [14411051]   WARN - #c.i.o.k.i.u.ActionsTreeUtil - No text in 'AIAssistant.ToolWindow.Snippet.Toolbar' template presentation. Showing its action-id instead
+2025-06-03 14:36:25,461 [14411051]   WARN - #c.i.o.k.i.u.ActionsTreeUtil - No text in 'AIAssistant.ToolWindow.Chat.Input.Left' template presentation. Showing its action-id instead
+2025-06-03 14:36:25,461 [14411051]   WARN - #c.i.o.k.i.u.ActionsTreeUtil - No text in 'AIAssistant.ToolWindow.List.ContextActions' template presentation. Showing its action-id instead
+2025-06-03 14:36:25,461 [14411051]   WARN - #c.i.o.k.i.u.ActionsTreeUtil - No text in 'AIAssistant.ToolWindow.Chat.TitleActions' template presentation. Showing its action-id instead
+2025-06-03 14:36:25,461 [14411051]   WARN - #c.i.o.k.i.u.ActionsTreeUtil - No text in 'AIAssistant.ToolsDropdown' template presentation. Showing its action-id instead
+2025-06-03 14:36:25,462 [14411052]   WARN - #c.i.o.k.i.u.ActionsTreeUtil - No text in 'Markdown.TableActions' template presentation. Showing its action-id instead
+2025-06-03 14:36:25,462 [14411052]   WARN - #c.i.o.k.i.u.ActionsTreeUtil - No text in 'Markdown.EditorContextMenuGroup' template presentation. Showing its action-id instead
+2025-06-03 14:36:25,462 [14411052]   WARN - #c.i.o.k.i.u.ActionsTreeUtil - No text in 'Markdown.InsertGroup' template presentation. Showing its action-id instead
+2025-06-03 14:36:25,463 [14411053]   WARN - #c.i.o.k.i.u.ActionsTreeUtil - No text in 'Markdown.TableColumnActions' template presentation. Showing its action-id instead
+2025-06-03 14:36:25,463 [14411053]   WARN - #c.i.o.k.i.u.ActionsTreeUtil - No text in 'Markdown.TableRowActions' template presentation. Showing its action-id instead
+2025-06-03 14:36:25,463 [14411053]   WARN - #c.i.o.k.i.u.ActionsTreeUtil - No text in 'Hg.MQ.Unapplied' template presentation. Showing its action-id instead
+2025-06-03 14:36:25,463 [14411053]   WARN - #c.i.o.k.i.u.ActionsTreeUtil - No text in 'Mq.Patches.Toolbar' template presentation. Showing its action-id instead
+2025-06-03 14:36:25,463 [14411053]   WARN - #c.i.o.k.i.u.ActionsTreeUtil - No text in 'Mq.Patches.ContextMenu' template presentation. Showing its action-id instead
+2025-06-03 14:36:25,463 [14411053]   WARN - #c.i.o.k.i.u.ActionsTreeUtil - No text in 'Hg.Log.ContextMenu' template presentation. Showing its action-id instead
+2025-06-03 14:36:25,464 [14411054]   WARN - #c.i.o.k.i.u.ActionsTreeUtil - No text in 'v8.profiling' template presentation. Showing its action-id instead
+2025-06-03 14:36:25,464 [14411054]   WARN - #c.i.o.k.i.u.ActionsTreeUtil - No text in 'SwEditorHoverActions' template presentation. Showing its action-id instead
+2025-06-03 14:36:25,464 [14411054]   WARN - #c.i.o.k.i.u.ActionsTreeUtil - No text in 'swagger.GutterGenerateActions' template presentation. Showing its action-id instead
+2025-06-03 14:36:25,465 [14411055]   WARN - #c.i.o.k.i.u.ActionsTreeUtil - No text in 'PhpChangeScheme' template presentation. Showing its action-id instead
+2025-06-03 14:36:25,465 [14411055]   WARN - #c.i.o.k.i.u.ActionsTreeUtil - No text in 'PhpUnitGenerateGroup' template presentation. Showing its action-id instead
+2025-06-03 14:36:25,465 [14411055]   WARN - #c.i.o.k.i.u.ActionsTreeUtil - No text in 'PhpGenerateGroup' template presentation. Showing its action-id instead
+2025-06-03 14:36:25,465 [14411055]   WARN - #c.i.o.k.i.u.ActionsTreeUtil - No text in 'PhpNewGroup' template presentation. Showing its action-id instead
+2025-06-03 14:36:25,465 [14411055]   WARN - #c.i.o.k.i.u.ActionsTreeUtil - No text in 'PhpRunMenu' template presentation. Showing its action-id instead
+2025-06-03 14:36:25,465 [14411055]   WARN - #c.i.o.k.i.u.ActionsTreeUtil - No text in 'ProfilerPopupActions' template presentation. Showing its action-id instead
+2025-06-03 14:36:25,466 [14411056]   WARN - #c.i.o.k.i.u.ActionsTreeUtil - No text in 'ComposerConfigGroup' template presentation. Showing its action-id instead
+2025-06-03 14:36:25,467 [14411057]   WARN - #c.i.o.k.i.u.ActionsTreeUtil - No text in 'PackageChecker.ProblemTab.ToolBar.ShowSafe' template presentation. Showing its action-id instead
+2025-06-03 14:36:25,467 [14411057]   WARN - #c.i.o.k.i.u.ActionsTreeUtil - No text in 'PackageChecker.AnalyzeActions' template presentation. Showing its action-id instead
+2025-06-03 14:36:25,467 [14411057]   WARN - #c.i.o.k.i.u.ActionsTreeUtil - No text in 'PackageChecker.ProblemTab.ToolBar' template presentation. Showing its action-id instead
+2025-06-03 14:36:25,467 [14411057]   WARN - #c.i.o.k.i.u.ActionsTreeUtil - No text in 'PackageChecker.Toolwindow.Tree.Popup' template presentation. Showing its action-id instead
+2025-06-03 14:36:25,467 [14411057]   WARN - #c.i.o.k.i.u.ActionsTreeUtil - No text in 'MainToolbarPerforceVCSGroup' template presentation. Showing its action-id instead
+2025-06-03 14:36:25,468 [14411058]   WARN - #c.i.o.k.i.u.ActionsTreeUtil - No text in 'Perforce.Toolbar' template presentation. Showing its action-id instead
+2025-06-03 14:36:25,468 [14411058]   WARN - #c.i.o.k.i.u.ActionsTreeUtil - No text in 'IndexingDiagnosticGroup' template presentation. Showing its action-id instead
+2025-06-03 14:36:25,468 [14411058]   WARN - #c.i.o.k.i.u.ActionsTreeUtil - No text in 'StartProfileGroup' template presentation. Showing its action-id instead
+2025-06-03 14:36:25,468 [14411058]   WARN - #c.i.o.k.i.u.ActionsTreeUtil - No text in 'DiagnosticGroup' template presentation. Showing its action-id instead
+2025-06-03 14:36:25,470 [14411060]   WARN - #c.i.o.k.i.u.ActionsTreeUtil - No text in 'Qodana.OpenQodanaCloudSettingsAction' template presentation. Showing its action-id instead
+2025-06-03 14:36:25,470 [14411060]   WARN - #c.i.o.k.i.u.ActionsTreeUtil - No text in 'Qodana.ProblemsView.Link' template presentation. Showing its action-id instead
+2025-06-03 14:36:25,471 [14411061]   WARN - #c.i.o.k.i.u.ActionsTreeUtil - No text in 'Qodana.OpenQodanaCloudReportAction' template presentation. Showing its action-id instead
+2025-06-03 14:36:25,471 [14411061]   WARN - #c.i.o.k.i.u.ActionsTreeUtil - No text in 'Qodana.ProblemsView.Login' template presentation. Showing its action-id instead
+2025-06-03 14:36:25,471 [14411061]   WARN - #c.i.o.k.i.u.ActionsTreeUtil - No text in 'Qodana.ProblemsView' template presentation. Showing its action-id instead
+2025-06-03 14:36:25,472 [14411062]   WARN - #c.i.o.k.i.u.ActionsTreeUtil - No text in 'com.jetbrains.gateway.RemoteDevelopmentActions' template presentation. Showing its action-id instead
+2025-06-03 14:36:25,472 [14411062]   WARN - #c.i.o.k.i.u.ActionsTreeUtil - No text in 'OpenRemoteDevelopment' template presentation. Showing its action-id instead
+2025-06-03 14:36:25,472 [14411062]   WARN - #c.i.o.k.i.u.ActionsTreeUtil - No text in 'RemoteExternalToolsGroup' template presentation. Showing its action-id instead
+2025-06-03 14:36:25,472 [14411062]   WARN - #c.i.o.k.i.u.ActionsTreeUtil - No text in 'SettingsSync' template presentation. Showing its action-id instead
+2025-06-03 14:36:25,472 [14411062]   WARN - #c.i.o.k.i.u.ActionsTreeUtil - No text in 'SettingsSyncSeparator' template presentation. Showing its action-id instead
+2025-06-03 14:36:25,473 [14411063]   WARN - #c.i.o.k.i.u.ActionsTreeUtil - No text in 'ShGenerateGroup' template presentation. Showing its action-id instead
+2025-06-03 14:36:25,473 [14411063]   WARN - #c.i.o.k.i.u.ActionsTreeUtil - No text in 'Svn.WorkingCopiesView.Toolbar' template presentation. Showing its action-id instead
+2025-06-03 14:36:25,473 [14411063]   WARN - #c.i.o.k.i.u.ActionsTreeUtil - No text in 'SubversionGroup' template presentation. Showing its action-id instead
+2025-06-03 14:36:25,473 [14411063]   WARN - #c.i.o.k.i.u.ActionsTreeUtil - No text in 'SubversionUpdateActionGroup' template presentation. Showing its action-id instead
+2025-06-03 14:36:25,478 [14411068]   WARN - #c.i.o.k.i.u.ActionsTreeUtil - No text in 'task.actions' template presentation. Showing its action-id instead
+2025-06-03 14:36:25,478 [14411068]   WARN - #c.i.o.k.i.u.ActionsTreeUtil - No text in 'tasks.group' template presentation. Showing its action-id instead
+2025-06-03 14:36:25,478 [14411068]   WARN - #c.i.o.k.i.u.ActionsTreeUtil - No text in 'working.context' template presentation. Showing its action-id instead
+2025-06-03 14:36:25,478 [14411068]   WARN - #c.i.o.k.i.u.ActionsTreeUtil - No text in 'Terminal.OutputContextMenu' template presentation. Showing its action-id instead
+2025-06-03 14:36:25,480 [14411070]   WARN - #c.i.o.k.i.u.ActionsTreeUtil - No text in 'TerminalToolwindowActionGroup' template presentation. Showing its action-id instead
+2025-06-03 14:36:25,480 [14411070]   WARN - #c.i.o.k.i.u.ActionsTreeUtil - No text in 'Terminal.PromptContextMenu' template presentation. Showing its action-id instead
+2025-06-03 14:36:25,482 [14411072]   WARN - #c.i.o.k.i.u.ActionsTreeUtil - No text in 'XPathView.MainMenu.Search' template presentation. Showing its action-id instead
+2025-06-03 14:36:25,482 [14411072]   WARN - #c.i.o.k.i.u.ActionsTreeUtil - No text in 'XPathView.EditorPopup' template presentation. Showing its action-id instead
+2025-06-03 14:36:25,482 [14411072]   WARN - #c.i.o.k.i.u.ActionsTreeUtil - No text in 'Dev.PsiViewerActions' template presentation. Showing its action-id instead
+2025-06-03 14:36:25,826 [14411416]   WARN - #c.i.o.k.i.u.ActionsTreeUtil - No text in 'FileChooser.GotoModule' template presentation. Showing its action-id instead
+2025-06-03 14:36:25,828 [14411418]   WARN - #c.i.o.k.i.u.ActionsTreeUtil - No text in 'ActivateUnitTestsToolWindow' template presentation. Showing its action-id instead
+2025-06-03 14:36:25,830 [14411420]   WARN - #c.i.o.k.i.u.ActionsTreeUtil - No text in 'Compile' template presentation. Showing its action-id instead
+2025-06-03 14:36:25,830 [14411420]   WARN - #c.i.o.k.i.u.ActionsTreeUtil - No text in 'MethodOverloadSwitchDown' template presentation. Showing its action-id instead
+2025-06-03 14:36:25,831 [14411421]   WARN - #c.i.o.k.i.u.ActionsTreeUtil - No text in 'ChangesView.GroupBy.Module' template presentation. Showing its action-id instead
+2025-06-03 14:36:25,831 [14411421]   WARN - #c.i.o.k.i.u.ActionsTreeUtil - No text in 'ShowProjectStructureSettings' template presentation. Showing its action-id instead
+2025-06-03 14:36:25,832 [14411422]   WARN - #c.i.o.k.i.u.ActionsTreeUtil - No text in 'ActivateNuGetToolWindow' template presentation. Showing its action-id instead
+2025-06-03 14:36:25,832 [14411422]   WARN - #c.i.o.k.i.u.ActionsTreeUtil - No text in 'ActivateFavoritesToolWindow' template presentation. Showing its action-id instead
+2025-06-03 14:36:25,835 [14411425]   WARN - #c.i.o.k.i.u.ActionsTreeUtil - No text in 'InactiveStopActionPlaceholder' template presentation. Showing its action-id instead
+2025-06-03 14:36:25,836 [14411426]   WARN - #c.i.o.k.i.u.ActionsTreeUtil - No text in 'UnmarkTestSourceRoot' template presentation. Showing its action-id instead
+2025-06-03 14:36:25,842 [14411432]   WARN - #c.i.o.k.i.u.ActionsTreeUtil - No text in 'MethodOverloadSwitchUp' template presentation. Showing its action-id instead
+2025-06-03 14:36:25,843 [14411433]   WARN - #c.i.o.k.i.u.ActionsTreeUtil - No text in 'CompileDirty' template presentation. Showing its action-id instead
+2025-06-03 14:36:25,843 [14411433]   WARN - #c.i.o.k.i.u.ActionsTreeUtil - No text in 'ValidateXml' template presentation. Showing its action-id instead
+2025-06-03 14:36:25,844 [14411434]   WARN - #c.i.o.k.i.u.ActionsTreeUtil - No text in 'ChangeTypeSignature' template presentation. Showing its action-id instead
+2025-06-03 14:36:25,851 [14411441]   WARN - #c.i.o.k.i.u.ActionsTreeUtil - No text in 'SwitchHeaderSource' template presentation. Showing its action-id instead
+2025-06-03 14:37:28,300 [14473890]   WARN - #c.i.o.o.e.ConfigurableCardPanel - auto-dispose 'PHP' id=reference.webide.settings.project.settings.php
+2025-06-03 14:37:28,310 [14473900]   WARN - #c.i.o.o.e.ConfigurableCardPanel - auto-dispose 'PHP' id=reference.webide.settings.project.settings.php
+2025-06-03 14:37:28,311 [14473901]   WARN - #c.i.o.o.e.ConfigurableCardPanel - auto-dispose 'Plugins' id=preferences.pluginManager
+2025-06-03 15:00:49,526 [15875116]   WARN - #git4idea.annotate.GitAnnotationProvider - Git annotations are empty for file /home/bogota/Desktop/examen/aardata/src/Entity/.gitignore in revision eda58301e4a0fef8a254995000a073919f0c867f
+2025-06-03 15:15:33,775 [16759365]   WARN - #c.i.s.ComponentManagerImpl - com.intellij.usages.UsageNodePresentation <clinit> requests com.intellij.usageView.UsageTreeColorsScheme instance. Class initialization must not depend on services. Consider using instance of the service on-demand instead.

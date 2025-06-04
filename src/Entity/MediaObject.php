@@ -9,7 +9,8 @@ use ApiPlatform\Metadata\Get;
 use ApiPlatform\Metadata\GetCollection;
 use ApiPlatform\Metadata\Post;
 use ApiPlatform\OpenApi\Model;
-use App\State\MediaObjectProcessor;
+use App\Dto\ExcelImportDto;
+use App\State\ExcelImportProcessor;
 use Doctrine\ORM\Mapping as ORM;
 use Symfony\Component\HttpFoundation\File\File;
 use Symfony\Component\Serializer\Annotation\Groups;
@@ -24,6 +25,7 @@ use Vich\UploaderBundle\Mapping\Annotation as Vich;
         new Get(),
         new GetCollection(),
         new Post(
+            uriTemplate: '/media_objects/import',
             inputFormats: ['multipart' => ['multipart/form-data']],
             openapi: new Model\Operation(
                 requestBody: new Model\RequestBody(
@@ -42,9 +44,10 @@ use Vich\UploaderBundle\Mapping\Annotation as Vich;
                     ])
                 )
             ),
+            input: ExcelImportDto::class,
             deserialize: false,
-            processor: MediaObjectProcessor::class
-        )
+            processor: ExcelImportProcessor::class
+        ),
     ],
     outputFormats: ['jsonld' => ['application/ld+json']],
     normalizationContext: ['groups' => ['media_object:read']]

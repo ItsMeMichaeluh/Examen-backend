@@ -9,7 +9,7 @@ use ApiPlatform\Metadata\Get;
 use ApiPlatform\Metadata\GetCollection;
 use ApiPlatform\Metadata\Post;
 use ApiPlatform\OpenApi\Model;
-use App\Dto\ExcelImportDto;
+use App\Dto\ExcelFileDto;
 use App\State\ExcelImportProcessor;
 use Doctrine\ORM\Mapping as ORM;
 use Symfony\Component\HttpFoundation\File\File;
@@ -44,7 +44,7 @@ use Vich\UploaderBundle\Mapping\Annotation as Vich;
                     ])
                 )
             ),
-            input: ExcelImportDto::class,
+            input: ExcelFileDto::class,
             deserialize: false,
             processor: ExcelImportProcessor::class
         ),

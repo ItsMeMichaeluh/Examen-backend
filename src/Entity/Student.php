@@ -11,10 +11,6 @@ use Doctrine\ORM\Mapping as ORM;
 class Student
 {
     #[ORM\Id]
-    #[ORM\GeneratedValue]
-    #[ORM\Column]
-    private ?int $id = null;
-
     #[ORM\Column(length: 45)]
     private ?string $studentNumber = null;
 

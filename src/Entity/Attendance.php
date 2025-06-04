@@ -27,6 +27,10 @@ class Attendance
     #[ORM\Column]
     private ?int $logged = null;
 
+    #[ORM\ManyToOne(inversedBy: 'attendances')]
+    #[ORM\JoinColumn(referencedColumnName: 'student_number', nullable: false)]
+    private ?Student $student = null;
+
     public function getId(): ?int
     {
         return $this->id;
@@ -76,6 +80,18 @@ class Attendance
     public function setLogged(int $logged): static
     {
         $this->logged = $logged;
+
+        return $this;
+    }
+
+    public function getStudent(): ?Student
+    {
+        return $this->student;
+    }
+
+    public function setStudent(?Student $student): static
+    {
+        $this->student = $student;
 
         return $this;
     }

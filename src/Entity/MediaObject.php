@@ -9,6 +9,7 @@ use ApiPlatform\Metadata\Get;
 use ApiPlatform\Metadata\GetCollection;
 use ApiPlatform\Metadata\Post;
 use ApiPlatform\OpenApi\Model;
+use App\State\MediaObjectProcessor;
 use Doctrine\ORM\Mapping as ORM;
 use Symfony\Component\HttpFoundation\File\File;
 use Symfony\Component\Serializer\Annotation\Groups;
@@ -40,9 +41,12 @@ use Vich\UploaderBundle\Mapping\Annotation as Vich;
                         ]
                     ])
                 )
-            )
+            ),
+            deserialize: false,
+            processor: MediaObjectProcessor::class
         )
     ],
+    outputFormats: ['jsonld' => ['application/ld+json']],
     normalizationContext: ['groups' => ['media_object:read']]
 )]
 class MediaObject

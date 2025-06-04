@@ -5,8 +5,11 @@ namespace App\State;
 use ApiPlatform\Metadata\Operation;
 use ApiPlatform\State\ProcessorInterface;
 
-use App\Dto\ExcelImportDto;
+use App\Dto\ExcelFileDto;
+use App\Entity\Attendance;
 use App\Entity\MediaObject;
+use App\Entity\Student;
+use App\Repository\StudentRepository;
 use Doctrine\ORM\EntityManagerInterface;
 use PhpOffice\PhpSpreadsheet\IOFactory;
 use PhpOffice\PhpSpreadsheet\Reader\IReader;
@@ -20,7 +23,8 @@ final readonly class ExcelImportProcessor implements ProcessorInterface
     public function __construct(
         private EntityManagerInterface $entityManager,
         private RequestStack           $requestStack,
-        private ValidatorInterface $validator
+        private ValidatorInterface $validator,
+        private StudentRepository $studentRepository,
     )
     {
     }
@@ -30,7 +34,7 @@ final readonly class ExcelImportProcessor implements ProcessorInterface
         $request = $this->requestStack->getCurrentRequest();
         $uploadedFile = $request->files->get('file');
 
-        $dto = new ExcelImportDto();
+        $dto = new ExcelFileDto();
         $dto->file = $uploadedFile;
 
         $errors = $this->validator->validate($dto);
@@ -73,20 +77,36 @@ final readonly class ExcelImportProcessor implements ProcessorInterface
             $cellIterator->setIterateOnlyExistingCells(true);
 
             $columns = [
-                'studentNummer',
-                'aanwezigheid',
-                'rooster',
+                'student_number',
+                'year',
                 'week',
-                'jaar',
+                'scheduled',
+                'logged',
             ];
             foreach ($cellIterator as $cell) {
                 $rowData[] = $cell->getValue();
             }
             $sheetData[] = array_combine($columns, $rowData);
         }
-        dump($sheetData);
 
+        foreach ($sheetData as $row) {
+            if (!$this->studentRepository->findOneBy(['studentNumber' => $row['student_number']])) {
+                $student = new Student();
+                $student->setStudentNumber($row['student_number']);
 
+                $this->entityManager->persist($student);
+                $this->entityManager->flush();
+            }
+
+            $attendance = new Attendance();
+            $attendance->setStudent($this->studentRepository->find($row['student_number']));
+            $attendance->setYear($row['year']);
+            $attendance->setWeek($row['week']);
+            $attendance->setScheduled($row['scheduled']);
+            $attendance->setLogged($row['logged']);
+
+            $this->entityManager->persist($attendance);
+        }
 
         $this->entityManager->persist($mediaObject);
         $this->entityManager->flush();

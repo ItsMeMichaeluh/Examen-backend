@@ -5,31 +5,38 @@ namespace App\Entity;
 use ApiPlatform\Metadata\ApiResource;
 use App\Repository\AttendanceRepository;
 use Doctrine\ORM\Mapping as ORM;
+use Symfony\Component\Serializer\Attribute\Groups;
 
 #[ORM\Entity(repositoryClass: AttendanceRepository::class)]
 #[ApiResource]
+#[ORM\UniqueConstraint(fields: ['student', 'year', 'week'])]
 class Attendance
 {
     #[ORM\Id]
     #[ORM\GeneratedValue]
     #[ORM\Column]
+    #[Groups(['student:read'])]
     private ?int $id = null;
-
-    #[ORM\Column]
-    private ?int $year = null;
-
-    #[ORM\Column]
-    private ?int $week = null;
-
-    #[ORM\Column]
-    private ?int $scheduled = null;
-
-    #[ORM\Column]
-    private ?int $logged = null;
 
     #[ORM\ManyToOne(inversedBy: 'attendances')]
     #[ORM\JoinColumn(referencedColumnName: 'student_number', nullable: false)]
     private ?Student $student = null;
+
+    #[ORM\Column]
+    #[Groups(['student:read'])]
+    private ?int $year = null;
+
+    #[ORM\Column]
+    #[Groups(['student:read'])]
+    private ?int $week = null;
+
+    #[ORM\Column]
+    #[Groups(['student:read'])]
+    private ?int $scheduled = null;
+
+    #[ORM\Column]
+    #[Groups(['student:read'])]
+    private ?int $logged = null;
 
     public function getId(): ?int
     {

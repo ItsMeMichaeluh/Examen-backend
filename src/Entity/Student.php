@@ -7,29 +7,39 @@ use App\Repository\StudentRepository;
 use Doctrine\Common\Collections\ArrayCollection;
 use Doctrine\Common\Collections\Collection;
 use Doctrine\ORM\Mapping as ORM;
+use Symfony\Component\Serializer\Attribute\Groups;
 
 #[ORM\Entity(repositoryClass: StudentRepository::class)]
-#[ApiResource]
+#[ApiResource(
+    normalizationContext: [
+        'groups' => ['student:read']
+    ]
+)]
 class Student
 {
     #[ORM\Id]
     #[ORM\Column(length: 45)]
+    #[Groups(['student:read'])]
     private ?string $studentNumber = null;
 
     #[ORM\Column]
+    #[Groups(['student:read'])]
     private bool $active = true;
-
-    #[ORM\Column]
-    private ?\DateTimeImmutable $createdAt = null;
-
-    #[ORM\Column]
-    private ?\DateTimeImmutable $updatedAt = null;
 
     /**
      * @var Collection<int, Attendance>
      */
-    #[ORM\OneToMany(targetEntity: Attendance::class, mappedBy: 'student')]
+    #[ORM\OneToMany(targetEntity: Attendance::class, mappedBy: 'student', fetch: "EAGER")]
+    #[Groups(['student:read'])]
     private Collection $attendances;
+
+    #[ORM\Column]
+    #[Groups(['student:read'])]
+    private ?\DateTimeImmutable $createdAt = null;
+
+    #[ORM\Column]
+    #[Groups(['student:read'])]
+    private ?\DateTimeImmutable $updatedAt = null;
 
     public function __construct()
     {

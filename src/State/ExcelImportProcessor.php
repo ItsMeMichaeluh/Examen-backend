@@ -8,6 +8,8 @@ use ApiPlatform\State\ProcessorInterface;
 use App\Dto\ExcelImportDto;
 use App\Entity\MediaObject;
 use Doctrine\ORM\EntityManagerInterface;
+use PhpOffice\PhpSpreadsheet\IOFactory;
+use PhpOffice\PhpSpreadsheet\Reader\IReader;
 use Symfony\Component\HttpFoundation\RequestStack;
 use Symfony\Component\HttpKernel\Exception\BadRequestHttpException;
 use Symfony\Component\HttpFoundation\File\UploadedFile;
@@ -46,8 +48,45 @@ final readonly class ExcelImportProcessor implements ProcessorInterface
             throw new BadRequestHttpException('"file" is required and must be an uploaded file.');
         }
 
+        if (!preg_match_all('/^AAR_\d{4}_W\d{2}_.+\.(ods|xlsx)$/', $uploadedFile->getClientOriginalName())) {
+            throw new BadRequestHttpException('Dit AARbestand volgt niet de vaste naamgevingsconventie. Verwacht: AAR_[JAAR]_W[WEEK]_[CODE].[extensie]');
+        }
+
         $mediaObject = new MediaObject();
         $mediaObject->file = $uploadedFile;
+
+
+
+        $fileName = $uploadedFile->getPathname();
+        $formats = [
+            \PhpOffice\PhpSpreadsheet\IOFactory::READER_XLSX,
+            \PhpOffice\PhpSpreadsheet\IOFactory::READER_ODS,
+        ];
+
+        $spreadsheet = IOFactory::load($fileName, IReader::READ_DATA_ONLY, $formats);
+        $worksheet = $spreadsheet->getActiveSheet();
+
+        $data = [];
+        foreach ($worksheet->getRowIterator(2) as $row) {
+            $rowData = [];
+            $cellIterator = $row->getCellIterator();
+            $cellIterator->setIterateOnlyExistingCells(true);
+
+            $columns = [
+                'studentNummer',
+                'aanwezigheid',
+                'rooster',
+                'week',
+                'jaar',
+            ];
+            foreach ($cellIterator as $cell) {
+                $rowData[] = $cell->getValue();
+            }
+            $sheetData[] = array_combine($columns, $rowData);
+        }
+        dump($sheetData);
+
+
 
         $this->entityManager->persist($mediaObject);
         $this->entityManager->flush();

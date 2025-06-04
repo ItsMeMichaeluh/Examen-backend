@@ -17,7 +17,7 @@ class Student
     private ?string $studentNumber = null;
 
     #[ORM\Column]
-    private ?bool $active = null;
+    private bool $active = true;
 
     #[ORM\Column]
     private ?\DateTimeImmutable $createdAt = null;

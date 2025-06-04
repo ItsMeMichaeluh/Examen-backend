@@ -4,6 +4,8 @@ namespace App\Entity;
 
 use ApiPlatform\Metadata\ApiResource;
 use App\Repository\StudentRepository;
+use Doctrine\Common\Collections\ArrayCollection;
+use Doctrine\Common\Collections\Collection;
 use Doctrine\ORM\Mapping as ORM;
 
 #[ORM\Entity(repositoryClass: StudentRepository::class)]
@@ -18,14 +20,24 @@ class Student
     private ?bool $active = null;
 
     #[ORM\Column]
-    private ?\DateTimeImmutable $created_at = null;
+    private ?\DateTimeImmutable $createdAt = null;
 
     #[ORM\Column]
-    private ?\DateTimeImmutable $updated_at = null;
+    private ?\DateTimeImmutable $updatedAt = null;
 
-    public function getId(): ?int
+    /**
+     * @var Collection<int, Attendance>
+     */
+    #[ORM\OneToMany(targetEntity: Attendance::class, mappedBy: 'student')]
+    private Collection $attendances;
+
+    public function __construct()
     {
-        return $this->id;
+        if ($this->createdAt === null) {
+            $this->createdAt = new \DateTimeImmutable("now");
+        }
+        $this->updatedAt = new \DateTimeImmutable("now");
+        $this->attendances = new ArrayCollection();
     }
 
     public function getStudentNumber(): ?string
@@ -40,7 +52,7 @@ class Student
         return $this;
     }
 
-    public function isActive(): ?bool
+    public function getActive(): ?bool
     {
         return $this->active;
     }
@@ -54,24 +66,40 @@ class Student
 
     public function getCreatedAt(): ?\DateTimeImmutable
     {
-        return $this->created_at;
-    }
-
-    public function setCreatedAt(\DateTimeImmutable $created_at): static
-    {
-        $this->created_at = $created_at;
-
-        return $this;
+        return $this->createdAt;
     }
 
     public function getUpdatedAt(): ?\DateTimeImmutable
     {
-        return $this->updated_at;
+        return $this->updatedAt;
     }
 
-    public function setUpdatedAt(\DateTimeImmutable $updated_at): static
+    /**
+     * @return Collection<int, Attendance>
+     */
+    public function getAttendances(): Collection
     {
-        $this->updated_at = $updated_at;
+        return $this->attendances;
+    }
+
+    public function addAttendance(Attendance $attendance): static
+    {
+        if (!$this->attendances->contains($attendance)) {
+            $this->attendances->add($attendance);
+            $attendance->setStudent($this);
+        }
+
+        return $this;
+    }
+
+    public function removeAttendance(Attendance $attendance): static
+    {
+        if ($this->attendances->removeElement($attendance)) {
+            // set the owning side to null (unless already changed)
+            if ($attendance->getStudent() === $this) {
+                $attendance->setStudent(null);
+            }
+        }
 
         return $this;
     }

@@ -17,7 +17,9 @@ class Log
 
     #[ORM\OneToOne(cascade: ['persist', 'remove'])]
     #[ORM\JoinColumn(nullable: false)]
-    private ?MediaObject $MediaObject = null;
+    private ?MediaObject $mediaObject = null;
+
+    private ?string $type = null;
 
     public function getId(): ?int
     {
@@ -26,12 +28,12 @@ class Log
 
     public function getMediaObject(): ?MediaObject
     {
-        return $this->MediaObject;
+        return $this->mediaObject;
     }
 
-    public function setMediaObject(MediaObject $MediaObject): static
+    public function setMediaObject(MediaObject $mediaObject): static
     {
-        $this->MediaObject = $MediaObject;
+        $this->mediaObject = $mediaObject;
 
         return $this;
     }

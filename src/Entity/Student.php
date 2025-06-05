@@ -3,7 +3,11 @@
 namespace App\Entity;
 
 use ApiPlatform\Metadata\ApiResource;
+use ApiPlatform\Metadata\Get;
+use ApiPlatform\Metadata\GetCollection;
+use ApiPlatform\Metadata\Patch;
 use App\Repository\StudentRepository;
+use App\State\StudentActivityProcessor;
 use Doctrine\Common\Collections\ArrayCollection;
 use Doctrine\Common\Collections\Collection;
 use Doctrine\ORM\Mapping as ORM;
@@ -11,6 +15,22 @@ use Symfony\Component\Serializer\Attribute\Groups;
 
 #[ORM\Entity(repositoryClass: StudentRepository::class)]
 #[ApiResource(
+    operations: [
+        new GetCollection(),
+        new Get(),
+        new Patch(
+            uriTemplate: '/students/{studentNumber}/start',
+            input: false,
+            processor: StudentActivityProcessor::class,
+            extraProperties: ['action' => 'start'],
+        ),
+        new Patch(
+            uriTemplate: '/students/{studentNumber}/stop',
+            input: false,
+            processor: StudentActivityProcessor::class,
+            extraProperties: ['action' => 'stop'],
+        ),
+    ],
     normalizationContext: [
         'groups' => ['student:read']
     ]
@@ -82,6 +102,13 @@ class Student
     public function getUpdatedAt(): ?\DateTimeImmutable
     {
         return $this->updatedAt;
+    }
+
+    public function setUpdatedAt(\DateTimeImmutable $updatedAt): static
+    {
+        $this->updatedAt = $updatedAt;
+
+        return $this;
     }
 
     /**

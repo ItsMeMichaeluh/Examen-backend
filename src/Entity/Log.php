@@ -3,6 +3,7 @@
 namespace App\Entity;
 
 use ApiPlatform\Metadata\ApiResource;
+use App\Enum\LogTypeEnum;
 use App\Repository\LogRepository;
 use Doctrine\ORM\Mapping as ORM;
 
@@ -19,7 +20,7 @@ class Log
     #[ORM\JoinColumn(nullable: false)]
     private ?MediaObject $mediaObject = null;
 
-    private ?string $type = null;
+    private ?LogTypeEnum $type = null;
 
     public function getId(): ?int
     {

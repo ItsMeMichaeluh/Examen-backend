@@ -55,9 +55,11 @@ final readonly class ExcelImportProcessor implements ProcessorInterface
             throw new BadRequestHttpException('"file" is required and must be an uploaded file.');
         }
 
-        if (!preg_match_all('/^AAR_\d{4}_W\d{2}_.+\.(ods|xlsx)$/', $uploadedFile->getClientOriginalName())) {
+        if (!preg_match_all('/^AAR_(\d{4})_W(\d{2})_.+\.(ods|xlsx)$/', $uploadedFile->getClientOriginalName(), $matches)) {
             throw new BadRequestHttpException('Dit AARbestand volgt niet de vaste naamgevingsconventie. Verwacht: AAR_[JAAR]_W[WEEK]_[CODE].[extensie]');
         }
+        $fileNameYear = (int)$matches[1][0];
+        $fileNameWeek = (int)$matches[2][0];
 
         $mediaObject = new MediaObject();
         $mediaObject->file = $uploadedFile;
@@ -78,10 +80,10 @@ final readonly class ExcelImportProcessor implements ProcessorInterface
             $rowIndex = $row->getRowIndex();
             $rowData = [
                 'student_number' => $worksheet->getCell('A' . $rowIndex)->getValue(),
-                'year' => $worksheet->getCell('B' . $rowIndex)->getValue(),
-                'week' => $worksheet->getCell('C' . $rowIndex)->getValue(),
-                'scheduled' => $worksheet->getCell('D' . $rowIndex)->getValue(),
-                'logged' => $worksheet->getCell('E' . $rowIndex)->getValue(),
+                'logged' => $worksheet->getCell('B' . $rowIndex)->getValue(),
+                'scheduled' => $worksheet->getCell('C' . $rowIndex)->getValue(),
+                'week' => $worksheet->getCell('D' . $rowIndex)->getValue(),
+                'year' => $worksheet->getCell('E' . $rowIndex)->getValue(),
             ];
             $sheetData[] = $rowData;
         }
@@ -106,15 +108,23 @@ final readonly class ExcelImportProcessor implements ProcessorInterface
                 $skipRow = true;
             }
 
+            dump($errorMessages);
             if ($skipRow) {
-                dump($errorMessages);
+                dump('skipping row');
                 continue;
             }
 
-            $student = $this->studentRepository->findOneBy(['studentNumber' => $row['student_number']]);
+            if ($dto->year !== $fileNameYear || $dto->week !== $fileNameWeek) {
+                dump('year or week dont match file name');
+                dump('fileWeek: ' . $fileNameWeek . ', valueWeek:'. $dto->week . ' fileYear: ' . $fileNameYear . ', valueYear:'. $dto->year);
+
+                continue;
+            }
+
+            $student = $this->studentRepository->findOneBy(['studentNumber' => $dto->studentNumber]);
             if (!$student) {
                 $student = new Student();
-                $student->setStudentNumber($row['student_number']);
+                $student->setStudentNumber($dto->studentNumber);
 
                 $this->entityManager->persist($student);
                 $this->entityManager->flush();
@@ -122,22 +132,27 @@ final readonly class ExcelImportProcessor implements ProcessorInterface
 
             $attendance = $this->attendanceRepository->findOneBy([
                 'student' => $student,
-                'year' => $row['year'],
-                'week' => $row['week'],
+                'year' => $dto->year,
+                'week' => $dto->week,
             ]);
 
             if ($attendance) {
-                if ($attendance->getScheduled() !== $row['scheduled'] || $attendance->getLogged() !== $row['logged']) {
-                    $attendance->setScheduled($row['scheduled']);
-                    $attendance->setLogged($row['logged']);
+                $existingScheduled = $attendance->getScheduled();
+                $existingLogged = $attendance->getLogged();
+
+                $existingPercentage = ($existingScheduled > 0) ? ($existingLogged / $existingScheduled) * 100 : 0;
+                $newPercentage = ($dto->scheduled > 0) ? ($dto->logged / $dto->scheduled) * 100 : 0;
+                if ($newPercentage > $existingPercentage) {
+                    $attendance->setScheduled($dto->scheduled);
+                    $attendance->setLogged($dto->logged);
                 }
             } else {
                 $attendance = new Attendance();
                 $attendance->setStudent($student);
-                $attendance->setYear($row['year']);
-                $attendance->setWeek($row['week']);
-                $attendance->setScheduled($row['scheduled']);
-                $attendance->setLogged($row['logged']);
+                $attendance->setYear($dto->year);
+                $attendance->setWeek($dto->week);
+                $attendance->setScheduled($dto->scheduled);
+                $attendance->setLogged($dto->logged);
             }
             $this->entityManager->persist($attendance);
         }

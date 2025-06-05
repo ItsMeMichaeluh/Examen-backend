@@ -921,3 +921,920 @@ com.intellij.diagnostic.PluginException: Migrate ڣП to ProjectActivity [Plugin
 2025-06-05 09:39:36,959 [2538001]   WARN - #c.j.p.PhpIndex - Invalid Signature '\Doctrine\Bundle\DoctrineBundle\Repository\class-string<#ᢐ\T.>'
 2025-06-05 09:39:36,959 [2538001]   WARN - #c.j.p.PhpIndex - Invalid Signature '\Doctrine\Bundle\DoctrineBundle\Repository\class-string<#ᢐ\T.>'
 2025-06-05 09:39:36,964 [2538006]   WARN - #c.j.p.PhpIndex - Invalid Signature '\Doctrine\ORM\Mapping\ClassMetadata<#ᢐ\T.>'
+2025-06-05 10:46:30,531 [6551573]   WARN - #c.j.p.PhpIndex - Invalid Signature '.getRowIterator'
+2025-06-05 10:46:30,531 [6551573]   WARN - #c.j.p.PhpIndex - Invalid Signature '.getRowIterator'
+2025-06-05 10:46:30,531 [6551573]   WARN - #c.j.p.PhpIndex - Invalid Signature '.getRowIterator'
+2025-06-05 10:46:30,531 [6551573]   WARN - #c.j.p.PhpIndex - Invalid Signature '.getActiveSheet'
+2025-06-05 10:46:30,531 [6551573]   WARN - #c.j.p.PhpIndex - Invalid Signature '.getRowIterator'
+2025-06-05 10:46:30,531 [6551573]   WARN - #c.j.p.PhpIndex - Invalid Signature '.getRowIterator'
+2025-06-05 10:46:30,531 [6551573]   WARN - #c.j.p.PhpIndex - Invalid Signature '.getActiveSheet'
+2025-06-05 10:46:30,531 [6551573]   WARN - #c.j.p.PhpIndex - Invalid Signature '.getActiveSheet'
+2025-06-05 10:46:30,531 [6551573]   WARN - #c.j.p.PhpIndex - Invalid Signature '.getRowIterator'
+2025-06-05 10:46:30,659 [6551701]   WARN - #c.j.p.PhpIndex - Invalid Signature '\Doctrine\ORM\EntityRepository<#ᢐ\T.>'
+2025-06-05 10:46:30,659 [6551701]   WARN - #c.j.p.PhpIndex - Invalid Signature '\Doctrine\ORM\EntityRepository'
+2025-06-05 10:46:30,939 [6551981]   WARN - #c.j.p.PhpIndex - Invalid Signature '\array<\string,\mixed>'
+2025-06-05 10:46:53,385 [6574427]   WARN - #c.j.p.PhpIndex - Invalid Signature '.getRowIterator'
+2025-06-05 10:46:53,386 [6574428]   WARN - #c.j.p.PhpIndex - Invalid Signature '.getActiveSheet'
+2025-06-05 10:46:53,424 [6574466]   WARN - #c.j.p.PhpIndex - Invalid Signature '\Doctrine\ORM\EntityRepository<#ᢐ\T.>'
+2025-06-05 10:46:53,424 [6574466]   WARN - #c.j.p.PhpIndex - Invalid Signature '\Doctrine\ORM\EntityRepository'
+2025-06-05 10:47:08,433 [6589475]   WARN - #c.j.p.PhpIndex - Invalid Signature '.getRowIterator'
+2025-06-05 10:47:08,433 [6589475]   WARN - #c.j.p.PhpIndex - Invalid Signature '.getActiveSheet'
+2025-06-05 10:47:08,487 [6589529]   WARN - #c.j.p.PhpIndex - Invalid Signature '\Doctrine\ORM\EntityRepository<#ᢐ\T.>'
+2025-06-05 10:47:08,488 [6589530]   WARN - #c.j.p.PhpIndex - Invalid Signature '\Doctrine\ORM\EntityRepository'
+2025-06-05 10:47:23,402 [6604444]   WARN - #c.j.p.PhpIndex - Invalid Signature '.getRowIterator'
+2025-06-05 10:47:23,402 [6604444]   WARN - #c.j.p.PhpIndex - Invalid Signature '.getActiveSheet'
+2025-06-05 10:47:23,447 [6604489]   WARN - #c.j.p.PhpIndex - Invalid Signature '\Doctrine\ORM\EntityRepository<#ᢐ\T.>'
+2025-06-05 10:47:23,447 [6604489]   WARN - #c.j.p.PhpIndex - Invalid Signature '\Doctrine\ORM\EntityRepository'
+2025-06-05 10:47:38,403 [6619445]   WARN - #c.j.p.PhpIndex - Invalid Signature '.getRowIterator'
+2025-06-05 10:47:38,403 [6619445]   WARN - #c.j.p.PhpIndex - Invalid Signature '.getActiveSheet'
+2025-06-05 10:47:38,434 [6619476]   WARN - #c.j.p.PhpIndex - Invalid Signature '\Doctrine\ORM\EntityRepository<#ᢐ\T.>'
+2025-06-05 10:47:38,435 [6619477]   WARN - #c.j.p.PhpIndex - Invalid Signature '\Doctrine\ORM\EntityRepository'
+2025-06-05 10:47:53,413 [6634455]   WARN - #c.j.p.PhpIndex - Invalid Signature '.getRowIterator'
+2025-06-05 10:47:53,413 [6634455]   WARN - #c.j.p.PhpIndex - Invalid Signature '.getActiveSheet'
+2025-06-05 10:47:53,443 [6634485]   WARN - #c.j.p.PhpIndex - Invalid Signature '\Doctrine\ORM\EntityRepository<#ᢐ\T.>'
+2025-06-05 10:47:53,444 [6634486]   WARN - #c.j.p.PhpIndex - Invalid Signature '\Doctrine\ORM\EntityRepository'
+2025-06-05 10:48:08,414 [6649456]   WARN - #c.j.p.PhpIndex - Invalid Signature '.getRowIterator'
+2025-06-05 10:48:08,415 [6649457]   WARN - #c.j.p.PhpIndex - Invalid Signature '.getActiveSheet'
+2025-06-05 10:48:08,453 [6649495]   WARN - #c.j.p.PhpIndex - Invalid Signature '\Doctrine\ORM\EntityRepository<#ᢐ\T.>'
+2025-06-05 10:48:08,453 [6649495]   WARN - #c.j.p.PhpIndex - Invalid Signature '\Doctrine\ORM\EntityRepository'
+2025-06-05 10:48:23,448 [6664490]   WARN - #c.j.p.PhpIndex - Invalid Signature '.getRowIterator'
+2025-06-05 10:48:23,448 [6664490]   WARN - #c.j.p.PhpIndex - Invalid Signature '.getActiveSheet'
+2025-06-05 10:48:23,485 [6664527]   WARN - #c.j.p.PhpIndex - Invalid Signature '\Doctrine\ORM\EntityRepository<#ᢐ\T.>'
+2025-06-05 10:48:23,485 [6664527]   WARN - #c.j.p.PhpIndex - Invalid Signature '\Doctrine\ORM\EntityRepository'
+2025-06-05 10:48:40,322 [6681364]   WARN - #c.j.p.PhpIndex - Invalid Signature '.getRowIterator'
+2025-06-05 10:48:40,322 [6681364]   WARN - #c.j.p.PhpIndex - Invalid Signature '.getActiveSheet'
+2025-06-05 10:48:40,360 [6681402]   WARN - #c.j.p.PhpIndex - Invalid Signature '\Doctrine\ORM\EntityRepository<#ᢐ\T.>'
+2025-06-05 10:48:40,361 [6681403]   WARN - #c.j.p.PhpIndex - Invalid Signature '\Doctrine\ORM\EntityRepository'
+2025-06-05 10:48:40,422 [6681464]   WARN - #c.j.p.PhpIndex - Invalid Signature '\array<\string,\mixed>'
+2025-06-05 10:48:53,499 [6694541]   WARN - #c.j.p.PhpIndex - Invalid Signature '.getRowIterator'
+2025-06-05 10:48:53,499 [6694541]   WARN - #c.j.p.PhpIndex - Invalid Signature '.getActiveSheet'
+2025-06-05 10:48:53,544 [6694586]   WARN - #c.j.p.PhpIndex - Invalid Signature '\Doctrine\ORM\EntityRepository<#ᢐ\T.>'
+2025-06-05 10:48:53,545 [6694587]   WARN - #c.j.p.PhpIndex - Invalid Signature '\Doctrine\ORM\EntityRepository'
+2025-06-05 10:49:08,476 [6709518]   WARN - #c.j.p.PhpIndex - Invalid Signature '.getRowIterator'
+2025-06-05 10:49:08,476 [6709518]   WARN - #c.j.p.PhpIndex - Invalid Signature '.getActiveSheet'
+2025-06-05 10:49:08,520 [6709562]   WARN - #c.j.p.PhpIndex - Invalid Signature '\Doctrine\ORM\EntityRepository<#ᢐ\T.>'
+2025-06-05 10:49:08,521 [6709563]   WARN - #c.j.p.PhpIndex - Invalid Signature '\Doctrine\ORM\EntityRepository'
+2025-06-05 10:49:23,494 [6724536]   WARN - #c.j.p.PhpIndex - Invalid Signature '.getRowIterator'
+2025-06-05 10:49:23,495 [6724537]   WARN - #c.j.p.PhpIndex - Invalid Signature '.getActiveSheet'
+2025-06-05 10:49:23,535 [6724577]   WARN - #c.j.p.PhpIndex - Invalid Signature '\Doctrine\ORM\EntityRepository<#ᢐ\T.>'
+2025-06-05 10:49:23,536 [6724578]   WARN - #c.j.p.PhpIndex - Invalid Signature '\Doctrine\ORM\EntityRepository'
+2025-06-05 10:49:38,486 [6739528]   WARN - #c.j.p.PhpIndex - Invalid Signature '.getRowIterator'
+2025-06-05 10:49:38,486 [6739528]   WARN - #c.j.p.PhpIndex - Invalid Signature '.getActiveSheet'
+2025-06-05 10:49:38,521 [6739563]   WARN - #c.j.p.PhpIndex - Invalid Signature '\Doctrine\ORM\EntityRepository<#ᢐ\T.>'
+2025-06-05 10:49:38,521 [6739563]   WARN - #c.j.p.PhpIndex - Invalid Signature '\Doctrine\ORM\EntityRepository'
+2025-06-05 10:49:53,504 [6754546]   WARN - #c.j.p.PhpIndex - Invalid Signature '.getRowIterator'
+2025-06-05 10:49:53,504 [6754546]   WARN - #c.j.p.PhpIndex - Invalid Signature '.getActiveSheet'
+2025-06-05 10:49:53,559 [6754601]   WARN - #c.j.p.PhpIndex - Invalid Signature '\Doctrine\ORM\EntityRepository<#ᢐ\T.>'
+2025-06-05 10:49:53,560 [6754602]   WARN - #c.j.p.PhpIndex - Invalid Signature '\Doctrine\ORM\EntityRepository'
+2025-06-05 10:50:08,492 [6769534]   WARN - #c.j.p.PhpIndex - Invalid Signature '.getRowIterator'
+2025-06-05 10:50:08,492 [6769534]   WARN - #c.j.p.PhpIndex - Invalid Signature '.getActiveSheet'
+2025-06-05 10:50:08,540 [6769582]   WARN - #c.j.p.PhpIndex - Invalid Signature '\Doctrine\ORM\EntityRepository<#ᢐ\T.>'
+2025-06-05 10:50:08,541 [6769583]   WARN - #c.j.p.PhpIndex - Invalid Signature '\Doctrine\ORM\EntityRepository'
+2025-06-05 10:50:16,870 [6777912]   WARN - #c.j.p.PhpIndex - Invalid Signature '.getRowIterator'
+2025-06-05 10:50:16,870 [6777912]   WARN - #c.j.p.PhpIndex - Invalid Signature '.getActiveSheet'
+2025-06-05 10:50:16,913 [6777955]   WARN - #c.j.p.PhpIndex - Invalid Signature '\Doctrine\ORM\EntityRepository<#ᢐ\T.>'
+2025-06-05 10:50:16,914 [6777956]   WARN - #c.j.p.PhpIndex - Invalid Signature '\Doctrine\ORM\EntityRepository'
+2025-06-05 10:50:25,636 [6786678]   WARN - #c.j.p.PhpIndex - Invalid Signature '.getRowIterator'
+2025-06-05 10:50:25,636 [6786678]   WARN - #c.j.p.PhpIndex - Invalid Signature '.getActiveSheet'
+2025-06-05 10:50:25,688 [6786730]   WARN - #c.j.p.PhpIndex - Invalid Signature '\Doctrine\ORM\EntityRepository<#ᢐ\T.>'
+2025-06-05 10:50:25,695 [6786737]   WARN - #c.j.p.PhpIndex - Invalid Signature '\Doctrine\ORM\EntityRepository'
+2025-06-05 10:50:25,719 [6786761]   WARN - #c.j.p.PhpIndex - Invalid Signature '\array<\string,\mixed>'
+2025-06-05 10:50:28,095 [6789137]   WARN - #c.j.p.PhpIndex - Invalid Signature '.getRowIterator'
+2025-06-05 10:50:28,095 [6789137]   WARN - #c.j.p.PhpIndex - Invalid Signature '.getActiveSheet'
+2025-06-05 10:50:28,131 [6789173]   WARN - #c.j.p.PhpIndex - Invalid Signature '\Doctrine\ORM\EntityRepository<#ᢐ\T.>'
+2025-06-05 10:50:28,132 [6789174]   WARN - #c.j.p.PhpIndex - Invalid Signature '\Doctrine\ORM\EntityRepository'
+2025-06-05 10:50:28,150 [6789192]   WARN - #c.j.p.PhpIndex - Invalid Signature '\array<\string,\mixed>'
+2025-06-05 10:50:28,150 [6789192]   WARN - #c.j.p.PhpIndex - Invalid Signature '\array<\string,\mixed>'
+2025-06-05 10:50:30,315 [6791357]   WARN - #c.j.p.PhpIndex - Invalid Signature '.getRowIterator'
+2025-06-05 10:50:30,315 [6791357]   WARN - #c.j.p.PhpIndex - Invalid Signature '.getActiveSheet'
+2025-06-05 10:50:30,332 [6791374]   WARN - #c.j.p.PhpIndex - Invalid Signature '\Doctrine\ORM\EntityRepository<#ᢐ\T.>'
+2025-06-05 10:50:30,333 [6791375]   WARN - #c.j.p.PhpIndex - Invalid Signature '\Doctrine\ORM\EntityRepository'
+2025-06-05 10:50:30,353 [6791395]   WARN - #c.j.p.PhpIndex - Invalid Signature '\array<\string,\mixed>'
+2025-06-05 10:50:41,083 [6802125]   WARN - #c.j.p.PhpIndex - Invalid Signature '.getActiveSheet'
+2025-06-05 10:50:41,088 [6802130]   WARN - #c.j.p.PhpIndex - Invalid Signature '.getRowIterator'
+2025-06-05 10:50:41,099 [6802141]   WARN - #c.j.p.PhpIndex - Invalid Signature '\Doctrine\ORM\EntityRepository<#ᢐ\T.>'
+2025-06-05 10:50:41,103 [6802145]   WARN - #c.j.p.PhpIndex - Invalid Signature '\Doctrine\ORM\EntityRepository'
+2025-06-05 10:50:41,126 [6802168]   WARN - #c.j.p.PhpIndex - Invalid Signature '\array<\string,\mixed>'
+2025-06-05 10:50:41,126 [6802168]   WARN - #c.j.p.PhpIndex - Invalid Signature '\array<\string,\mixed>'
+2025-06-05 10:50:44,580 [6805622]   WARN - #c.j.p.PhpIndex - Invalid Signature '.getRowIterator'
+2025-06-05 10:50:44,581 [6805623]   WARN - #c.j.p.PhpIndex - Invalid Signature '.getActiveSheet'
+2025-06-05 10:50:44,583 [6805625]   WARN - #c.j.p.PhpIndex - Invalid Signature '.getActiveSheet'
+2025-06-05 10:50:44,603 [6805645]   WARN - #c.j.p.PhpIndex - Invalid Signature '\Doctrine\ORM\EntityRepository<#ᢐ\T.>'
+2025-06-05 10:50:44,604 [6805646]   WARN - #c.j.p.PhpIndex - Invalid Signature '\Doctrine\ORM\EntityRepository'
+2025-06-05 10:50:44,621 [6805663]   WARN - #c.j.p.PhpIndex - Invalid Signature '\array<\string,\mixed>'
+2025-06-05 10:50:44,621 [6805663]   WARN - #c.j.p.PhpIndex - Invalid Signature '\array<\string,\mixed>'
+2025-06-05 10:50:48,124 [6809166]   WARN - #c.j.p.PhpIndex - Invalid Signature '.getActiveSheet'
+2025-06-05 10:50:48,135 [6809177]   WARN - #c.j.p.PhpIndex - Invalid Signature '.getRowIterator'
+2025-06-05 10:50:48,150 [6809192]   WARN - #c.j.p.PhpIndex - Invalid Signature '\Doctrine\ORM\EntityRepository<#ᢐ\T.>'
+2025-06-05 10:50:48,151 [6809193]   WARN - #c.j.p.PhpIndex - Invalid Signature '\Doctrine\ORM\EntityRepository'
+2025-06-05 10:50:48,186 [6809228]   WARN - #c.j.p.PhpIndex - Invalid Signature '\array<\string,\mixed>'
+2025-06-05 10:50:54,517 [6815559]   WARN - #c.j.p.PhpIndex - Invalid Signature '.getActiveSheet'
+2025-06-05 10:50:54,518 [6815560]   WARN - #c.j.p.PhpIndex - Invalid Signature '.getRowIterator'
+2025-06-05 10:50:54,527 [6815569]   WARN - #c.j.p.PhpIndex - Invalid Signature '\Doctrine\ORM\EntityRepository<#ᢐ\T.>'
+2025-06-05 10:50:54,528 [6815570]   WARN - #c.j.p.PhpIndex - Invalid Signature '\Doctrine\ORM\EntityRepository'
+2025-06-05 10:50:54,553 [6815595]   WARN - #c.j.p.PhpIndex - Invalid Signature '\array<\string,\mixed>'
+2025-06-05 10:50:54,554 [6815596]   WARN - #c.j.p.PhpIndex - Invalid Signature '\array<\string,\mixed>'
+2025-06-05 10:50:59,327 [6820369]   WARN - #c.j.p.PhpIndex - Invalid Signature '.getRowIterator'
+2025-06-05 10:50:59,327 [6820369]   WARN - #c.j.p.PhpIndex - Invalid Signature '.getActiveSheet'
+2025-06-05 10:50:59,363 [6820405]   WARN - #c.j.p.PhpIndex - Invalid Signature '\Doctrine\ORM\EntityRepository<#ᢐ\T.>'
+2025-06-05 10:50:59,364 [6820406]   WARN - #c.j.p.PhpIndex - Invalid Signature '\Doctrine\ORM\EntityRepository'
+2025-06-05 10:50:59,383 [6820425]   WARN - #c.j.p.PhpIndex - Invalid Signature '\array<\string,\mixed>'
+2025-06-05 10:51:01,124 [6822166]   WARN - #c.j.p.PhpIndex - Invalid Signature '.getRowIterator'
+2025-06-05 10:51:01,125 [6822167]   WARN - #c.j.p.PhpIndex - Invalid Signature '.getActiveSheet'
+2025-06-05 10:51:01,168 [6822210]   WARN - #c.j.p.PhpIndex - Invalid Signature '\Doctrine\ORM\EntityRepository<#ᢐ\T.>'
+2025-06-05 10:51:01,169 [6822211]   WARN - #c.j.p.PhpIndex - Invalid Signature '\Doctrine\ORM\EntityRepository'
+2025-06-05 10:51:01,182 [6822224]   WARN - #c.j.p.PhpIndex - Invalid Signature '\array<\string,\mixed>'
+2025-06-05 10:51:04,976 [6826018]   WARN - #c.j.p.PhpIndex - Invalid Signature '.getActiveSheet'
+2025-06-05 10:51:04,979 [6826021]   WARN - #c.j.p.PhpIndex - Invalid Signature '.getRowIterator'
+2025-06-05 10:51:04,994 [6826036]   WARN - #c.j.p.PhpIndex - Invalid Signature '\Doctrine\ORM\EntityRepository<#ᢐ\T.>'
+2025-06-05 10:51:04,994 [6826036]   WARN - #c.j.p.PhpIndex - Invalid Signature '\Doctrine\ORM\EntityRepository'
+2025-06-05 10:51:05,008 [6826050]   WARN - #c.j.p.PhpIndex - Invalid Signature '\array<\string,\mixed>'
+2025-06-05 10:51:05,008 [6826050]   WARN - #c.j.p.PhpIndex - Invalid Signature '\array<\string,\mixed>'
+2025-06-05 10:51:08,496 [6829538]   WARN - #c.j.p.PhpIndex - Invalid Signature '.getRowIterator'
+2025-06-05 10:51:08,496 [6829538]   WARN - #c.j.p.PhpIndex - Invalid Signature '.getActiveSheet'
+2025-06-05 10:51:08,528 [6829570]   WARN - #c.j.p.PhpIndex - Invalid Signature '\Doctrine\ORM\EntityRepository<#ᢐ\T.>'
+2025-06-05 10:51:08,529 [6829571]   WARN - #c.j.p.PhpIndex - Invalid Signature '\Doctrine\ORM\EntityRepository'
+2025-06-05 10:51:08,541 [6829583]   WARN - #c.j.p.PhpIndex - Invalid Signature '\array<\string,\mixed>'
+2025-06-05 10:51:08,541 [6829583]   WARN - #c.j.p.PhpIndex - Invalid Signature '\array<\string,\mixed>'
+2025-06-05 10:51:08,973 [6830015]   WARN - #c.j.p.PhpIndex - Invalid Signature '.getRowIterator'
+2025-06-05 10:51:08,973 [6830015]   WARN - #c.j.p.PhpIndex - Invalid Signature '.getActiveSheet'
+2025-06-05 10:51:08,973 [6830015]   WARN - #c.j.p.PhpIndex - Invalid Signature '.getRowIterator'
+2025-06-05 10:51:08,978 [6830020]   WARN - #c.j.p.PhpIndex - Invalid Signature '\array<\string,\mixed>'
+2025-06-05 10:51:08,996 [6830038]   WARN - #c.j.p.PhpIndex - Invalid Signature '\Doctrine\ORM\EntityRepository<#ᢐ\T.>'
+2025-06-05 10:51:08,997 [6830039]   WARN - #c.j.p.PhpIndex - Invalid Signature '\Doctrine\ORM\EntityRepository'
+2025-06-05 10:51:09,541 [6830583]   WARN - #c.j.p.PhpIndex - Invalid Signature '.getRowIterator'
+2025-06-05 10:51:09,541 [6830583]   WARN - #c.j.p.PhpIndex - Invalid Signature '.getActiveSheet'
+2025-06-05 10:51:09,541 [6830583]   WARN - #c.j.p.PhpIndex - Invalid Signature '.getRowIterator'
+2025-06-05 10:51:09,574 [6830616]   WARN - #c.j.p.PhpIndex - Invalid Signature '\Doctrine\ORM\EntityRepository<#ᢐ\T.>'
+2025-06-05 10:51:09,575 [6830617]   WARN - #c.j.p.PhpIndex - Invalid Signature '\Doctrine\ORM\EntityRepository'
+2025-06-05 10:51:09,574 [6830616]   WARN - #c.j.p.PhpIndex - Invalid Signature '\Doctrine\ORM\EntityRepository<#ᢐ\T.>'
+2025-06-05 10:51:09,591 [6830633]   WARN - #c.j.p.PhpIndex - Invalid Signature '\array<\string,\mixed>'
+2025-06-05 10:51:10,415 [6831457]   WARN - #c.j.p.PhpIndex - Invalid Signature '.getRowIterator'
+2025-06-05 10:51:10,415 [6831457]   WARN - #c.j.p.PhpIndex - Invalid Signature '.getActiveSheet'
+2025-06-05 10:51:10,415 [6831457]   WARN - #c.j.p.PhpIndex - Invalid Signature '.getRowIterator'
+2025-06-05 10:51:10,433 [6831475]   WARN - #c.j.p.PhpIndex - Invalid Signature '\Doctrine\ORM\EntityRepository<#ᢐ\T.>'
+2025-06-05 10:51:10,433 [6831475]   WARN - #c.j.p.PhpIndex - Invalid Signature '\Doctrine\ORM\EntityRepository'
+2025-06-05 10:51:10,459 [6831501]   WARN - #c.j.p.PhpIndex - Invalid Signature '\array<\string,\mixed>'
+2025-06-05 10:51:10,459 [6831501]   WARN - #c.j.p.PhpIndex - Invalid Signature '\array<\string,\mixed>'
+2025-06-05 10:51:11,746 [6832788]   WARN - #c.j.p.PhpIndex - Invalid Signature '\array<\string,\mixed>'
+2025-06-05 10:51:11,756 [6832798]   WARN - #c.j.p.PhpIndex - Invalid Signature '.getActiveSheet'
+2025-06-05 10:51:11,759 [6832801]   WARN - #c.j.p.PhpIndex - Invalid Signature '.getRowIterator'
+2025-06-05 10:51:11,777 [6832819]   WARN - #c.j.p.PhpIndex - Invalid Signature '\Doctrine\ORM\EntityRepository<#ᢐ\T.>'
+2025-06-05 10:51:11,778 [6832820]   WARN - #c.j.p.PhpIndex - Invalid Signature '\Doctrine\ORM\EntityRepository'
+2025-06-05 10:51:12,234 [6833276]   WARN - #c.j.p.PhpIndex - Invalid Signature '.getRowIterator'
+2025-06-05 10:51:12,235 [6833277]   WARN - #c.j.p.PhpIndex - Invalid Signature '.getActiveSheet'
+2025-06-05 10:51:12,258 [6833300]   WARN - #c.j.p.PhpIndex - Invalid Signature '\Doctrine\ORM\EntityRepository<#ᢐ\T.>'
+2025-06-05 10:51:12,259 [6833301]   WARN - #c.j.p.PhpIndex - Invalid Signature '\Doctrine\ORM\EntityRepository'
+2025-06-05 10:51:13,146 [6834188]   WARN - #c.j.p.PhpIndex - Invalid Signature '\array<\string,\mixed>'
+2025-06-05 10:51:13,182 [6834224]   WARN - #c.j.p.PhpIndex - Invalid Signature '.getActiveSheet'
+2025-06-05 10:51:13,182 [6834224]   WARN - #c.j.p.PhpIndex - Invalid Signature '.getRowIterator'
+2025-06-05 10:51:13,206 [6834248]   WARN - #c.j.p.PhpIndex - Invalid Signature '\Doctrine\ORM\EntityRepository<#ᢐ\T.>'
+2025-06-05 10:51:13,207 [6834249]   WARN - #c.j.p.PhpIndex - Invalid Signature '\Doctrine\ORM\EntityRepository'
+2025-06-05 10:51:13,734 [6834776]   WARN - #c.j.p.PhpIndex - Invalid Signature '.getRowIterator'
+2025-06-05 10:51:13,734 [6834776]   WARN - #c.j.p.PhpIndex - Invalid Signature '.getActiveSheet'
+2025-06-05 10:51:13,771 [6834813]   WARN - #c.j.p.PhpIndex - Invalid Signature '\Doctrine\ORM\EntityRepository<#ᢐ\T.>'
+2025-06-05 10:51:13,772 [6834814]   WARN - #c.j.p.PhpIndex - Invalid Signature '\Doctrine\ORM\EntityRepository'
+2025-06-05 10:51:13,788 [6834830]   WARN - #c.j.p.PhpIndex - Invalid Signature '\array<\string,\mixed>'
+2025-06-05 10:51:21,120 [6842162]   WARN - #c.j.p.PhpIndex - Invalid Signature '.getActiveSheet'
+2025-06-05 10:51:21,120 [6842162]   WARN - #c.j.p.PhpIndex - Invalid Signature '.getRowIterator'
+2025-06-05 10:51:21,170 [6842212]   WARN - #c.j.p.PhpIndex - Invalid Signature '\Doctrine\ORM\EntityRepository<#ᢐ\T.>'
+2025-06-05 10:51:21,170 [6842212]   WARN - #c.j.p.PhpIndex - Invalid Signature '\Doctrine\ORM\EntityRepository'
+2025-06-05 10:51:21,189 [6842231]   WARN - #c.j.p.PhpIndex - Invalid Signature '\array<\string,\mixed>'
+2025-06-05 10:51:35,908 [6856950]   WARN - #c.j.p.PhpIndex - Invalid Signature '.getRowIterator'
+2025-06-05 10:51:35,908 [6856950]   WARN - #c.j.p.PhpIndex - Invalid Signature '.getActiveSheet'
+2025-06-05 10:51:35,908 [6856950]   WARN - #c.j.p.PhpIndex - Invalid Signature '.getActiveSheet'
+2025-06-05 10:51:35,908 [6856950]   WARN - #c.j.p.PhpIndex - Invalid Signature '.getRowIterator'
+2025-06-05 10:51:35,908 [6856950]   WARN - #c.j.p.PhpIndex - Invalid Signature '.getActiveSheet'
+2025-06-05 10:51:35,921 [6856963]   WARN - #c.j.p.PhpIndex - Invalid Signature '\array<\string,\mixed>'
+2025-06-05 10:51:35,921 [6856963]   WARN - #c.j.p.PhpIndex - Invalid Signature '\array<\string,\mixed>'
+2025-06-05 10:51:35,956 [6856998]   WARN - #c.j.p.PhpIndex - Invalid Signature '\Doctrine\ORM\EntityRepository<#ᢐ\T.>'
+2025-06-05 10:51:35,956 [6856998]   WARN - #c.j.p.PhpIndex - Invalid Signature '\Doctrine\ORM\EntityRepository'
+2025-06-05 10:51:35,956 [6856998]   WARN - #c.j.p.PhpIndex - Invalid Signature '\Doctrine\ORM\EntityRepository<#ᢐ\T.>'
+2025-06-05 10:51:35,956 [6856998]   WARN - #c.j.p.PhpIndex - Invalid Signature '\Doctrine\ORM\EntityRepository'
+2025-06-05 10:51:50,765 [6871807]   WARN - #c.j.p.PhpIndex - Invalid Signature '.getActiveSheet'
+2025-06-05 10:51:50,770 [6871812]   WARN - #c.j.p.PhpIndex - Invalid Signature '.getActiveSheet'
+2025-06-05 10:51:50,770 [6871812]   WARN - #c.j.p.PhpIndex - Invalid Signature '.getRowIterator'
+2025-06-05 10:51:50,766 [6871808]   WARN - #c.j.p.PhpIndex - Invalid Signature '.getRowIterator'
+2025-06-05 10:51:50,780 [6871822]   WARN - #c.j.p.PhpIndex - Invalid Signature '\array<\string,\mixed>'
+2025-06-05 10:51:50,808 [6871850]   WARN - #c.j.p.PhpIndex - Invalid Signature '\Doctrine\ORM\EntityRepository<#ᢐ\T.>'
+2025-06-05 10:51:50,808 [6871850]   WARN - #c.j.p.PhpIndex - Invalid Signature '\Doctrine\ORM\EntityRepository<#ᢐ\T.>'
+2025-06-05 10:51:50,809 [6871851]   WARN - #c.j.p.PhpIndex - Invalid Signature '\Doctrine\ORM\EntityRepository'
+2025-06-05 10:51:50,809 [6871851]   WARN - #c.j.p.PhpIndex - Invalid Signature '\Doctrine\ORM\EntityRepository'
+2025-06-05 10:51:50,808 [6871850]   WARN - #c.j.p.PhpIndex - Invalid Signature '\Doctrine\ORM\EntityRepository<#ᢐ\T.>'
+2025-06-05 10:52:05,770 [6886812]   WARN - #c.j.p.PhpIndex - Invalid Signature '.getActiveSheet'
+2025-06-05 10:52:05,770 [6886812]   WARN - #c.j.p.PhpIndex - Invalid Signature '.getRowIterator'
+2025-06-05 10:52:05,775 [6886817]   WARN - #c.j.p.PhpIndex - Invalid Signature '\array<\string,\mixed>'
+2025-06-05 10:52:05,800 [6886842]   WARN - #c.j.p.PhpIndex - Invalid Signature '\Doctrine\ORM\EntityRepository<#ᢐ\T.>'
+2025-06-05 10:52:05,801 [6886843]   WARN - #c.j.p.PhpIndex - Invalid Signature '\Doctrine\ORM\EntityRepository'
+2025-06-05 10:52:05,801 [6886843]   WARN - #c.j.p.PhpIndex - Invalid Signature '\Doctrine\ORM\EntityRepository'
+2025-06-05 10:52:20,771 [6901813]   WARN - #c.j.p.PhpIndex - Invalid Signature '\array<\string,\mixed>'
+2025-06-05 10:52:20,778 [6901820]   WARN - #c.j.p.PhpIndex - Invalid Signature '.getRowIterator'
+2025-06-05 10:52:20,778 [6901820]   WARN - #c.j.p.PhpIndex - Invalid Signature '.getActiveSheet'
+2025-06-05 10:52:20,813 [6901855]   WARN - #c.j.p.PhpIndex - Invalid Signature '\Doctrine\ORM\EntityRepository<#ᢐ\T.>'
+2025-06-05 10:52:20,813 [6901855]   WARN - #c.j.p.PhpIndex - Invalid Signature '\Doctrine\ORM\EntityRepository'
+2025-06-05 10:52:20,813 [6901855]   WARN - #c.j.p.PhpIndex - Invalid Signature '\Doctrine\ORM\EntityRepository'
+2025-06-05 10:52:35,782 [6916824]   WARN - #c.j.p.PhpIndex - Invalid Signature '.getActiveSheet'
+2025-06-05 10:52:35,782 [6916824]   WARN - #c.j.p.PhpIndex - Invalid Signature '.getRowIterator'
+2025-06-05 10:52:35,798 [6916840]   WARN - #c.j.p.PhpIndex - Invalid Signature '\array<\string,\mixed>'
+2025-06-05 10:52:35,825 [6916867]   WARN - #c.j.p.PhpIndex - Invalid Signature '\Doctrine\ORM\EntityRepository<#ᢐ\T.>'
+2025-06-05 10:52:35,825 [6916867]   WARN - #c.j.p.PhpIndex - Invalid Signature '\Doctrine\ORM\EntityRepository'
+2025-06-05 10:52:35,825 [6916867]   WARN - #c.j.p.PhpIndex - Invalid Signature '\Doctrine\ORM\EntityRepository<#ᢐ\T.>'
+2025-06-05 10:52:35,825 [6916867]   WARN - #c.j.p.PhpIndex - Invalid Signature '\Doctrine\ORM\EntityRepository<#ᢐ\T.>'
+2025-06-05 10:52:50,795 [6931837]   WARN - #c.j.p.PhpIndex - Invalid Signature '.getActiveSheet'
+2025-06-05 10:52:50,795 [6931837]   WARN - #c.j.p.PhpIndex - Invalid Signature '.getRowIterator'
+2025-06-05 10:52:50,813 [6931855]   WARN - #c.j.p.PhpIndex - Invalid Signature '\array<\string,\mixed>'
+2025-06-05 10:52:50,857 [6931899]   WARN - #c.j.p.PhpIndex - Invalid Signature '\Doctrine\ORM\EntityRepository<#ᢐ\T.>'
+2025-06-05 10:52:50,857 [6931899]   WARN - #c.j.p.PhpIndex - Invalid Signature '\Doctrine\ORM\EntityRepository'
+2025-06-05 10:53:07,258 [6948300]   WARN - #c.j.p.PhpIndex - Invalid Signature '.getRowIterator'
+2025-06-05 10:53:07,258 [6948300]   WARN - #c.j.p.PhpIndex - Invalid Signature '.getActiveSheet'
+2025-06-05 10:53:07,258 [6948300]   WARN - #c.j.p.PhpIndex - Invalid Signature '.getActiveSheet'
+2025-06-05 10:53:07,284 [6948326]   WARN - #c.j.p.PhpIndex - Invalid Signature '\array<\string,\mixed>'
+2025-06-05 10:53:07,320 [6948362]   WARN - #c.j.p.PhpIndex - Invalid Signature '\Doctrine\ORM\EntityRepository<#ᢐ\T.>'
+2025-06-05 10:53:07,320 [6948362]   WARN - #c.j.p.PhpIndex - Invalid Signature '\Doctrine\ORM\EntityRepository<#ᢐ\T.>'
+2025-06-05 10:53:07,320 [6948362]   WARN - #c.j.p.PhpIndex - Invalid Signature '\Doctrine\ORM\EntityRepository'
+2025-06-05 10:53:07,320 [6948362]   WARN - #c.j.p.PhpIndex - Invalid Signature '\Doctrine\ORM\EntityRepository<#ᢐ\T.>'
+2025-06-05 10:53:20,827 [6961869]   WARN - #c.j.p.PhpIndex - Invalid Signature '.getActiveSheet'
+2025-06-05 10:53:20,827 [6961869]   WARN - #c.j.p.PhpIndex - Invalid Signature '.getRowIterator'
+2025-06-05 10:53:20,838 [6961880]   WARN - #c.j.p.PhpIndex - Invalid Signature '\array<\string,\mixed>'
+2025-06-05 10:53:20,877 [6961919]   WARN - #c.j.p.PhpIndex - Invalid Signature '\Doctrine\ORM\EntityRepository<#ᢐ\T.>'
+2025-06-05 10:53:20,877 [6961919]   WARN - #c.j.p.PhpIndex - Invalid Signature '\Doctrine\ORM\EntityRepository'
+2025-06-05 10:53:35,947 [6976989]   WARN - #c.j.p.PhpIndex - Invalid Signature '.getRowIterator'
+2025-06-05 10:53:35,947 [6976989]   WARN - #c.j.p.PhpIndex - Invalid Signature '.getRowIterator'
+2025-06-05 10:53:35,947 [6976989]   WARN - #c.j.p.PhpIndex - Invalid Signature '.getRowIterator'
+2025-06-05 10:53:35,947 [6976989]   WARN - #c.j.p.PhpIndex - Invalid Signature '.getActiveSheet'
+2025-06-05 10:53:35,948 [6976990]   WARN - #c.j.p.PhpIndex - Invalid Signature '.getActiveSheet'
+2025-06-05 10:53:35,947 [6976989]   WARN - #c.j.p.PhpIndex - Invalid Signature '.getActiveSheet'
+2025-06-05 10:53:35,966 [6977008]   WARN - #c.j.p.PhpIndex - Invalid Signature '\array<\string,\mixed>'
+2025-06-05 10:53:35,995 [6977037]   WARN - #c.j.p.PhpIndex - Invalid Signature '\Doctrine\ORM\EntityRepository<#ᢐ\T.>'
+2025-06-05 10:53:35,995 [6977037]   WARN - #c.j.p.PhpIndex - Invalid Signature '\Doctrine\ORM\EntityRepository'
+2025-06-05 10:53:35,995 [6977037]   WARN - #c.j.p.PhpIndex - Invalid Signature '\Doctrine\ORM\EntityRepository<#ᢐ\T.>'
+2025-06-05 10:53:50,967 [6992009]   WARN - #c.j.p.PhpIndex - Invalid Signature '.getRowIterator'
+2025-06-05 10:53:50,968 [6992010]   WARN - #c.j.p.PhpIndex - Invalid Signature '.getActiveSheet'
+2025-06-05 10:53:50,989 [6992031]   WARN - #c.j.p.PhpIndex - Invalid Signature '\array<\string,\mixed>'
+2025-06-05 10:53:51,016 [6992058]   WARN - #c.j.p.PhpIndex - Invalid Signature '\Doctrine\ORM\EntityRepository<#ᢐ\T.>'
+2025-06-05 10:53:51,016 [6992058]   WARN - #c.j.p.PhpIndex - Invalid Signature '\Doctrine\ORM\EntityRepository'
+2025-06-05 10:53:51,016 [6992058]   WARN - #c.j.p.PhpIndex - Invalid Signature '\Doctrine\ORM\EntityRepository<#ᢐ\T.>'
+2025-06-05 10:54:05,860 [7006902]   WARN - #c.j.p.PhpIndex - Invalid Signature '.getActiveSheet'
+2025-06-05 10:54:05,860 [7006902]   WARN - #c.j.p.PhpIndex - Invalid Signature '.getRowIterator'
+2025-06-05 10:54:05,860 [7006902]   WARN - #c.j.p.PhpIndex - Invalid Signature '.getRowIterator'
+2025-06-05 10:54:05,872 [7006914]   WARN - #c.j.p.PhpIndex - Invalid Signature '\array<\string,\mixed>'
+2025-06-05 10:54:05,905 [7006947]   WARN - #c.j.p.PhpIndex - Invalid Signature '\Doctrine\ORM\EntityRepository<#ᢐ\T.>'
+2025-06-05 10:54:05,906 [7006948]   WARN - #c.j.p.PhpIndex - Invalid Signature '\Doctrine\ORM\EntityRepository'
+2025-06-05 10:54:05,906 [7006948]   WARN - #c.j.p.PhpIndex - Invalid Signature '\Doctrine\ORM\EntityRepository'
+2025-06-05 10:54:05,906 [7006948]   WARN - #c.j.p.PhpIndex - Invalid Signature '\Doctrine\ORM\EntityRepository'
+2025-06-05 10:54:20,855 [7021897]   WARN - #c.j.p.PhpIndex - Invalid Signature '\array<\string,\mixed>'
+2025-06-05 10:54:20,873 [7021915]   WARN - #c.j.p.PhpIndex - Invalid Signature '.getActiveSheet'
+2025-06-05 10:54:20,873 [7021915]   WARN - #c.j.p.PhpIndex - Invalid Signature '.getActiveSheet'
+2025-06-05 10:54:20,873 [7021915]   WARN - #c.j.p.PhpIndex - Invalid Signature '.getRowIterator'
+2025-06-05 10:54:20,905 [7021947]   WARN - #c.j.p.PhpIndex - Invalid Signature '\Doctrine\ORM\EntityRepository<#ᢐ\T.>'
+2025-06-05 10:54:20,905 [7021947]   WARN - #c.j.p.PhpIndex - Invalid Signature '\Doctrine\ORM\EntityRepository'
+2025-06-05 10:54:35,883 [7036925]   WARN - #c.j.p.PhpIndex - Invalid Signature '.getActiveSheet'
+2025-06-05 10:54:35,883 [7036925]   WARN - #c.j.p.PhpIndex - Invalid Signature '.getActiveSheet'
+2025-06-05 10:54:35,883 [7036925]   WARN - #c.j.p.PhpIndex - Invalid Signature '.getRowIterator'
+2025-06-05 10:54:35,883 [7036925]   WARN - #c.j.p.PhpIndex - Invalid Signature '.getRowIterator'
+2025-06-05 10:54:35,889 [7036931]   WARN - #c.j.p.PhpIndex - Invalid Signature '\array<\string,\mixed>'
+2025-06-05 10:54:35,917 [7036959]   WARN - #c.j.p.PhpIndex - Invalid Signature '\Doctrine\ORM\EntityRepository<#ᢐ\T.>'
+2025-06-05 10:54:35,917 [7036959]   WARN - #c.j.p.PhpIndex - Invalid Signature '\Doctrine\ORM\EntityRepository'
+2025-06-05 10:54:50,875 [7051917]   WARN - #c.j.p.PhpIndex - Invalid Signature '.getRowIterator'
+2025-06-05 10:54:50,875 [7051917]   WARN - #c.j.p.PhpIndex - Invalid Signature '.getActiveSheet'
+2025-06-05 10:54:50,877 [7051919]   WARN - #c.j.p.PhpIndex - Invalid Signature '\array<\string,\mixed>'
+2025-06-05 10:54:50,909 [7051951]   WARN - #c.j.p.PhpIndex - Invalid Signature '\Doctrine\ORM\EntityRepository<#ᢐ\T.>'
+2025-06-05 10:54:50,910 [7051952]   WARN - #c.j.p.PhpIndex - Invalid Signature '\Doctrine\ORM\EntityRepository'
+2025-06-05 10:54:50,909 [7051951]   WARN - #c.j.p.PhpIndex - Invalid Signature '\Doctrine\ORM\EntityRepository<#ᢐ\T.>'
+2025-06-05 10:55:05,881 [7066923]   WARN - #c.j.p.PhpIndex - Invalid Signature '.getRowIterator'
+2025-06-05 10:55:05,881 [7066923]   WARN - #c.j.p.PhpIndex - Invalid Signature '.getActiveSheet'
+2025-06-05 10:55:05,894 [7066936]   WARN - #c.j.p.PhpIndex - Invalid Signature '\array<\string,\mixed>'
+2025-06-05 10:55:05,894 [7066936]   WARN - #c.j.p.PhpIndex - Invalid Signature '\array<\string,\mixed>'
+2025-06-05 10:55:05,919 [7066961]   WARN - #c.j.p.PhpIndex - Invalid Signature '\Doctrine\ORM\EntityRepository<#ᢐ\T.>'
+2025-06-05 10:55:05,920 [7066962]   WARN - #c.j.p.PhpIndex - Invalid Signature '\Doctrine\ORM\EntityRepository'
+2025-06-05 10:55:20,894 [7081936]   WARN - #c.j.p.PhpIndex - Invalid Signature '.getRowIterator'
+2025-06-05 10:55:20,894 [7081936]   WARN - #c.j.p.PhpIndex - Invalid Signature '.getActiveSheet'
+2025-06-05 10:55:20,894 [7081936]   WARN - #c.j.p.PhpIndex - Invalid Signature '.getActiveSheet'
+2025-06-05 10:55:20,901 [7081943]   WARN - #c.j.p.PhpIndex - Invalid Signature '\array<\string,\mixed>'
+2025-06-05 10:55:20,927 [7081969]   WARN - #c.j.p.PhpIndex - Invalid Signature '\Doctrine\ORM\EntityRepository<#ᢐ\T.>'
+2025-06-05 10:55:20,928 [7081970]   WARN - #c.j.p.PhpIndex - Invalid Signature '\Doctrine\ORM\EntityRepository'
+2025-06-05 10:55:20,927 [7081969]   WARN - #c.j.p.PhpIndex - Invalid Signature '\Doctrine\ORM\EntityRepository<#ᢐ\T.>'
+2025-06-05 10:55:35,913 [7096955]   WARN - #c.j.p.PhpIndex - Invalid Signature '.getActiveSheet'
+2025-06-05 10:55:35,913 [7096955]   WARN - #c.j.p.PhpIndex - Invalid Signature '.getRowIterator'
+2025-06-05 10:55:35,922 [7096964]   WARN - #c.j.p.PhpIndex - Invalid Signature '\array<\string,\mixed>'
+2025-06-05 10:55:35,945 [7096987]   WARN - #c.j.p.PhpIndex - Invalid Signature '\Doctrine\ORM\EntityRepository<#ᢐ\T.>'
+2025-06-05 10:55:35,945 [7096987]   WARN - #c.j.p.PhpIndex - Invalid Signature '\Doctrine\ORM\EntityRepository'
+2025-06-05 10:55:50,911 [7111953]   WARN - #c.j.p.PhpIndex - Invalid Signature '.getRowIterator'
+2025-06-05 10:55:50,911 [7111953]   WARN - #c.j.p.PhpIndex - Invalid Signature '.getActiveSheet'
+2025-06-05 10:55:50,917 [7111959]   WARN - #c.j.p.PhpIndex - Invalid Signature '\array<\string,\mixed>'
+2025-06-05 10:55:50,936 [7111978]   WARN - #c.j.p.PhpIndex - Invalid Signature '\Doctrine\ORM\EntityRepository<#ᢐ\T.>'
+2025-06-05 10:55:50,936 [7111978]   WARN - #c.j.p.PhpIndex - Invalid Signature '\Doctrine\ORM\EntityRepository<#ᢐ\T.>'
+2025-06-05 10:55:50,937 [7111979]   WARN - #c.j.p.PhpIndex - Invalid Signature '\Doctrine\ORM\EntityRepository'
+2025-06-05 10:55:50,936 [7111978]   WARN - #c.j.p.PhpIndex - Invalid Signature '\Doctrine\ORM\EntityRepository<#ᢐ\T.>'
+2025-06-05 10:56:05,908 [7126950]   WARN - #c.j.p.PhpIndex - Invalid Signature '\array<\string,\mixed>'
+2025-06-05 10:56:05,911 [7126953]   WARN - #c.j.p.PhpIndex - Invalid Signature '.getRowIterator'
+2025-06-05 10:56:05,911 [7126953]   WARN - #c.j.p.PhpIndex - Invalid Signature '.getRowIterator'
+2025-06-05 10:56:05,911 [7126953]   WARN - #c.j.p.PhpIndex - Invalid Signature '.getActiveSheet'
+2025-06-05 10:56:05,945 [7126987]   WARN - #c.j.p.PhpIndex - Invalid Signature '\Doctrine\ORM\EntityRepository<#ᢐ\T.>'
+2025-06-05 10:56:05,945 [7126987]   WARN - #c.j.p.PhpIndex - Invalid Signature '\Doctrine\ORM\EntityRepository<#ᢐ\T.>'
+2025-06-05 10:56:05,945 [7126987]   WARN - #c.j.p.PhpIndex - Invalid Signature '\Doctrine\ORM\EntityRepository'
+2025-06-05 10:56:20,911 [7141953]   WARN - #c.j.p.PhpIndex - Invalid Signature '.getRowIterator'
+2025-06-05 10:56:20,911 [7141953]   WARN - #c.j.p.PhpIndex - Invalid Signature '.getActiveSheet'
+2025-06-05 10:56:20,919 [7141961]   WARN - #c.j.p.PhpIndex - Invalid Signature '\array<\string,\mixed>'
+2025-06-05 10:56:20,946 [7141988]   WARN - #c.j.p.PhpIndex - Invalid Signature '\Doctrine\ORM\EntityRepository<#ᢐ\T.>'
+2025-06-05 10:56:20,946 [7141988]   WARN - #c.j.p.PhpIndex - Invalid Signature '\Doctrine\ORM\EntityRepository'
+2025-06-05 10:56:35,929 [7156971]   WARN - #c.j.p.PhpIndex - Invalid Signature '.getActiveSheet'
+2025-06-05 10:56:35,931 [7156973]   WARN - #c.j.p.PhpIndex - Invalid Signature '.getRowIterator'
+2025-06-05 10:56:35,931 [7156973]   WARN - #c.j.p.PhpIndex - Invalid Signature '.getRowIterator'
+2025-06-05 10:56:35,930 [7156972]   WARN - #c.j.p.PhpIndex - Invalid Signature '.getActiveSheet'
+2025-06-05 10:56:35,937 [7156979]   WARN - #c.j.p.PhpIndex - Invalid Signature '\array<\string,\mixed>'
+2025-06-05 10:56:35,964 [7157006]   WARN - #c.j.p.PhpIndex - Invalid Signature '\Doctrine\ORM\EntityRepository<#ᢐ\T.>'
+2025-06-05 10:56:35,965 [7157007]   WARN - #c.j.p.PhpIndex - Invalid Signature '\Doctrine\ORM\EntityRepository'
+2025-06-05 10:56:35,964 [7157006]   WARN - #c.j.p.PhpIndex - Invalid Signature '\Doctrine\ORM\EntityRepository<#ᢐ\T.>'
+2025-06-05 10:56:35,965 [7157007]   WARN - #c.j.p.PhpIndex - Invalid Signature '\Doctrine\ORM\EntityRepository'
+2025-06-05 10:56:35,964 [7157006]   WARN - #c.j.p.PhpIndex - Invalid Signature '\Doctrine\ORM\EntityRepository<#ᢐ\T.>'
+2025-06-05 10:56:50,924 [7171966]   WARN - #c.j.p.PhpIndex - Invalid Signature '.getActiveSheet'
+2025-06-05 10:56:50,927 [7171969]   WARN - #c.j.p.PhpIndex - Invalid Signature '.getRowIterator'
+2025-06-05 10:56:50,927 [7171969]   WARN - #c.j.p.PhpIndex - Invalid Signature '.getActiveSheet'
+2025-06-05 10:56:50,929 [7171971]   WARN - #c.j.p.PhpIndex - Invalid Signature '\array<\string,\mixed>'
+2025-06-05 10:56:50,929 [7171971]   WARN - #c.j.p.PhpIndex - Invalid Signature '\array<\string,\mixed>'
+2025-06-05 10:56:50,953 [7171995]   WARN - #c.j.p.PhpIndex - Invalid Signature '\Doctrine\ORM\EntityRepository<#ᢐ\T.>'
+2025-06-05 10:56:50,953 [7171995]   WARN - #c.j.p.PhpIndex - Invalid Signature '\Doctrine\ORM\EntityRepository'
+2025-06-05 10:56:50,953 [7171995]   WARN - #c.j.p.PhpIndex - Invalid Signature '\Doctrine\ORM\EntityRepository<#ᢐ\T.>'
+2025-06-05 10:57:05,937 [7186979]   WARN - #c.j.p.PhpIndex - Invalid Signature '.getActiveSheet'
+2025-06-05 10:57:05,938 [7186980]   WARN - #c.j.p.PhpIndex - Invalid Signature '.getRowIterator'
+2025-06-05 10:57:05,948 [7186990]   WARN - #c.j.p.PhpIndex - Invalid Signature '\array<\string,\mixed>'
+2025-06-05 10:57:05,948 [7186990]   WARN - #c.j.p.PhpIndex - Invalid Signature '\array<\string,\mixed>'
+2025-06-05 10:57:05,972 [7187014]   WARN - #c.j.p.PhpIndex - Invalid Signature '\Doctrine\ORM\EntityRepository<#ᢐ\T.>'
+2025-06-05 10:57:05,973 [7187015]   WARN - #c.j.p.PhpIndex - Invalid Signature '\Doctrine\ORM\EntityRepository'
+2025-06-05 10:57:05,972 [7187014]   WARN - #c.j.p.PhpIndex - Invalid Signature '\Doctrine\ORM\EntityRepository<#ᢐ\T.>'
+2025-06-05 10:57:20,940 [7201982]   WARN - #c.j.p.PhpIndex - Invalid Signature '.getActiveSheet'
+2025-06-05 10:57:20,940 [7201982]   WARN - #c.j.p.PhpIndex - Invalid Signature '.getRowIterator'
+2025-06-05 10:57:20,949 [7201991]   WARN - #c.j.p.PhpIndex - Invalid Signature '\array<\string,\mixed>'
+2025-06-05 10:57:20,977 [7202019]   WARN - #c.j.p.PhpIndex - Invalid Signature '\Doctrine\ORM\EntityRepository<#ᢐ\T.>'
+2025-06-05 10:57:20,977 [7202019]   WARN - #c.j.p.PhpIndex - Invalid Signature '\Doctrine\ORM\EntityRepository'
+2025-06-05 10:57:20,977 [7202019]   WARN - #c.j.p.PhpIndex - Invalid Signature '\Doctrine\ORM\EntityRepository'
+2025-06-05 10:57:35,942 [7216984]   WARN - #c.j.p.PhpIndex - Invalid Signature '.getActiveSheet'
+2025-06-05 10:57:35,943 [7216985]   WARN - #c.j.p.PhpIndex - Invalid Signature '.getRowIterator'
+2025-06-05 10:57:35,953 [7216995]   WARN - #c.j.p.PhpIndex - Invalid Signature '\array<\string,\mixed>'
+2025-06-05 10:57:35,953 [7216995]   WARN - #c.j.p.PhpIndex - Invalid Signature '\array<\string,\mixed>'
+2025-06-05 10:57:35,975 [7217017]   WARN - #c.j.p.PhpIndex - Invalid Signature '\Doctrine\ORM\EntityRepository<#ᢐ\T.>'
+2025-06-05 10:57:35,975 [7217017]   WARN - #c.j.p.PhpIndex - Invalid Signature '\Doctrine\ORM\EntityRepository'
+2025-06-05 10:57:50,956 [7231998]   WARN - #c.j.p.PhpIndex - Invalid Signature '.getActiveSheet'
+2025-06-05 10:57:50,960 [7232002]   WARN - #c.j.p.PhpIndex - Invalid Signature '.getRowIterator'
+2025-06-05 10:57:50,957 [7231999]   WARN - #c.j.p.PhpIndex - Invalid Signature '.getActiveSheet'
+2025-06-05 10:57:50,964 [7232006]   WARN - #c.j.p.PhpIndex - Invalid Signature '\array<\string,\mixed>'
+2025-06-05 10:57:50,964 [7232006]   WARN - #c.j.p.PhpIndex - Invalid Signature '\array<\string,\mixed>'
+2025-06-05 10:57:50,958 [7232000]   WARN - #c.j.p.PhpIndex - Invalid Signature '.getRowIterator'
+2025-06-05 10:57:50,994 [7232036]   WARN - #c.j.p.PhpIndex - Invalid Signature '\Doctrine\ORM\EntityRepository<#ᢐ\T.>'
+2025-06-05 10:57:50,994 [7232036]   WARN - #c.j.p.PhpIndex - Invalid Signature '\Doctrine\ORM\EntityRepository'
+2025-06-05 10:58:06,079 [7247121]   WARN - #c.j.p.PhpIndex - Invalid Signature '.getRowIterator'
+2025-06-05 10:58:06,080 [7247122]   WARN - #c.j.p.PhpIndex - Invalid Signature '.getActiveSheet'
+2025-06-05 10:58:06,101 [7247143]   WARN - #c.j.p.PhpIndex - Invalid Signature '\array<\string,\mixed>'
+2025-06-05 10:58:06,101 [7247143]   WARN - #c.j.p.PhpIndex - Invalid Signature '\array<\string,\mixed>'
+2025-06-05 10:58:06,134 [7247176]   WARN - #c.j.p.PhpIndex - Invalid Signature '\Doctrine\ORM\EntityRepository<#ᢐ\T.>'
+2025-06-05 10:58:06,135 [7247177]   WARN - #c.j.p.PhpIndex - Invalid Signature '\Doctrine\ORM\EntityRepository'
+2025-06-05 10:58:06,135 [7247177]   WARN - #c.j.p.PhpIndex - Invalid Signature '\Doctrine\ORM\EntityRepository'
+2025-06-05 10:58:20,961 [7262003]   WARN - #c.j.p.PhpIndex - Invalid Signature '.getActiveSheet'
+2025-06-05 10:58:20,961 [7262003]   WARN - #c.j.p.PhpIndex - Invalid Signature '.getRowIterator'
+2025-06-05 10:58:20,966 [7262008]   WARN - #c.j.p.PhpIndex - Invalid Signature '\array<\string,\mixed>'
+2025-06-05 10:58:20,966 [7262008]   WARN - #c.j.p.PhpIndex - Invalid Signature '\array<\string,\mixed>'
+2025-06-05 10:58:20,988 [7262030]   WARN - #c.j.p.PhpIndex - Invalid Signature '\Doctrine\ORM\EntityRepository<#ᢐ\T.>'
+2025-06-05 10:58:20,989 [7262031]   WARN - #c.j.p.PhpIndex - Invalid Signature '\Doctrine\ORM\EntityRepository'
+2025-06-05 10:58:35,976 [7277018]   WARN - #c.j.p.PhpIndex - Invalid Signature '.getRowIterator'
+2025-06-05 10:58:35,976 [7277018]   WARN - #c.j.p.PhpIndex - Invalid Signature '.getActiveSheet'
+2025-06-05 10:58:35,977 [7277019]   WARN - #c.j.p.PhpIndex - Invalid Signature '.getActiveSheet'
+2025-06-05 10:58:35,986 [7277028]   WARN - #c.j.p.PhpIndex - Invalid Signature '\array<\string,\mixed>'
+2025-06-05 10:58:36,010 [7277052]   WARN - #c.j.p.PhpIndex - Invalid Signature '\Doctrine\ORM\EntityRepository<#ᢐ\T.>'
+2025-06-05 10:58:36,010 [7277052]   WARN - #c.j.p.PhpIndex - Invalid Signature '\Doctrine\ORM\EntityRepository<#ᢐ\T.>'
+2025-06-05 10:58:36,011 [7277053]   WARN - #c.j.p.PhpIndex - Invalid Signature '\Doctrine\ORM\EntityRepository'
+2025-06-05 10:58:36,011 [7277053]   WARN - #c.j.p.PhpIndex - Invalid Signature '\Doctrine\ORM\EntityRepository'
+2025-06-05 10:58:50,971 [7292013]   WARN - #c.j.p.PhpIndex - Invalid Signature '.getRowIterator'
+2025-06-05 10:58:50,971 [7292013]   WARN - #c.j.p.PhpIndex - Invalid Signature '.getActiveSheet'
+2025-06-05 10:58:50,971 [7292013]   WARN - #c.j.p.PhpIndex - Invalid Signature '.getActiveSheet'
+2025-06-05 10:58:50,980 [7292022]   WARN - #c.j.p.PhpIndex - Invalid Signature '\array<\string,\mixed>'
+2025-06-05 10:58:50,980 [7292022]   WARN - #c.j.p.PhpIndex - Invalid Signature '\array<\string,\mixed>'
+2025-06-05 10:58:50,998 [7292040]   WARN - #c.j.p.PhpIndex - Invalid Signature '\Doctrine\ORM\EntityRepository<#ᢐ\T.>'
+2025-06-05 10:58:50,998 [7292040]   WARN - #c.j.p.PhpIndex - Invalid Signature '\Doctrine\ORM\EntityRepository'
+2025-06-05 10:59:05,983 [7307025]   WARN - #c.j.p.PhpIndex - Invalid Signature '.getActiveSheet'
+2025-06-05 10:59:05,983 [7307025]   WARN - #c.j.p.PhpIndex - Invalid Signature '.getRowIterator'
+2025-06-05 10:59:05,990 [7307032]   WARN - #c.j.p.PhpIndex - Invalid Signature '\array<\string,\mixed>'
+2025-06-05 10:59:06,016 [7307058]   WARN - #c.j.p.PhpIndex - Invalid Signature '\Doctrine\ORM\EntityRepository<#ᢐ\T.>'
+2025-06-05 10:59:06,016 [7307058]   WARN - #c.j.p.PhpIndex - Invalid Signature '\Doctrine\ORM\EntityRepository'
+2025-06-05 10:59:20,989 [7322031]   WARN - #c.j.p.PhpIndex - Invalid Signature '.getRowIterator'
+2025-06-05 10:59:20,989 [7322031]   WARN - #c.j.p.PhpIndex - Invalid Signature '.getActiveSheet'
+2025-06-05 10:59:21,005 [7322047]   WARN - #c.j.p.PhpIndex - Invalid Signature '\array<\string,\mixed>'
+2025-06-05 10:59:21,005 [7322047]   WARN - #c.j.p.PhpIndex - Invalid Signature '\array<\string,\mixed>'
+2025-06-05 10:59:21,026 [7322068]   WARN - #c.j.p.PhpIndex - Invalid Signature '\Doctrine\ORM\EntityRepository<#ᢐ\T.>'
+2025-06-05 10:59:21,026 [7322068]   WARN - #c.j.p.PhpIndex - Invalid Signature '\Doctrine\ORM\EntityRepository'
+2025-06-05 10:59:21,026 [7322068]   WARN - #c.j.p.PhpIndex - Invalid Signature '\Doctrine\ORM\EntityRepository<#ᢐ\T.>'
+2025-06-05 10:59:35,993 [7337035]   WARN - #c.j.p.PhpIndex - Invalid Signature '.getActiveSheet'
+2025-06-05 10:59:35,993 [7337035]   WARN - #c.j.p.PhpIndex - Invalid Signature '.getRowIterator'
+2025-06-05 10:59:35,993 [7337035]   WARN - #c.j.p.PhpIndex - Invalid Signature '.getActiveSheet'
+2025-06-05 10:59:36,002 [7337044]   WARN - #c.j.p.PhpIndex - Invalid Signature '\array<\string,\mixed>'
+2025-06-05 10:59:36,002 [7337044]   WARN - #c.j.p.PhpIndex - Invalid Signature '\array<\string,\mixed>'
+2025-06-05 10:59:36,029 [7337071]   WARN - #c.j.p.PhpIndex - Invalid Signature '\Doctrine\ORM\EntityRepository<#ᢐ\T.>'
+2025-06-05 10:59:36,030 [7337072]   WARN - #c.j.p.PhpIndex - Invalid Signature '\Doctrine\ORM\EntityRepository'
+2025-06-05 10:59:36,029 [7337071]   WARN - #c.j.p.PhpIndex - Invalid Signature '\Doctrine\ORM\EntityRepository<#ᢐ\T.>'
+2025-06-05 10:59:36,029 [7337071]   WARN - #c.j.p.PhpIndex - Invalid Signature '\Doctrine\ORM\EntityRepository<#ᢐ\T.>'
+2025-06-05 10:59:51,004 [7352046]   WARN - #c.j.p.PhpIndex - Invalid Signature '.getRowIterator'
+2025-06-05 10:59:51,004 [7352046]   WARN - #c.j.p.PhpIndex - Invalid Signature '.getActiveSheet'
+2025-06-05 10:59:51,010 [7352052]   WARN - #c.j.p.PhpIndex - Invalid Signature '\array<\string,\mixed>'
+2025-06-05 10:59:51,030 [7352072]   WARN - #c.j.p.PhpIndex - Invalid Signature '\Doctrine\ORM\EntityRepository<#ᢐ\T.>'
+2025-06-05 10:59:51,030 [7352072]   WARN - #c.j.p.PhpIndex - Invalid Signature '\Doctrine\ORM\EntityRepository<#ᢐ\T.>'
+2025-06-05 10:59:51,030 [7352072]   WARN - #c.j.p.PhpIndex - Invalid Signature '\Doctrine\ORM\EntityRepository'
+2025-06-05 10:59:51,030 [7352072]   WARN - #c.j.p.PhpIndex - Invalid Signature '\Doctrine\ORM\EntityRepository<#ᢐ\T.>'
+2025-06-05 11:00:06,014 [7367056]   WARN - #c.j.p.PhpIndex - Invalid Signature '.getRowIterator'
+2025-06-05 11:00:06,014 [7367056]   WARN - #c.j.p.PhpIndex - Invalid Signature '.getRowIterator'
+2025-06-05 11:00:06,025 [7367067]   WARN - #c.j.p.PhpIndex - Invalid Signature '.getActiveSheet'
+2025-06-05 11:00:06,025 [7367067]   WARN - #c.j.p.PhpIndex - Invalid Signature '\array<\string,\mixed>'
+2025-06-05 11:00:06,025 [7367067]   WARN - #c.j.p.PhpIndex - Invalid Signature '\array<\string,\mixed>'
+2025-06-05 11:00:06,023 [7367065]   WARN - #c.j.p.PhpIndex - Invalid Signature '.getActiveSheet'
+2025-06-05 11:00:06,017 [7367059]   WARN - #c.j.p.PhpIndex - Invalid Signature '.getActiveSheet'
+2025-06-05 11:00:06,016 [7367058]   WARN - #c.j.p.PhpIndex - Invalid Signature '.getActiveSheet'
+2025-06-05 11:00:06,025 [7367067]   WARN - #c.j.p.PhpIndex - Invalid Signature '.getActiveSheet'
+2025-06-05 11:00:06,045 [7367087]   WARN - #c.j.p.PhpIndex - Invalid Signature '\Doctrine\ORM\EntityRepository<#ᢐ\T.>'
+2025-06-05 11:00:06,045 [7367087]   WARN - #c.j.p.PhpIndex - Invalid Signature '\Doctrine\ORM\EntityRepository'
+2025-06-05 11:00:21,021 [7382063]   WARN - #c.j.p.PhpIndex - Invalid Signature '.getActiveSheet'
+2025-06-05 11:00:21,021 [7382063]   WARN - #c.j.p.PhpIndex - Invalid Signature '.getRowIterator'
+2025-06-05 11:00:21,032 [7382074]   WARN - #c.j.p.PhpIndex - Invalid Signature '\array<\string,\mixed>'
+2025-06-05 11:00:21,057 [7382099]   WARN - #c.j.p.PhpIndex - Invalid Signature '\Doctrine\ORM\EntityRepository<#ᢐ\T.>'
+2025-06-05 11:00:21,058 [7382100]   WARN - #c.j.p.PhpIndex - Invalid Signature '\Doctrine\ORM\EntityRepository'
+2025-06-05 11:00:21,057 [7382099]   WARN - #c.j.p.PhpIndex - Invalid Signature '\Doctrine\ORM\EntityRepository<#ᢐ\T.>'
+2025-06-05 11:00:36,040 [7397082]   WARN - #c.j.p.PhpIndex - Invalid Signature '.getRowIterator'
+2025-06-05 11:00:36,040 [7397082]   WARN - #c.j.p.PhpIndex - Invalid Signature '.getActiveSheet'
+2025-06-05 11:00:36,048 [7397090]   WARN - #c.j.p.PhpIndex - Invalid Signature '\array<\string,\mixed>'
+2025-06-05 11:00:36,067 [7397109]   WARN - #c.j.p.PhpIndex - Invalid Signature '\Doctrine\ORM\EntityRepository<#ᢐ\T.>'
+2025-06-05 11:00:36,067 [7397109]   WARN - #c.j.p.PhpIndex - Invalid Signature '\Doctrine\ORM\EntityRepository'
+2025-06-05 11:00:36,067 [7397109]   WARN - #c.j.p.PhpIndex - Invalid Signature '\Doctrine\ORM\EntityRepository<#ᢐ\T.>'
+2025-06-05 11:00:36,067 [7397109]   WARN - #c.j.p.PhpIndex - Invalid Signature '\Doctrine\ORM\EntityRepository'
+2025-06-05 11:00:51,035 [7412077]   WARN - #c.j.p.PhpIndex - Invalid Signature '.getActiveSheet'
+2025-06-05 11:00:51,035 [7412077]   WARN - #c.j.p.PhpIndex - Invalid Signature '.getRowIterator'
+2025-06-05 11:00:51,043 [7412085]   WARN - #c.j.p.PhpIndex - Invalid Signature '\array<\string,\mixed>'
+2025-06-05 11:00:51,066 [7412108]   WARN - #c.j.p.PhpIndex - Invalid Signature '\Doctrine\ORM\EntityRepository<#ᢐ\T.>'
+2025-06-05 11:00:51,066 [7412108]   WARN - #c.j.p.PhpIndex - Invalid Signature '\Doctrine\ORM\EntityRepository<#ᢐ\T.>'
+2025-06-05 11:00:51,066 [7412108]   WARN - #c.j.p.PhpIndex - Invalid Signature '\Doctrine\ORM\EntityRepository'
+2025-06-05 11:00:51,066 [7412108]   WARN - #c.j.p.PhpIndex - Invalid Signature '\Doctrine\ORM\EntityRepository'
+2025-06-05 11:01:06,037 [7427079]   WARN - #c.j.p.PhpIndex - Invalid Signature '.getActiveSheet'
+2025-06-05 11:01:06,041 [7427083]   WARN - #c.j.p.PhpIndex - Invalid Signature '.getRowIterator'
+2025-06-05 11:01:06,040 [7427082]   WARN - #c.j.p.PhpIndex - Invalid Signature '.getRowIterator'
+2025-06-05 11:01:06,038 [7427080]   WARN - #c.j.p.PhpIndex - Invalid Signature '.getActiveSheet'
+2025-06-05 11:01:06,045 [7427087]   WARN - #c.j.p.PhpIndex - Invalid Signature '\array<\string,\mixed>'
+2025-06-05 11:01:06,038 [7427080]   WARN - #c.j.p.PhpIndex - Invalid Signature '.getRowIterator'
+2025-06-05 11:01:06,068 [7427110]   WARN - #c.j.p.PhpIndex - Invalid Signature '\Doctrine\ORM\EntityRepository<#ᢐ\T.>'
+2025-06-05 11:01:06,068 [7427110]   WARN - #c.j.p.PhpIndex - Invalid Signature '\Doctrine\ORM\EntityRepository'
+2025-06-05 11:01:06,068 [7427110]   WARN - #c.j.p.PhpIndex - Invalid Signature '\Doctrine\ORM\EntityRepository'
+2025-06-05 11:01:21,035 [7442077]   WARN - #c.j.p.PhpIndex - Invalid Signature '.getActiveSheet'
+2025-06-05 11:01:21,035 [7442077]   WARN - #c.j.p.PhpIndex - Invalid Signature '.getRowIterator'
+2025-06-05 11:01:21,042 [7442084]   WARN - #c.j.p.PhpIndex - Invalid Signature '\array<\string,\mixed>'
+2025-06-05 11:01:21,042 [7442084]   WARN - #c.j.p.PhpIndex - Invalid Signature '\array<\string,\mixed>'
+2025-06-05 11:01:21,070 [7442112]   WARN - #c.j.p.PhpIndex - Invalid Signature '\Doctrine\ORM\EntityRepository<#ᢐ\T.>'
+2025-06-05 11:01:21,070 [7442112]   WARN - #c.j.p.PhpIndex - Invalid Signature '\Doctrine\ORM\EntityRepository'
+2025-06-05 11:01:36,045 [7457087]   WARN - #c.j.p.PhpIndex - Invalid Signature '.getActiveSheet'
+2025-06-05 11:01:36,046 [7457088]   WARN - #c.j.p.PhpIndex - Invalid Signature '.getRowIterator'
+2025-06-05 11:01:36,045 [7457087]   WARN - #c.j.p.PhpIndex - Invalid Signature '.getActiveSheet'
+2025-06-05 11:01:36,060 [7457102]   WARN - #c.j.p.PhpIndex - Invalid Signature '\array<\string,\mixed>'
+2025-06-05 11:01:36,091 [7457133]   WARN - #c.j.p.PhpIndex - Invalid Signature '\Doctrine\ORM\EntityRepository<#ᢐ\T.>'
+2025-06-05 11:01:36,091 [7457133]   WARN - #c.j.p.PhpIndex - Invalid Signature '\Doctrine\ORM\EntityRepository<#ᢐ\T.>'
+2025-06-05 11:01:36,092 [7457134]   WARN - #c.j.p.PhpIndex - Invalid Signature '\Doctrine\ORM\EntityRepository'
+2025-06-05 11:01:36,092 [7457134]   WARN - #c.j.p.PhpIndex - Invalid Signature '\Doctrine\ORM\EntityRepository'
+2025-06-05 11:01:36,092 [7457134]   WARN - #c.j.p.PhpIndex - Invalid Signature '\Doctrine\ORM\EntityRepository'
+2025-06-05 11:01:51,054 [7472096]   WARN - #c.j.p.PhpIndex - Invalid Signature '.getRowIterator'
+2025-06-05 11:01:51,054 [7472096]   WARN - #c.j.p.PhpIndex - Invalid Signature '.getActiveSheet'
+2025-06-05 11:01:51,054 [7472096]   WARN - #c.j.p.PhpIndex - Invalid Signature '.getActiveSheet'
+2025-06-05 11:01:51,066 [7472108]   WARN - #c.j.p.PhpIndex - Invalid Signature '\array<\string,\mixed>'
+2025-06-05 11:01:51,066 [7472108]   WARN - #c.j.p.PhpIndex - Invalid Signature '\array<\string,\mixed>'
+2025-06-05 11:01:51,085 [7472127]   WARN - #c.j.p.PhpIndex - Invalid Signature '\Doctrine\ORM\EntityRepository<#ᢐ\T.>'
+2025-06-05 11:01:51,085 [7472127]   WARN - #c.j.p.PhpIndex - Invalid Signature '\Doctrine\ORM\EntityRepository<#ᢐ\T.>'
+2025-06-05 11:01:51,086 [7472128]   WARN - #c.j.p.PhpIndex - Invalid Signature '\Doctrine\ORM\EntityRepository'
+2025-06-05 11:01:51,086 [7472128]   WARN - #c.j.p.PhpIndex - Invalid Signature '\Doctrine\ORM\EntityRepository'
+2025-06-05 11:02:06,057 [7487099]   WARN - #c.j.p.PhpIndex - Invalid Signature '\array<\string,\mixed>'
+2025-06-05 11:02:06,066 [7487108]   WARN - #c.j.p.PhpIndex - Invalid Signature '.getActiveSheet'
+2025-06-05 11:02:06,066 [7487108]   WARN - #c.j.p.PhpIndex - Invalid Signature '.getRowIterator'
+2025-06-05 11:02:06,092 [7487134]   WARN - #c.j.p.PhpIndex - Invalid Signature '\Doctrine\ORM\EntityRepository<#ᢐ\T.>'
+2025-06-05 11:02:06,092 [7487134]   WARN - #c.j.p.PhpIndex - Invalid Signature '\Doctrine\ORM\EntityRepository<#ᢐ\T.>'
+2025-06-05 11:02:06,092 [7487134]   WARN - #c.j.p.PhpIndex - Invalid Signature '\Doctrine\ORM\EntityRepository'
+2025-06-05 11:02:06,092 [7487134]   WARN - #c.j.p.PhpIndex - Invalid Signature '\Doctrine\ORM\EntityRepository<#ᢐ\T.>'
+2025-06-05 11:02:06,092 [7487134]   WARN - #c.j.p.PhpIndex - Invalid Signature '\Doctrine\ORM\EntityRepository'
+2025-06-05 11:02:21,097 [7502139]   WARN - #c.j.p.PhpIndex - Invalid Signature '.getRowIterator'
+2025-06-05 11:02:21,097 [7502139]   WARN - #c.j.p.PhpIndex - Invalid Signature '.getActiveSheet'
+2025-06-05 11:02:21,113 [7502155]   WARN - #c.j.p.PhpIndex - Invalid Signature '\array<\string,\mixed>'
+2025-06-05 11:02:21,113 [7502155]   WARN - #c.j.p.PhpIndex - Invalid Signature '\array<\string,\mixed>'
+2025-06-05 11:02:21,127 [7502169]   WARN - #c.j.p.PhpIndex - Invalid Signature '\Doctrine\ORM\EntityRepository<#ᢐ\T.>'
+2025-06-05 11:02:21,128 [7502170]   WARN - #c.j.p.PhpIndex - Invalid Signature '\Doctrine\ORM\EntityRepository'
+2025-06-05 11:02:36,069 [7517111]   WARN - #c.j.p.PhpIndex - Invalid Signature '.getRowIterator'
+2025-06-05 11:02:36,069 [7517111]   WARN - #c.j.p.PhpIndex - Invalid Signature '.getActiveSheet'
+2025-06-05 11:02:36,089 [7517131]   WARN - #c.j.p.PhpIndex - Invalid Signature '\array<\string,\mixed>'
+2025-06-05 11:02:36,089 [7517131]   WARN - #c.j.p.PhpIndex - Invalid Signature '\array<\string,\mixed>'
+2025-06-05 11:02:36,106 [7517148]   WARN - #c.j.p.PhpIndex - Invalid Signature '\Doctrine\ORM\EntityRepository<#ᢐ\T.>'
+2025-06-05 11:02:36,106 [7517148]   WARN - #c.j.p.PhpIndex - Invalid Signature '\Doctrine\ORM\EntityRepository'
+2025-06-05 11:02:51,075 [7532117]   WARN - #c.j.p.PhpIndex - Invalid Signature '.getRowIterator'
+2025-06-05 11:02:51,075 [7532117]   WARN - #c.j.p.PhpIndex - Invalid Signature '.getActiveSheet'
+2025-06-05 11:02:51,079 [7532121]   WARN - #c.j.p.PhpIndex - Invalid Signature '\array<\string,\mixed>'
+2025-06-05 11:02:51,104 [7532146]   WARN - #c.j.p.PhpIndex - Invalid Signature '\Doctrine\ORM\EntityRepository<#ᢐ\T.>'
+2025-06-05 11:02:51,104 [7532146]   WARN - #c.j.p.PhpIndex - Invalid Signature '\Doctrine\ORM\EntityRepository'
+2025-06-05 11:03:06,073 [7547115]   WARN - #c.j.p.PhpIndex - Invalid Signature '.getActiveSheet'
+2025-06-05 11:03:06,073 [7547115]   WARN - #c.j.p.PhpIndex - Invalid Signature '.getRowIterator'
+2025-06-05 11:03:06,085 [7547127]   WARN - #c.j.p.PhpIndex - Invalid Signature '\array<\string,\mixed>'
+2025-06-05 11:03:06,112 [7547154]   WARN - #c.j.p.PhpIndex - Invalid Signature '\Doctrine\ORM\EntityRepository<#ᢐ\T.>'
+2025-06-05 11:03:06,113 [7547155]   WARN - #c.j.p.PhpIndex - Invalid Signature '\Doctrine\ORM\EntityRepository<#ᢐ\T.>'
+2025-06-05 11:03:06,113 [7547155]   WARN - #c.j.p.PhpIndex - Invalid Signature '\Doctrine\ORM\EntityRepository'
+2025-06-05 11:03:06,112 [7547154]   WARN - #c.j.p.PhpIndex - Invalid Signature '\Doctrine\ORM\EntityRepository<#ᢐ\T.>'
+2025-06-05 11:03:06,113 [7547155]   WARN - #c.j.p.PhpIndex - Invalid Signature '\Doctrine\ORM\EntityRepository'
+2025-06-05 11:03:21,086 [7562128]   WARN - #c.j.p.PhpIndex - Invalid Signature '.getActiveSheet'
+2025-06-05 11:03:21,086 [7562128]   WARN - #c.j.p.PhpIndex - Invalid Signature '.getRowIterator'
+2025-06-05 11:03:21,095 [7562137]   WARN - #c.j.p.PhpIndex - Invalid Signature '\array<\string,\mixed>'
+2025-06-05 11:03:21,115 [7562157]   WARN - #c.j.p.PhpIndex - Invalid Signature '\Doctrine\ORM\EntityRepository<#ᢐ\T.>'
+2025-06-05 11:03:21,115 [7562157]   WARN - #c.j.p.PhpIndex - Invalid Signature '\Doctrine\ORM\EntityRepository'
+2025-06-05 11:03:36,088 [7577130]   WARN - #c.j.p.PhpIndex - Invalid Signature '.getRowIterator'
+2025-06-05 11:03:36,088 [7577130]   WARN - #c.j.p.PhpIndex - Invalid Signature '.getActiveSheet'
+2025-06-05 11:03:36,104 [7577146]   WARN - #c.j.p.PhpIndex - Invalid Signature '\array<\string,\mixed>'
+2025-06-05 11:03:36,104 [7577146]   WARN - #c.j.p.PhpIndex - Invalid Signature '\array<\string,\mixed>'
+2025-06-05 11:03:36,121 [7577163]   WARN - #c.j.p.PhpIndex - Invalid Signature '\Doctrine\ORM\EntityRepository<#ᢐ\T.>'
+2025-06-05 11:03:36,121 [7577163]   WARN - #c.j.p.PhpIndex - Invalid Signature '\Doctrine\ORM\EntityRepository'
+2025-06-05 11:03:36,121 [7577163]   WARN - #c.j.p.PhpIndex - Invalid Signature '\Doctrine\ORM\EntityRepository<#ᢐ\T.>'
+2025-06-05 11:03:51,089 [7592131]   WARN - #c.j.p.PhpIndex - Invalid Signature '.getActiveSheet'
+2025-06-05 11:03:51,089 [7592131]   WARN - #c.j.p.PhpIndex - Invalid Signature '.getRowIterator'
+2025-06-05 11:03:51,089 [7592131]   WARN - #c.j.p.PhpIndex - Invalid Signature '.getActiveSheet'
+2025-06-05 11:03:51,100 [7592142]   WARN - #c.j.p.PhpIndex - Invalid Signature '\array<\string,\mixed>'
+2025-06-05 11:03:51,123 [7592165]   WARN - #c.j.p.PhpIndex - Invalid Signature '\Doctrine\ORM\EntityRepository<#ᢐ\T.>'
+2025-06-05 11:03:51,123 [7592165]   WARN - #c.j.p.PhpIndex - Invalid Signature '\Doctrine\ORM\EntityRepository'
+2025-06-05 11:03:51,123 [7592165]   WARN - #c.j.p.PhpIndex - Invalid Signature '\Doctrine\ORM\EntityRepository'
+2025-06-05 11:04:06,102 [7607144]   WARN - #c.j.p.PhpIndex - Invalid Signature '.getActiveSheet'
+2025-06-05 11:04:06,102 [7607144]   WARN - #c.j.p.PhpIndex - Invalid Signature '.getRowIterator'
+2025-06-05 11:04:06,102 [7607144]   WARN - #c.j.p.PhpIndex - Invalid Signature '.getRowIterator'
+2025-06-05 11:04:06,108 [7607150]   WARN - #c.j.p.PhpIndex - Invalid Signature '\array<\string,\mixed>'
+2025-06-05 11:04:06,108 [7607150]   WARN - #c.j.p.PhpIndex - Invalid Signature '\array<\string,\mixed>'
+2025-06-05 11:04:06,124 [7607166]   WARN - #c.j.p.PhpIndex - Invalid Signature '\Doctrine\ORM\EntityRepository<#ᢐ\T.>'
+2025-06-05 11:04:06,124 [7607166]   WARN - #c.j.p.PhpIndex - Invalid Signature '\Doctrine\ORM\EntityRepository'
+2025-06-05 11:04:21,226 [7622268]   WARN - #c.j.p.PhpIndex - Invalid Signature '.getActiveSheet'
+2025-06-05 11:04:21,227 [7622269]   WARN - #c.j.p.PhpIndex - Invalid Signature '.getRowIterator'
+2025-06-05 11:04:21,236 [7622278]   WARN - #c.j.p.PhpIndex - Invalid Signature '\array<\string,\mixed>'
+2025-06-05 11:04:21,238 [7622280]   WARN - #c.j.p.PhpIndex - Invalid Signature '\array<\string,\mixed>'
+2025-06-05 11:04:21,264 [7622306]   WARN - #c.j.p.PhpIndex - Invalid Signature '\Doctrine\ORM\EntityRepository<#ᢐ\T.>'
+2025-06-05 11:04:21,265 [7622307]   WARN - #c.j.p.PhpIndex - Invalid Signature '\Doctrine\ORM\EntityRepository'
+2025-06-05 12:40:52,675 [13413717]   WARN - #com.mallowigi.tree.HollowFoldersDecorator - null
+2025-06-05 13:25:25,122 [16086164]   WARN - #c.i.s.ComponentManagerImpl - com.intellij.usages.UsageNodePresentation <clinit> requests com.intellij.usageView.UsageTreeColorsScheme instance. Class initialization must not depend on services. Consider using instance of the service on-demand instead.
+2025-06-05 13:40:57,012 [17018054]   WARN - #c.j.p.PhpIndex - Invalid Signature '.getActiveSheet'
+2025-06-05 13:40:57,025 [17018067]   WARN - #c.j.p.PhpIndex - Invalid Signature '\Doctrine\ORM\EntityRepository<#ᢐ\T.>'
+2025-06-05 13:40:57,026 [17018068]   WARN - #c.j.p.PhpIndex - Invalid Signature '\Doctrine\ORM\EntityRepository'
+2025-06-05 13:40:57,083 [17018125]   WARN - #c.j.p.PhpIndex - Invalid Signature '.getRowIterator'
+2025-06-05 13:40:57,224 [17018266]   WARN - #c.j.p.PhpIndex - Invalid Signature '\array<\string,\mixed>'
+2025-06-05 13:41:44,898 [17065940]   WARN - #c.j.p.PhpIndex - Invalid Signature '.getRowIterator'
+2025-06-05 13:41:44,898 [17065940]   WARN - #c.j.p.PhpIndex - Invalid Signature '.getRowIterator'
+2025-06-05 13:41:44,898 [17065940]   WARN - #c.j.p.PhpIndex - Invalid Signature '.getActiveSheet'
+2025-06-05 13:41:44,965 [17066007]   WARN - #c.j.p.PhpIndex - Invalid Signature '\Doctrine\ORM\EntityRepository<#ᢐ\T.>'
+2025-06-05 13:41:44,966 [17066008]   WARN - #c.j.p.PhpIndex - Invalid Signature '\Doctrine\ORM\EntityRepository'
+2025-06-05 13:41:44,965 [17066007]   WARN - #c.j.p.PhpIndex - Invalid Signature '\Doctrine\ORM\EntityRepository<#ᢐ\T.>'
+2025-06-05 13:41:44,965 [17066007]   WARN - #c.j.p.PhpIndex - Invalid Signature '\Doctrine\ORM\EntityRepository<#ᢐ\T.>'
+2025-06-05 13:41:44,984 [17066026]   WARN - #c.j.p.PhpIndex - Invalid Signature '\array<\string,\mixed>'
+2025-06-05 13:41:54,033 [17075075]   WARN - #c.j.p.PhpIndex - Invalid Signature '.getRowIterator'
+2025-06-05 13:41:54,033 [17075075]   WARN - #c.j.p.PhpIndex - Invalid Signature '.getRowIterator'
+2025-06-05 13:41:54,033 [17075075]   WARN - #c.j.p.PhpIndex - Invalid Signature '.getActiveSheet'
+2025-06-05 13:41:54,033 [17075075]   WARN - #c.j.p.PhpIndex - Invalid Signature '.getActiveSheet'
+2025-06-05 13:41:54,067 [17075109]   WARN - #c.j.p.PhpIndex - Invalid Signature '\Doctrine\ORM\EntityRepository<#ᢐ\T.>'
+2025-06-05 13:41:54,067 [17075109]   WARN - #c.j.p.PhpIndex - Invalid Signature '\Doctrine\ORM\EntityRepository<#ᢐ\T.>'
+2025-06-05 13:41:54,068 [17075110]   WARN - #c.j.p.PhpIndex - Invalid Signature '\Doctrine\ORM\EntityRepository'
+2025-06-05 13:41:54,068 [17075110]   WARN - #c.j.p.PhpIndex - Invalid Signature '\Doctrine\ORM\EntityRepository'
+2025-06-05 13:41:54,068 [17075110]   WARN - #c.j.p.PhpIndex - Invalid Signature '\Doctrine\ORM\EntityRepository'
+2025-06-05 13:41:54,068 [17075110]   WARN - #c.j.p.PhpIndex - Invalid Signature '\Doctrine\ORM\EntityRepository'
+2025-06-05 13:41:54,082 [17075124]   WARN - #c.j.p.PhpIndex - Invalid Signature '\array<\string,\mixed>'
+2025-06-05 13:41:56,760 [17077802]   WARN - #c.j.p.PhpIndex - Invalid Signature '.getRowIterator'
+2025-06-05 13:41:56,760 [17077802]   WARN - #c.j.p.PhpIndex - Invalid Signature '.getRowIterator'
+2025-06-05 13:41:56,760 [17077802]   WARN - #c.j.p.PhpIndex - Invalid Signature '.getActiveSheet'
+2025-06-05 13:41:56,807 [17077849]   WARN - #c.j.p.PhpIndex - Invalid Signature '\Doctrine\ORM\EntityRepository<#ᢐ\T.>'
+2025-06-05 13:41:56,807 [17077849]   WARN - #c.j.p.PhpIndex - Invalid Signature '\Doctrine\ORM\EntityRepository<#ᢐ\T.>'
+2025-06-05 13:41:56,808 [17077850]   WARN - #c.j.p.PhpIndex - Invalid Signature '\Doctrine\ORM\EntityRepository'
+2025-06-05 13:41:56,830 [17077872]   WARN - #c.j.p.PhpIndex - Invalid Signature '\array<\string,\mixed>'
+2025-06-05 13:41:59,403 [17080445]   WARN - #c.j.p.PhpIndex - Invalid Signature '.getRowIterator'
+2025-06-05 13:41:59,403 [17080445]   WARN - #c.j.p.PhpIndex - Invalid Signature '.getActiveSheet'
+2025-06-05 13:41:59,403 [17080445]   WARN - #c.j.p.PhpIndex - Invalid Signature '.getRowIterator'
+2025-06-05 13:41:59,445 [17080487]   WARN - #c.j.p.PhpIndex - Invalid Signature '\Doctrine\ORM\EntityRepository<#ᢐ\T.>'
+2025-06-05 13:41:59,445 [17080487]   WARN - #c.j.p.PhpIndex - Invalid Signature '\Doctrine\ORM\EntityRepository'
+2025-06-05 13:41:59,470 [17080512]   WARN - #c.j.p.PhpIndex - Invalid Signature '\array<\string,\mixed>'
+2025-06-05 13:42:06,534 [17087576]   WARN - #c.i.u.x.Binding - No accessors for org.jetbrains.security.package.Package. This means that state class cannot be serialized properly. Please see https://jb.gg/ij-psoc
+2025-06-05 13:42:16,676 [17097718]   WARN - #c.j.p.PhpIndex - Invalid Signature '\Doctrine\Bundle\DoctrineBundle\Repository\class-string<#ᢐ\T.>'
+2025-06-05 13:42:16,677 [17097719]   WARN - #c.j.p.PhpIndex - Invalid Signature '\Doctrine\ORM\Mapping\ClassMetadata<#ᢐ\T.>'
+2025-06-05 13:42:26,971 [17108013]   WARN - #c.j.p.PhpIndex - Invalid Signature '.getRowIterator'
+2025-06-05 13:42:26,971 [17108013]   WARN - #c.j.p.PhpIndex - Invalid Signature '.getActiveSheet'
+2025-06-05 13:42:26,971 [17108013]   WARN - #c.j.p.PhpIndex - Invalid Signature '.getRowIterator'
+2025-06-05 13:42:26,997 [17108039]   WARN - #c.j.p.PhpIndex - Invalid Signature '\Doctrine\ORM\EntityRepository<#ᢐ\T.>'
+2025-06-05 13:42:26,998 [17108040]   WARN - #c.j.p.PhpIndex - Invalid Signature '\Doctrine\ORM\EntityRepository'
+2025-06-05 13:42:27,048 [17108090]   WARN - #c.j.p.PhpIndex - Invalid Signature '\array<\string,\mixed>'
+2025-06-05 13:42:43,330 [17124372] SEVERE - #c.i.o.a.i.ApplicationImpl - Failed to close and dispose all projects
+com.intellij.openapi.application.impl.ApplicationImpl$1ApplicationExitException: com.intellij.openapi.progress.CeProcessCanceledException: kotlinx.coroutines.JobCancellationException: Job was cancelled; job="ProjectImpl@858872267 container":supervisor:ChildScope{Cancelled}@641e4b87
+	at com.intellij.openapi.application.impl.ApplicationImpl.logErrorDuringExit(ApplicationImpl.java:666)
+	at com.intellij.openapi.application.impl.ApplicationImpl.destructApplication(ApplicationImpl.java:613)
+	at com.intellij.openapi.application.impl.ApplicationImpl.doExit(ApplicationImpl.java:551)
+	at com.intellij.openapi.application.impl.ApplicationImpl.exit(ApplicationImpl.java:536)
+	at com.intellij.openapi.application.impl.ApplicationImpl.restart(ApplicationImpl.java:515)
+	at com.intellij.openapi.application.impl.ApplicationImpl.restart(ApplicationImpl.java:485)
+	at com.intellij.openapi.application.impl.ApplicationImpl.restart(ApplicationImpl.java:473)
+	at com.intellij.ide.InvalidateCacheService.invalidateCachesAndRestart(InvalidateCacheService.java:34)
+	at com.intellij.ide.actions.InvalidateCachesAction.actionPerformed(InvalidateCachesAction.java:15)
+	at com.intellij.openapi.actionSystem.ex.ActionUtil.doPerformActionOrShowPopup(ActionUtil.kt:304)
+	at com.intellij.openapi.actionSystem.ex.ActionUtil.performActionDumbAwareWithCallbacks$lambda$4(ActionUtil.kt:275)
+	at com.intellij.openapi.actionSystem.impl.ActionManagerImpl.performWithActionCallbacks(ActionManagerImpl.kt:1166)
+	at com.intellij.openapi.actionSystem.ex.ActionUtil.performActionDumbAwareWithCallbacks(ActionUtil.kt:274)
+	at com.intellij.openapi.actionSystem.impl.ActionMenuItem.performAction$lambda$5(ActionMenuItem.kt:269)
+	at com.intellij.openapi.wm.impl.FocusManagerImpl.runOnOwnContext(FocusManagerImpl.java:227)
+	at com.intellij.openapi.actionSystem.impl.ActionMenuItem.performAction(ActionMenuItem.kt:260)
+	at com.intellij.openapi.actionSystem.impl.ActionMenuItem._init_$lambda$0(ActionMenuItem.kt:71)
+	at java.desktop/javax.swing.AbstractButton.fireActionPerformed(AbstractButton.java:1972)
+	at com.intellij.openapi.actionSystem.impl.ActionMenuItem.fireActionPerformed$lambda$4(ActionMenuItem.kt:102)
+	at com.intellij.openapi.application.TransactionGuardImpl.performActivity(TransactionGuardImpl.java:106)
+	at com.intellij.openapi.application.TransactionGuardImpl.performUserActivity(TransactionGuardImpl.java:95)
+	at com.intellij.openapi.actionSystem.impl.ActionMenuItem.fireActionPerformed(ActionMenuItem.kt:101)
+	at com.intellij.ui.plaf.beg.BegMenuItemUI.doClick(BegMenuItemUI.java:525)
+	at com.intellij.ui.plaf.beg.BegMenuItemUI$MyMouseInputHandler.mouseReleased(BegMenuItemUI.java:558)
+	at java.desktop/java.awt.Component.processMouseEvent(Component.java:6657)
+	at java.desktop/javax.swing.JComponent.processMouseEvent(JComponent.java:3385)
+	at java.desktop/java.awt.Component.processEvent(Component.java:6422)
+	at java.desktop/java.awt.Container.processEvent(Container.java:2266)
+	at java.desktop/java.awt.Component.dispatchEventImpl(Component.java:5027)
+	at java.desktop/java.awt.Container.dispatchEventImpl(Container.java:2324)
+	at java.desktop/java.awt.Component.dispatchEvent(Component.java:4855)
+	at java.desktop/java.awt.LightweightDispatcher.retargetMouseEvent(Container.java:4969)
+	at java.desktop/java.awt.LightweightDispatcher.processMouseEvent(Container.java:4583)
+	at java.desktop/java.awt.LightweightDispatcher.dispatchEvent(Container.java:4524)
+	at java.desktop/java.awt.Container.dispatchEventImpl(Container.java:2310)
+	at java.desktop/java.awt.Window.dispatchEventImpl(Window.java:2809)
+	at java.desktop/java.awt.Component.dispatchEvent(Component.java:4855)
+	at java.desktop/java.awt.EventQueue.dispatchEventImpl(EventQueue.java:794)
+	at java.desktop/java.awt.EventQueue$3.run(EventQueue.java:739)
+	at java.desktop/java.awt.EventQueue$3.run(EventQueue.java:733)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:399)
+	at java.base/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:86)
+	at java.base/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:97)
+	at java.desktop/java.awt.EventQueue$4.run(EventQueue.java:766)
+	at java.desktop/java.awt.EventQueue$4.run(EventQueue.java:764)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:399)
+	at java.base/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:86)
+	at java.desktop/java.awt.EventQueue.dispatchEvent(EventQueue.java:763)
+	at com.intellij.ide.IdeEventQueue.defaultDispatchEvent(IdeEventQueue.kt:699)
+	at com.intellij.ide.IdeEventQueue.dispatchMouseEvent(IdeEventQueue.kt:638)
+	at com.intellij.ide.IdeEventQueue._dispatchEvent$lambda$10(IdeEventQueue.kt:584)
+	at com.intellij.openapi.application.impl.RwLockHolder.runWithEnabledImplicitRead(RwLockHolder.kt:138)
+	at com.intellij.openapi.application.impl.RwLockHolder.runWithImplicitRead(RwLockHolder.kt:129)
+	at com.intellij.ide.IdeEventQueue._dispatchEvent(IdeEventQueue.kt:584)
+	at com.intellij.ide.IdeEventQueue.access$_dispatchEvent(IdeEventQueue.kt:77)
+	at com.intellij.ide.IdeEventQueue$dispatchEvent$processEventRunnable$1$1$1.compute(IdeEventQueue.kt:362)
+	at com.intellij.ide.IdeEventQueue$dispatchEvent$processEventRunnable$1$1$1.compute(IdeEventQueue.kt:361)
+	at com.intellij.openapi.progress.impl.CoreProgressManager.computePrioritized(CoreProgressManager.java:843)
+	at com.intellij.ide.IdeEventQueue$dispatchEvent$processEventRunnable$1$1.invoke(IdeEventQueue.kt:361)
+	at com.intellij.ide.IdeEventQueue$dispatchEvent$processEventRunnable$1$1.invoke(IdeEventQueue.kt:356)
+	at com.intellij.ide.IdeEventQueueKt.performActivity$lambda$1(IdeEventQueue.kt:1022)
+	at com.intellij.openapi.application.TransactionGuardImpl.performActivity(TransactionGuardImpl.java:114)
+	at com.intellij.ide.IdeEventQueueKt.performActivity(IdeEventQueue.kt:1022)
+	at com.intellij.ide.IdeEventQueue.dispatchEvent$lambda$7(IdeEventQueue.kt:356)
+	at com.intellij.openapi.application.impl.RwLockHolder.runIntendedWriteActionOnCurrentThread(RwLockHolder.kt:209)
+	at com.intellij.openapi.application.impl.ApplicationImpl.runIntendedWriteActionOnCurrentThread(ApplicationImpl.java:830)
+	at com.intellij.ide.IdeEventQueue.dispatchEvent(IdeEventQueue.kt:398)
+	at java.desktop/java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:207)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:128)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:117)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:113)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:105)
+	at java.desktop/java.awt.EventDispatchThread.run(EventDispatchThread.java:92)
+Caused by: com.intellij.openapi.progress.CeProcessCanceledException: kotlinx.coroutines.JobCancellationException: Job was cancelled; job="ProjectImpl@858872267 container":supervisor:ChildScope{Cancelled}@641e4b87
+	at com.intellij.openapi.progress.Cancellation.checkCancelled(Cancellation.java:34)
+	at com.intellij.openapi.progress.impl.CoreProgressManager.doCheckCanceled(CoreProgressManager.java:158)
+	at com.intellij.openapi.progress.ProgressManager.checkCanceled(ProgressManager.java:333)
+	at com.intellij.openapi.progress.impl.ProgressManagerImpl$IdeIOCancellationCallback.checkCancelled(ProgressManagerImpl.java:263)
+	at com.intellij.util.io.IOCancellationCallbackHolder.checkCancelled(IOCancellationCallbackHolder.kt:23)
+	at com.intellij.util.io.PersistentHashMapValueStorage.checkCancellation(PersistentHashMapValueStorage.java:686)
+	at com.intellij.util.io.PersistentHashMapValueStorage.readBytes(PersistentHashMapValueStorage.java:565)
+	at com.intellij.util.io.PersistentMapImpl.doGet(PersistentMapImpl.java:684)
+	at com.intellij.util.io.PersistentMapImpl.get(PersistentMapImpl.java:621)
+	at com.intellij.ui.svg.SvgCacheManager.loadFromCache(SvgCacheManager.kt:178)
+	at com.intellij.ui.icons.RasterizedImageDataLoaderKt.loadSvgFromClassResource-RA_vzyY(RasterizedImageDataLoader.kt:319)
+	at com.intellij.ui.icons.RasterizedImageDataLoaderKt.loadPatched(RasterizedImageDataLoader.kt:262)
+	at com.intellij.ui.icons.RasterizedImageDataLoaderKt.access$loadPatched(RasterizedImageDataLoader.kt:1)
+	at com.intellij.ui.icons.PatchedRasterizedImageDataLoader.loadImage(RasterizedImageDataLoader.kt:143)
+	at com.intellij.ui.icons.CachedImageIcon.loadImage-Xbo1f9k$intellij_platform_util_ui(CachedImageIcon.kt:327)
+	at com.intellij.ui.icons.ScaledIconCache.loadIcon-GvFvY-8(ScaledIconCache.kt:58)
+	at com.intellij.ui.icons.ScaledIconCache.getCachedIcon-BVbfYdY(ScaledIconCache.kt:43)
+	at com.intellij.ui.icons.CachedImageIcon.resolveActualIcon(CachedImageIcon.kt:163)
+	at com.intellij.ui.icons.CachedImageIcon.getIconWidth(CachedImageIcon.kt:124)
+	at com.intellij.ui.icons.CustomIconUtilKt.loadIconCustomVersionOrScale(customIconUtil.kt:65)
+	at com.intellij.openapi.wm.impl.SquareStripeButtonKt.scaleIcon(SquareStripeButton.kt:290)
+	at com.intellij.openapi.wm.impl.SquareStripeButtonKt.access$scaleIcon(SquareStripeButton.kt:1)
+	at com.intellij.openapi.wm.impl.SquareStripeButton.updatePresentation(SquareStripeButton.kt:223)
+	at com.intellij.toolWindow.ToolWindowPaneNewButtonManager$createStripeButton$manager$1.updateIcon(ToolWindowPaneNewButtonManager.kt:170)
+	at com.intellij.openapi.wm.impl.ToolWindowManagerImpl.toolWindowPropertyChanged(ToolWindowManagerImpl.kt:2289)
+	at com.jetbrains.rdserver.toolWindow.BackendServerToolWindowManager.toolWindowPropertyChanged(BackendServerToolWindowManager.kt:319)
+	at com.intellij.openapi.wm.impl.ToolWindowImpl.setIcon(ToolWindowImpl.kt:483)
+	at com.intellij.notification.impl.ProjectNotificationModel.updateToolWindow$lambda$9(NotificationsToolWindow.kt:1873)
+	at com.intellij.util.ui.EdtInvocationManager.invokeLaterIfNeeded(EdtInvocationManager.java:33)
+	at com.intellij.util.ui.UIUtil.invokeLaterIfNeeded(UIUtil.java:1983)
+	at com.intellij.notification.impl.ProjectNotificationModel.updateToolWindow(NotificationsToolWindow.kt:1861)
+	at com.intellij.notification.impl.ProjectNotificationModel.expire$lambda$3(NotificationsToolWindow.kt:1828)
+	at com.intellij.notification.impl.ApplicationNotificationModel.expire(NotificationsToolWindow.kt:1727)
+	at com.intellij.notification.impl.NotificationsToolWindowFactory$Companion.expire(NotificationsToolWindow.kt:86)
+	at com.intellij.notification.impl.NotificationsManagerImpl.lambda$expire$0(NotificationsManagerImpl.java:106)
+	at com.intellij.util.ui.EdtInvocationManager.invokeLaterIfNeeded(EdtInvocationManager.java:33)
+	at com.intellij.util.ui.UIUtil.invokeLaterIfNeeded(UIUtil.java:1983)
+	at com.intellij.notification.impl.NotificationsManagerImpl.expire(NotificationsManagerImpl.java:105)
+	at com.intellij.notification.Notification.expire(Notification.java:350)
+	at com.intellij.notification.Notifications$Bus.lambda$doNotify$3(Notifications.java:97)
+	at com.intellij.openapi.util.ObjectTree.runWithTrace(ObjectTree.java:130)
+	at com.intellij.openapi.util.ObjectTree.executeAllChildren(ObjectTree.java:146)
+	at com.intellij.openapi.util.Disposer.disposeChildren(Disposer.java:201)
+	at com.intellij.serviceContainer.ComponentManagerImpl$startDispose$1.invoke(ComponentManagerImpl.kt:1141)
+	at com.intellij.serviceContainer.ComponentManagerImpl$startDispose$1.invoke(ComponentManagerImpl.kt:1140)
+	at com.intellij.util.Suppressions.runSuppressing(suppressions.kt:15)
+	at com.intellij.serviceContainer.ComponentManagerImpl.startDispose(ComponentManagerImpl.kt:1140)
+	at com.intellij.openapi.project.impl.ProjectManagerImpl.closeProject$lambda$15(ProjectManagerImpl.kt:402)
+	at com.intellij.openapi.application.impl.RwLockHolder.runWriteAction(RwLockHolder.kt:344)
+	at com.intellij.openapi.application.impl.ApplicationImpl.runWriteAction(ApplicationImpl.java:883)
+	at com.intellij.openapi.project.impl.ProjectManagerImpl.closeProject(ProjectManagerImpl.kt:395)
+	at com.intellij.openapi.project.impl.ProjectManagerImpl.closeProject$default(ProjectManagerImpl.kt:320)
+	at com.intellij.openapi.project.impl.ProjectManagerImpl.closeAndDisposeAllProjects(ProjectManagerImpl.kt:313)
+	at com.intellij.openapi.application.impl.ApplicationImpl.lambda$destructApplication$4(ApplicationImpl.java:606)
+	at com.intellij.platform.diagnostic.telemetry.helpers.TraceKt.computeWithSpanIgnoreThrows(trace.kt:105)
+	at com.intellij.platform.diagnostic.telemetry.helpers.TraceUtil.computeWithSpanThrows(TraceUtil.java:20)
+	at com.intellij.openapi.application.impl.ApplicationImpl.destructApplication(ApplicationImpl.java:605)
+	... 71 more
+Caused by: kotlinx.coroutines.JobCancellationException: Job was cancelled; job="ProjectImpl@858872267 container":supervisor:ChildScope{Cancelled}@641e4b87
+2025-06-05 13:42:43,394 [17124436]   WARN - #c.i.s.ComponentManagerImpl - com.maddyhome.idea.vim.ui.ex.ExEntryPanelService is initialized during dispose
+java.lang.IllegalStateException: com.maddyhome.idea.vim.ui.ex.ExEntryPanelService is initialized during dispose
+	at com.intellij.serviceContainer.ComponentManagerImpl.doGetService(ComponentManagerImpl.kt:751)
+	at com.intellij.serviceContainer.ComponentManagerImpl.getService(ComponentManagerImpl.kt:698)
+	at com.maddyhome.idea.vim.newapi.IjVimInjector.getCommandLine(IjVimInjector.kt:351)
+	at com.maddyhome.idea.vim.VimPlugin.turnOffPlugin(VimPlugin.java:357)
+	at com.maddyhome.idea.vim.VimPlugin.dispose(VimPlugin.java:278)
+	at com.intellij.openapi.util.ObjectTree.runWithTrace(ObjectTree.java:130)
+	at com.intellij.openapi.util.ObjectTree.executeAll(ObjectTree.java:162)
+	at com.intellij.openapi.util.Disposer.dispose(Disposer.java:205)
+	at com.intellij.openapi.util.Disposer.dispose(Disposer.java:193)
+	at com.intellij.serviceContainer.ComponentManagerImpl.dispose(ComponentManagerImpl.kt:1159)
+	at com.intellij.openapi.application.impl.ApplicationImpl.dispose(ApplicationImpl.java:302)
+	at com.intellij.openapi.util.ObjectTree.runWithTrace(ObjectTree.java:130)
+	at com.intellij.openapi.util.ObjectTree.executeAll(ObjectTree.java:162)
+	at com.intellij.openapi.util.Disposer.dispose(Disposer.java:205)
+	at com.intellij.openapi.util.Disposer.dispose(Disposer.java:193)
+	at com.intellij.openapi.application.impl.ApplicationImpl.lambda$disposeContainer$0(ApplicationImpl.java:195)
+	at com.intellij.openapi.application.impl.RwLockHolder.runWriteAction(RwLockHolder.kt:344)
+	at com.intellij.openapi.application.impl.ApplicationImpl.runWriteAction(ApplicationImpl.java:883)
+	at com.intellij.openapi.application.impl.ApplicationImpl.disposeContainer(ApplicationImpl.java:193)
+	at com.intellij.openapi.application.impl.ApplicationImpl.destructApplication(ApplicationImpl.java:620)
+	at com.intellij.openapi.application.impl.ApplicationImpl.doExit(ApplicationImpl.java:551)
+	at com.intellij.openapi.application.impl.ApplicationImpl.exit(ApplicationImpl.java:536)
+	at com.intellij.openapi.application.impl.ApplicationImpl.restart(ApplicationImpl.java:515)
+	at com.intellij.openapi.application.impl.ApplicationImpl.restart(ApplicationImpl.java:485)
+	at com.intellij.openapi.application.impl.ApplicationImpl.restart(ApplicationImpl.java:473)
+	at com.intellij.ide.InvalidateCacheService.invalidateCachesAndRestart(InvalidateCacheService.java:34)
+	at com.intellij.ide.actions.InvalidateCachesAction.actionPerformed(InvalidateCachesAction.java:15)
+	at com.intellij.openapi.actionSystem.ex.ActionUtil.doPerformActionOrShowPopup(ActionUtil.kt:304)
+	at com.intellij.openapi.actionSystem.ex.ActionUtil.performActionDumbAwareWithCallbacks$lambda$4(ActionUtil.kt:275)
+	at com.intellij.openapi.actionSystem.impl.ActionManagerImpl.performWithActionCallbacks(ActionManagerImpl.kt:1166)
+	at com.intellij.openapi.actionSystem.ex.ActionUtil.performActionDumbAwareWithCallbacks(ActionUtil.kt:274)
+	at com.intellij.openapi.actionSystem.impl.ActionMenuItem.performAction$lambda$5(ActionMenuItem.kt:269)
+	at com.intellij.openapi.wm.impl.FocusManagerImpl.runOnOwnContext(FocusManagerImpl.java:227)
+	at com.intellij.openapi.actionSystem.impl.ActionMenuItem.performAction(ActionMenuItem.kt:260)
+	at com.intellij.openapi.actionSystem.impl.ActionMenuItem._init_$lambda$0(ActionMenuItem.kt:71)
+	at java.desktop/javax.swing.AbstractButton.fireActionPerformed(AbstractButton.java:1972)
+	at com.intellij.openapi.actionSystem.impl.ActionMenuItem.fireActionPerformed$lambda$4(ActionMenuItem.kt:102)
+	at com.intellij.openapi.application.TransactionGuardImpl.performActivity(TransactionGuardImpl.java:106)
+	at com.intellij.openapi.application.TransactionGuardImpl.performUserActivity(TransactionGuardImpl.java:95)
+	at com.intellij.openapi.actionSystem.impl.ActionMenuItem.fireActionPerformed(ActionMenuItem.kt:101)
+	at com.intellij.ui.plaf.beg.BegMenuItemUI.doClick(BegMenuItemUI.java:525)
+	at com.intellij.ui.plaf.beg.BegMenuItemUI$MyMouseInputHandler.mouseReleased(BegMenuItemUI.java:558)
+	at java.desktop/java.awt.Component.processMouseEvent(Component.java:6657)
+	at java.desktop/javax.swing.JComponent.processMouseEvent(JComponent.java:3385)
+	at java.desktop/java.awt.Component.processEvent(Component.java:6422)
+	at java.desktop/java.awt.Container.processEvent(Container.java:2266)
+	at java.desktop/java.awt.Component.dispatchEventImpl(Component.java:5027)
+	at java.desktop/java.awt.Container.dispatchEventImpl(Container.java:2324)
+	at java.desktop/java.awt.Component.dispatchEvent(Component.java:4855)
+	at java.desktop/java.awt.LightweightDispatcher.retargetMouseEvent(Container.java:4969)
+	at java.desktop/java.awt.LightweightDispatcher.processMouseEvent(Container.java:4583)
+	at java.desktop/java.awt.LightweightDispatcher.dispatchEvent(Container.java:4524)
+	at java.desktop/java.awt.Container.dispatchEventImpl(Container.java:2310)
+	at java.desktop/java.awt.Window.dispatchEventImpl(Window.java:2809)
+	at java.desktop/java.awt.Component.dispatchEvent(Component.java:4855)
+	at java.desktop/java.awt.EventQueue.dispatchEventImpl(EventQueue.java:794)
+	at java.desktop/java.awt.EventQueue$3.run(EventQueue.java:739)
+	at java.desktop/java.awt.EventQueue$3.run(EventQueue.java:733)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:399)
+	at java.base/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:86)
+	at java.base/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:97)
+	at java.desktop/java.awt.EventQueue$4.run(EventQueue.java:766)
+	at java.desktop/java.awt.EventQueue$4.run(EventQueue.java:764)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:399)
+	at java.base/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:86)
+	at java.desktop/java.awt.EventQueue.dispatchEvent(EventQueue.java:763)
+	at com.intellij.ide.IdeEventQueue.defaultDispatchEvent(IdeEventQueue.kt:699)
+	at com.intellij.ide.IdeEventQueue.dispatchMouseEvent(IdeEventQueue.kt:638)
+	at com.intellij.ide.IdeEventQueue._dispatchEvent$lambda$10(IdeEventQueue.kt:584)
+	at com.intellij.openapi.application.impl.RwLockHolder.runWithEnabledImplicitRead(RwLockHolder.kt:138)
+	at com.intellij.openapi.application.impl.RwLockHolder.runWithImplicitRead(RwLockHolder.kt:129)
+	at com.intellij.ide.IdeEventQueue._dispatchEvent(IdeEventQueue.kt:584)
+	at com.intellij.ide.IdeEventQueue.access$_dispatchEvent(IdeEventQueue.kt:77)
+	at com.intellij.ide.IdeEventQueue$dispatchEvent$processEventRunnable$1$1$1.compute(IdeEventQueue.kt:362)
+	at com.intellij.ide.IdeEventQueue$dispatchEvent$processEventRunnable$1$1$1.compute(IdeEventQueue.kt:361)
+	at com.intellij.openapi.progress.impl.CoreProgressManager.computePrioritized(CoreProgressManager.java:843)
+	at com.intellij.ide.IdeEventQueue$dispatchEvent$processEventRunnable$1$1.invoke(IdeEventQueue.kt:361)
+	at com.intellij.ide.IdeEventQueue$dispatchEvent$processEventRunnable$1$1.invoke(IdeEventQueue.kt:356)
+	at com.intellij.ide.IdeEventQueueKt.performActivity$lambda$1(IdeEventQueue.kt:1022)
+	at com.intellij.openapi.application.TransactionGuardImpl.performActivity(TransactionGuardImpl.java:114)
+	at com.intellij.ide.IdeEventQueueKt.performActivity(IdeEventQueue.kt:1022)
+	at com.intellij.ide.IdeEventQueue.dispatchEvent$lambda$7(IdeEventQueue.kt:356)
+	at com.intellij.openapi.application.impl.RwLockHolder.runIntendedWriteActionOnCurrentThread(RwLockHolder.kt:209)
+	at com.intellij.openapi.application.impl.ApplicationImpl.runIntendedWriteActionOnCurrentThread(ApplicationImpl.java:830)
+	at com.intellij.ide.IdeEventQueue.dispatchEvent(IdeEventQueue.kt:398)
+	at java.desktop/java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:207)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:128)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:117)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:113)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:105)
+	at java.desktop/java.awt.EventDispatchThread.run(EventDispatchThread.java:92)
+2025-06-05 13:42:43,438 [17124480] SEVERE - #c.i.o.u.ObjectTree - Not disposed pointer: file:///home/bogota/Desktop/examen/aardata
+com.intellij.openapi.util.TraceableDisposable$DisposalException: Not disposed pointer: file:///home/bogota/Desktop/examen/aardata
+	at com.intellij.openapi.util.TraceableDisposable.throwDisposalError(TraceableDisposable.java:48)
+	at com.intellij.openapi.vfs.impl.VirtualFilePointerManagerImpl.assertAllPointersDisposed(VirtualFilePointerManagerImpl.java:494)
+	at com.intellij.openapi.vfs.impl.VirtualFilePointerManagerImpl.dispose(VirtualFilePointerManagerImpl.java:121)
+	at com.intellij.openapi.util.ObjectTree.runWithTrace(ObjectTree.java:130)
+	at com.intellij.openapi.util.ObjectTree.executeAll(ObjectTree.java:162)
+	at com.intellij.openapi.util.Disposer.dispose(Disposer.java:205)
+	at com.intellij.openapi.util.Disposer.dispose(Disposer.java:193)
+	at com.intellij.serviceContainer.ComponentManagerImpl.dispose(ComponentManagerImpl.kt:1159)
+	at com.intellij.openapi.application.impl.ApplicationImpl.dispose(ApplicationImpl.java:302)
+	at com.intellij.openapi.util.ObjectTree.runWithTrace(ObjectTree.java:130)
+	at com.intellij.openapi.util.ObjectTree.executeAll(ObjectTree.java:162)
+	at com.intellij.openapi.util.Disposer.dispose(Disposer.java:205)
+	at com.intellij.openapi.util.Disposer.dispose(Disposer.java:193)
+	at com.intellij.openapi.application.impl.ApplicationImpl.lambda$disposeContainer$0(ApplicationImpl.java:195)
+	at com.intellij.openapi.application.impl.RwLockHolder.runWriteAction(RwLockHolder.kt:344)
+	at com.intellij.openapi.application.impl.ApplicationImpl.runWriteAction(ApplicationImpl.java:883)
+	at com.intellij.openapi.application.impl.ApplicationImpl.disposeContainer(ApplicationImpl.java:193)
+	at com.intellij.openapi.application.impl.ApplicationImpl.destructApplication(ApplicationImpl.java:620)
+	at com.intellij.openapi.application.impl.ApplicationImpl.doExit(ApplicationImpl.java:551)
+	at com.intellij.openapi.application.impl.ApplicationImpl.exit(ApplicationImpl.java:536)
+	at com.intellij.openapi.application.impl.ApplicationImpl.restart(ApplicationImpl.java:515)
+	at com.intellij.openapi.application.impl.ApplicationImpl.restart(ApplicationImpl.java:485)
+	at com.intellij.openapi.application.impl.ApplicationImpl.restart(ApplicationImpl.java:473)
+	at com.intellij.ide.InvalidateCacheService.invalidateCachesAndRestart(InvalidateCacheService.java:34)
+	at com.intellij.ide.actions.InvalidateCachesAction.actionPerformed(InvalidateCachesAction.java:15)
+	at com.intellij.openapi.actionSystem.ex.ActionUtil.doPerformActionOrShowPopup(ActionUtil.kt:304)
+	at com.intellij.openapi.actionSystem.ex.ActionUtil.performActionDumbAwareWithCallbacks$lambda$4(ActionUtil.kt:275)
+	at com.intellij.openapi.actionSystem.impl.ActionManagerImpl.performWithActionCallbacks(ActionManagerImpl.kt:1166)
+	at com.intellij.openapi.actionSystem.ex.ActionUtil.performActionDumbAwareWithCallbacks(ActionUtil.kt:274)
+	at com.intellij.openapi.actionSystem.impl.ActionMenuItem.performAction$lambda$5(ActionMenuItem.kt:269)
+	at com.intellij.openapi.wm.impl.FocusManagerImpl.runOnOwnContext(FocusManagerImpl.java:227)
+	at com.intellij.openapi.actionSystem.impl.ActionMenuItem.performAction(ActionMenuItem.kt:260)
+	at com.intellij.openapi.actionSystem.impl.ActionMenuItem._init_$lambda$0(ActionMenuItem.kt:71)
+	at java.desktop/javax.swing.AbstractButton.fireActionPerformed(AbstractButton.java:1972)
+	at com.intellij.openapi.actionSystem.impl.ActionMenuItem.fireActionPerformed$lambda$4(ActionMenuItem.kt:102)
+	at com.intellij.openapi.application.TransactionGuardImpl.performActivity(TransactionGuardImpl.java:106)
+	at com.intellij.openapi.application.TransactionGuardImpl.performUserActivity(TransactionGuardImpl.java:95)
+	at com.intellij.openapi.actionSystem.impl.ActionMenuItem.fireActionPerformed(ActionMenuItem.kt:101)
+	at com.intellij.ui.plaf.beg.BegMenuItemUI.doClick(BegMenuItemUI.java:525)
+	at com.intellij.ui.plaf.beg.BegMenuItemUI$MyMouseInputHandler.mouseReleased(BegMenuItemUI.java:558)
+	at java.desktop/java.awt.Component.processMouseEvent(Component.java:6657)
+	at java.desktop/javax.swing.JComponent.processMouseEvent(JComponent.java:3385)
+	at java.desktop/java.awt.Component.processEvent(Component.java:6422)
+	at java.desktop/java.awt.Container.processEvent(Container.java:2266)
+	at java.desktop/java.awt.Component.dispatchEventImpl(Component.java:5027)
+	at java.desktop/java.awt.Container.dispatchEventImpl(Container.java:2324)
+	at java.desktop/java.awt.Component.dispatchEvent(Component.java:4855)
+	at java.desktop/java.awt.LightweightDispatcher.retargetMouseEvent(Container.java:4969)
+	at java.desktop/java.awt.LightweightDispatcher.processMouseEvent(Container.java:4583)
+	at java.desktop/java.awt.LightweightDispatcher.dispatchEvent(Container.java:4524)
+	at java.desktop/java.awt.Container.dispatchEventImpl(Container.java:2310)
+	at java.desktop/java.awt.Window.dispatchEventImpl(Window.java:2809)
+	at java.desktop/java.awt.Component.dispatchEvent(Component.java:4855)
+	at java.desktop/java.awt.EventQueue.dispatchEventImpl(EventQueue.java:794)
+	at java.desktop/java.awt.EventQueue$3.run(EventQueue.java:739)
+	at java.desktop/java.awt.EventQueue$3.run(EventQueue.java:733)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:399)
+	at java.base/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:86)
+	at java.base/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:97)
+	at java.desktop/java.awt.EventQueue$4.run(EventQueue.java:766)
+	at java.desktop/java.awt.EventQueue$4.run(EventQueue.java:764)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:399)
+	at java.base/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:86)
+	at java.desktop/java.awt.EventQueue.dispatchEvent(EventQueue.java:763)
+	at com.intellij.ide.IdeEventQueue.defaultDispatchEvent(IdeEventQueue.kt:699)
+	at com.intellij.ide.IdeEventQueue.dispatchMouseEvent(IdeEventQueue.kt:638)
+	at com.intellij.ide.IdeEventQueue._dispatchEvent$lambda$10(IdeEventQueue.kt:584)
+	at com.intellij.openapi.application.impl.RwLockHolder.runWithEnabledImplicitRead(RwLockHolder.kt:138)
+	at com.intellij.openapi.application.impl.RwLockHolder.runWithImplicitRead(RwLockHolder.kt:129)
+	at com.intellij.ide.IdeEventQueue._dispatchEvent(IdeEventQueue.kt:584)
+	at com.intellij.ide.IdeEventQueue.access$_dispatchEvent(IdeEventQueue.kt:77)
+	at com.intellij.ide.IdeEventQueue$dispatchEvent$processEventRunnable$1$1$1.compute(IdeEventQueue.kt:362)
+	at com.intellij.ide.IdeEventQueue$dispatchEvent$processEventRunnable$1$1$1.compute(IdeEventQueue.kt:361)
+	at com.intellij.openapi.progress.impl.CoreProgressManager.computePrioritized(CoreProgressManager.java:843)
+	at com.intellij.ide.IdeEventQueue$dispatchEvent$processEventRunnable$1$1.invoke(IdeEventQueue.kt:361)
+	at com.intellij.ide.IdeEventQueue$dispatchEvent$processEventRunnable$1$1.invoke(IdeEventQueue.kt:356)
+	at com.intellij.ide.IdeEventQueueKt.performActivity$lambda$1(IdeEventQueue.kt:1022)
+	at com.intellij.openapi.application.TransactionGuardImpl.performActivity(TransactionGuardImpl.java:114)
+	at com.intellij.ide.IdeEventQueueKt.performActivity(IdeEventQueue.kt:1022)
+	at com.intellij.ide.IdeEventQueue.dispatchEvent$lambda$7(IdeEventQueue.kt:356)
+	at com.intellij.openapi.application.impl.RwLockHolder.runIntendedWriteActionOnCurrentThread(RwLockHolder.kt:209)
+	at com.intellij.openapi.application.impl.ApplicationImpl.runIntendedWriteActionOnCurrentThread(ApplicationImpl.java:830)
+	at com.intellij.ide.IdeEventQueue.dispatchEvent(IdeEventQueue.kt:398)
+	at java.desktop/java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:207)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:128)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:117)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:113)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:105)
+	at java.desktop/java.awt.EventDispatchThread.run(EventDispatchThread.java:92)
+2025-06-05 13:42:43,439 [17124481] SEVERE - #c.i.o.u.ObjectTree - PhpStorm 2024.1.4  Build #PS-241.18034.69
+2025-06-05 13:42:43,440 [17124482] SEVERE - #c.i.o.u.ObjectTree - JDK: 17.0.11; VM: OpenJDK 64-Bit Server VM; Vendor: JetBrains s.r.o.
+2025-06-05 13:42:43,440 [17124482] SEVERE - #c.i.o.u.ObjectTree - OS: Linux

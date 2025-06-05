@@ -1,0 +1,22 @@
+<?php
+
+namespace App\Service;
+
+use JetBrains\PhpStorm\NoReturn;
+use Vich\UploaderBundle\Mapping\PropertyMapping;
+use Vich\UploaderBundle\Naming\DirectoryNamerInterface;
+
+
+class CustomDirectoryNamer implements DirectoryNamerInterface
+{
+
+    /**
+     * @inheritDoc
+     */
+    #[NoReturn]
+    public function directoryName(object|array $object, PropertyMapping $mapping): string
+    {
+        dump("HALLO?");
+        dd($object, $mapping);
+    }
+}

@@ -61,7 +61,7 @@ class MediaObject
     #[Groups(['media_object:read'])]
     public ?string $contentUrl = null;
 
-    #[Vich\UploadableField(mapping: 'media_object', fileNameProperty: 'filePath')]
+    #[Vich\UploadableField(mapping: 'app_data', fileNameProperty: 'filePath')]
     #[Assert\NotNull]
     public ?File $file = null;
 

@@ -561,3 +561,363 @@ java.nio.file.FileSystemException: /opt/PhpStorm-241.18034.69/plugins/javascript
 2025-06-03 14:37:28,311 [14473901]   WARN - #c.i.o.o.e.ConfigurableCardPanel - auto-dispose 'Plugins' id=preferences.pluginManager
 2025-06-03 15:00:49,526 [15875116]   WARN - #git4idea.annotate.GitAnnotationProvider - Git annotations are empty for file /home/bogota/Desktop/examen/aardata/src/Entity/.gitignore in revision eda58301e4a0fef8a254995000a073919f0c867f
 2025-06-03 15:15:33,775 [16759365]   WARN - #c.i.s.ComponentManagerImpl - com.intellij.usages.UsageNodePresentation <clinit> requests com.intellij.usageView.UsageTreeColorsScheme instance. Class initialization must not depend on services. Consider using instance of the service on-demand instead.
+CompileCommand: exclude com/intellij/openapi/vfs/impl/FilePartNodeRoot.trieDescend bool exclude = true
+2025-06-05 08:57:19,971 [   1013]   WARN - #c.i.o.e.c.i.EditorColorsManagerImpl - resource not found: colorSchemes/DqlAddonsDefault.xml
+2025-06-05 08:57:19,983 [   1025]   WARN - #c.i.o.e.c.i.EditorColorsManagerImpl - resource not found: colorSchemes/DqlAddonsDarcula.xml
+2025-06-05 08:57:20,193 [   1235]   WARN - #c.i.s.ComponentManagerImpl - com.intellij.platform.ide.menu.GlobalMenuLinux <clinit> requests com.intellij.openapi.application.Experiments instance. Class initialization must not depend on services. Consider using instance of the service on-demand instead.
+2025-06-05 08:57:20,549 [   1591]   WARN - #c.i.w.i.i.WorkspaceModelCacheSerializer - Could not deserialize cache from /home/bogota/.cache/JetBrains/PhpStorm2024.1/global-model-cache/cache.data
+com.esotericsoftware.kryo.kryo5.KryoException: Buffer too small: capacity: 0, required: 1
+	at com.esotericsoftware.kryo.kryo5.io.ByteBufferInput.require(ByteBufferInput.java:166)
+	at com.esotericsoftware.kryo.kryo5.io.ByteBufferInput.readVarIntFlag(ByteBufferInput.java:444)
+	at com.esotericsoftware.kryo.kryo5.io.ByteBufferInput.readString(ByteBufferInput.java:709)
+	at com.intellij.platform.workspace.storage.impl.serialization.EntityStorageSerializerImpl.checkCacheVersionIdentical(EntityStorageSerializerImpl.kt:225)
+	at com.intellij.platform.workspace.storage.impl.serialization.EntityStorageSerializerImpl.deserializeCache-IoAF18A(EntityStorageSerializerImpl.kt:143)
+	at com.intellij.workspaceModel.ide.impl.WorkspaceModelCacheSerializer.loadCacheFromFile$intellij_platform_ide_impl(WorkspaceModelCacheSerializer.kt:53)
+	at com.intellij.workspaceModel.ide.impl.GlobalWorkspaceModelCacheImpl.loadCache(GlobalWorkspaceModelCacheImpl.kt:85)
+	at com.intellij.workspaceModel.ide.impl.GlobalWorkspaceModel.<init>(GlobalWorkspaceModel.kt:77)
+	at com.intellij.platform.instanceContainer.instantiation.InstantiateKt$instantiate$2.invoke(instantiate.kt:45)
+	at com.intellij.platform.instanceContainer.instantiation.InstantiateKt$instantiate$2.invoke(instantiate.kt:42)
+	at com.intellij.platform.instanceContainer.instantiation.InstantiateKt.instantiate(instantiate.kt:308)
+	at com.intellij.platform.instanceContainer.instantiation.InstantiateKt.instantiate(instantiate.kt:42)
+	at com.intellij.serviceContainer.LightServiceInstanceSupport$LightServiceInstanceInitializer.createInstance(LightServiceInstanceSupport.kt:47)
+	at com.intellij.platform.instanceContainer.internal.LazyInstanceHolder$initialize$1$1.invokeSuspend(LazyInstanceHolder.kt:162)
+	at com.intellij.platform.instanceContainer.internal.LazyInstanceHolder$initialize$1$1.invoke(LazyInstanceHolder.kt)
+	at com.intellij.platform.instanceContainer.internal.LazyInstanceHolder$initialize$1$1.invoke(LazyInstanceHolder.kt)
+	at kotlinx.coroutines.intrinsics.UndispatchedKt.startUndispatchedOrReturn(Undispatched.kt:78)
+	at kotlinx.coroutines.BuildersKt__Builders_commonKt.withContext(Builders.common.kt:167)
+	at kotlinx.coroutines.BuildersKt.withContext(Unknown Source)
+	at com.intellij.platform.instanceContainer.internal.LazyInstanceHolder$initialize$1.invokeSuspend(LazyInstanceHolder.kt:160)
+	at com.intellij.platform.instanceContainer.internal.LazyInstanceHolder$initialize$1.invoke(LazyInstanceHolder.kt)
+	at com.intellij.platform.instanceContainer.internal.LazyInstanceHolder$initialize$1.invoke(LazyInstanceHolder.kt)
+	at kotlinx.coroutines.intrinsics.UndispatchedKt.startCoroutineUndispatched(Undispatched.kt:44)
+	at kotlinx.coroutines.CoroutineStart.invoke(CoroutineStart.kt:112)
+	at kotlinx.coroutines.AbstractCoroutine.start(AbstractCoroutine.kt:126)
+	at kotlinx.coroutines.BuildersKt__Builders_commonKt.launch(Builders.common.kt:56)
+	at kotlinx.coroutines.BuildersKt.launch(Unknown Source)
+	at com.intellij.platform.instanceContainer.internal.LazyInstanceHolder.initialize(LazyInstanceHolder.kt:145)
+	at com.intellij.platform.instanceContainer.internal.LazyInstanceHolder.access$initialize(LazyInstanceHolder.kt:13)
+	at com.intellij.platform.instanceContainer.internal.LazyInstanceHolder.tryInitialize(LazyInstanceHolder.kt:135)
+	at com.intellij.platform.instanceContainer.internal.LazyInstanceHolder.getInstance(LazyInstanceHolder.kt:95)
+	at com.intellij.platform.instanceContainer.internal.LazyInstanceHolder.getInstance$suspendImpl(LazyInstanceHolder.kt:83)
+	at com.intellij.platform.instanceContainer.internal.LazyInstanceHolder.getInstance(LazyInstanceHolder.kt)
+	at com.intellij.platform.instanceContainer.internal.InstanceContainerImpl.instance(InstanceContainerImpl.kt:68)
+	at com.intellij.serviceContainer.ComponentManagerImpl.getServiceAsync(ComponentManagerImpl.kt:702)
+	at com.intellij.workspaceModel.ide.impl.legacyBridge.module.ModuleBridgeLoaderService$execute$2.invokeSuspend(ModuleBridgeLoaderService.kt:155)
+	at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:33)
+	at kotlinx.coroutines.UndispatchedCoroutine.afterResume(CoroutineContext.kt:270)
+	at kotlinx.coroutines.AbstractCoroutine.resumeWith(AbstractCoroutine.kt:102)
+	at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:46)
+	at kotlinx.coroutines.UndispatchedCoroutine.afterResume(CoroutineContext.kt:270)
+	at kotlinx.coroutines.AbstractCoroutine.resumeWith(AbstractCoroutine.kt:102)
+	at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:46)
+	at kotlinx.coroutines.DispatchedTask.run(DispatchedTask.kt:108)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler.runSafely(CoroutineScheduler.kt:584)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.executeTask(CoroutineScheduler.kt:793)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.runWorker(CoroutineScheduler.kt:697)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.run(CoroutineScheduler.kt:684)
+2025-06-05 08:57:24,305 [   5347]   WARN - #c.i.u.x.Binding - No accessors for com.jetbrains.php.testFramework.PhpTestFrameworkType. This means that state class cannot be serialized properly. Please see https://jb.gg/ij-psoc
+2025-06-05 08:57:25,696 [   6738]   WARN - #c.i.i.s.i.StartupManagerImpl - Migrate Ţஜ to ProjectActivity [Plugin: izhangzhihao.rainbow.brackets]
+com.intellij.diagnostic.PluginException: Migrate Ţஜ to ProjectActivity [Plugin: izhangzhihao.rainbow.brackets]
+	at com.intellij.ide.startup.impl.StartupManagerImpl.runPostStartupActivities(StartupManagerImpl.kt:276)
+	at com.intellij.ide.startup.impl.StartupManagerImpl.access$runPostStartupActivities(StartupManagerImpl.kt:68)
+	at com.intellij.ide.startup.impl.StartupManagerImpl$runPostStartupActivities$3$2.invokeSuspend(StartupManagerImpl.kt:191)
+	at com.intellij.ide.startup.impl.StartupManagerImpl$runPostStartupActivities$3$2.invoke(StartupManagerImpl.kt)
+	at com.intellij.ide.startup.impl.StartupManagerImpl$runPostStartupActivities$3$2.invoke(StartupManagerImpl.kt)
+	at kotlinx.coroutines.intrinsics.UndispatchedKt.startUndispatchedOrReturn(Undispatched.kt:78)
+	at kotlinx.coroutines.BuildersKt__Builders_commonKt.withContext(Builders.common.kt:167)
+	at kotlinx.coroutines.BuildersKt.withContext(Unknown Source)
+	at com.intellij.ide.startup.impl.StartupManagerImpl$runPostStartupActivities$3.invokeSuspend(StartupManagerImpl.kt:190)
+	at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:33)
+	at kotlinx.coroutines.UndispatchedCoroutine.afterResume(CoroutineContext.kt:270)
+	at kotlinx.coroutines.AbstractCoroutine.resumeWith(AbstractCoroutine.kt:102)
+	at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:46)
+	at kotlinx.coroutines.DispatchedTask.run(DispatchedTask.kt:108)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler.runSafely(CoroutineScheduler.kt:584)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.executeTask(CoroutineScheduler.kt:793)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.runWorker(CoroutineScheduler.kt:697)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.run(CoroutineScheduler.kt:684)
+2025-06-05 08:57:25,715 [   6757]   WARN - #c.i.i.s.i.StartupManagerImpl - Migrate dev.ekvedaras.laravelquery.services.Startup to ProjectActivity [Plugin: dev.ekvedaras.laravelquery]
+com.intellij.diagnostic.PluginException: Migrate dev.ekvedaras.laravelquery.services.Startup to ProjectActivity [Plugin: dev.ekvedaras.laravelquery]
+	at com.intellij.ide.startup.impl.StartupManagerImpl.runPostStartupActivities(StartupManagerImpl.kt:276)
+	at com.intellij.ide.startup.impl.StartupManagerImpl.access$runPostStartupActivities(StartupManagerImpl.kt:68)
+	at com.intellij.ide.startup.impl.StartupManagerImpl$runPostStartupActivities$3$2.invokeSuspend(StartupManagerImpl.kt:191)
+	at com.intellij.ide.startup.impl.StartupManagerImpl$runPostStartupActivities$3$2.invoke(StartupManagerImpl.kt)
+	at com.intellij.ide.startup.impl.StartupManagerImpl$runPostStartupActivities$3$2.invoke(StartupManagerImpl.kt)
+	at kotlinx.coroutines.intrinsics.UndispatchedKt.startUndispatchedOrReturn(Undispatched.kt:78)
+	at kotlinx.coroutines.BuildersKt__Builders_commonKt.withContext(Builders.common.kt:167)
+	at kotlinx.coroutines.BuildersKt.withContext(Unknown Source)
+	at com.intellij.ide.startup.impl.StartupManagerImpl$runPostStartupActivities$3.invokeSuspend(StartupManagerImpl.kt:190)
+	at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:33)
+	at kotlinx.coroutines.UndispatchedCoroutine.afterResume(CoroutineContext.kt:270)
+	at kotlinx.coroutines.AbstractCoroutine.resumeWith(AbstractCoroutine.kt:102)
+	at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:46)
+	at kotlinx.coroutines.DispatchedTask.run(DispatchedTask.kt:108)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler.runSafely(CoroutineScheduler.kt:584)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.executeTask(CoroutineScheduler.kt:793)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.runWorker(CoroutineScheduler.kt:697)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.run(CoroutineScheduler.kt:684)
+2025-06-05 08:57:25,718 [   6760]   WARN - #c.i.i.s.i.StartupManagerImpl - Migrate fr.adrienbrault.idea.symfony2plugin.webDeployment.WebDeploymentProjectComponent$PostStartupActivity to ProjectActivity [Plugin: fr.adrienbrault.idea.symfony2plugin]
+com.intellij.diagnostic.PluginException: Migrate fr.adrienbrault.idea.symfony2plugin.webDeployment.WebDeploymentProjectComponent$PostStartupActivity to ProjectActivity [Plugin: fr.adrienbrault.idea.symfony2plugin]
+	at com.intellij.ide.startup.impl.StartupManagerImpl.runPostStartupActivities(StartupManagerImpl.kt:276)
+	at com.intellij.ide.startup.impl.StartupManagerImpl.access$runPostStartupActivities(StartupManagerImpl.kt:68)
+	at com.intellij.ide.startup.impl.StartupManagerImpl$runPostStartupActivities$3$2.invokeSuspend(StartupManagerImpl.kt:191)
+	at com.intellij.ide.startup.impl.StartupManagerImpl$runPostStartupActivities$3$2.invoke(StartupManagerImpl.kt)
+	at com.intellij.ide.startup.impl.StartupManagerImpl$runPostStartupActivities$3$2.invoke(StartupManagerImpl.kt)
+	at kotlinx.coroutines.intrinsics.UndispatchedKt.startUndispatchedOrReturn(Undispatched.kt:78)
+	at kotlinx.coroutines.BuildersKt__Builders_commonKt.withContext(Builders.common.kt:167)
+	at kotlinx.coroutines.BuildersKt.withContext(Unknown Source)
+	at com.intellij.ide.startup.impl.StartupManagerImpl$runPostStartupActivities$3.invokeSuspend(StartupManagerImpl.kt:190)
+	at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:33)
+	at kotlinx.coroutines.UndispatchedCoroutine.afterResume(CoroutineContext.kt:270)
+	at kotlinx.coroutines.AbstractCoroutine.resumeWith(AbstractCoroutine.kt:102)
+	at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:46)
+	at kotlinx.coroutines.DispatchedTask.run(DispatchedTask.kt:108)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler.runSafely(CoroutineScheduler.kt:584)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.executeTask(CoroutineScheduler.kt:793)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.runWorker(CoroutineScheduler.kt:697)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.run(CoroutineScheduler.kt:684)
+2025-06-05 08:57:25,740 [   6782]   WARN - #c.i.i.s.i.StartupManagerImpl - Migrate ڣП to ProjectActivity [Plugin: izhangzhihao.rainbow.brackets]
+com.intellij.diagnostic.PluginException: Migrate ڣП to ProjectActivity [Plugin: izhangzhihao.rainbow.brackets]
+	at com.intellij.ide.startup.impl.StartupManagerImpl.runPostStartupActivities(StartupManagerImpl.kt:276)
+	at com.intellij.ide.startup.impl.StartupManagerImpl.access$runPostStartupActivities(StartupManagerImpl.kt:68)
+	at com.intellij.ide.startup.impl.StartupManagerImpl$runPostStartupActivities$3$2.invokeSuspend(StartupManagerImpl.kt:191)
+	at com.intellij.ide.startup.impl.StartupManagerImpl$runPostStartupActivities$3$2.invoke(StartupManagerImpl.kt)
+	at com.intellij.ide.startup.impl.StartupManagerImpl$runPostStartupActivities$3$2.invoke(StartupManagerImpl.kt)
+	at kotlinx.coroutines.intrinsics.UndispatchedKt.startUndispatchedOrReturn(Undispatched.kt:78)
+	at kotlinx.coroutines.BuildersKt__Builders_commonKt.withContext(Builders.common.kt:167)
+	at kotlinx.coroutines.BuildersKt.withContext(Unknown Source)
+	at com.intellij.ide.startup.impl.StartupManagerImpl$runPostStartupActivities$3.invokeSuspend(StartupManagerImpl.kt:190)
+	at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:33)
+	at kotlinx.coroutines.UndispatchedCoroutine.afterResume(CoroutineContext.kt:270)
+	at kotlinx.coroutines.AbstractCoroutine.resumeWith(AbstractCoroutine.kt:102)
+	at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:46)
+	at kotlinx.coroutines.DispatchedTask.run(DispatchedTask.kt:108)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler.runSafely(CoroutineScheduler.kt:584)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.executeTask(CoroutineScheduler.kt:793)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.runWorker(CoroutineScheduler.kt:697)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.run(CoroutineScheduler.kt:684)
+2025-06-05 08:58:19,426 [  60468]   WARN - #c.i.u.x.Binding - No accessors for com.intellij.ide.util.TipsUsageManager$State. This means that state class cannot be serialized properly. Please see https://jb.gg/ij-psoc
+2025-06-05 09:10:31,593 [ 792635]   WARN - #c.i.u.x.Binding - No accessors for com.intellij.platform.feedback.impl.state.DontShowAgainFeedbackState. This means that state class cannot be serialized properly. Please see https://jb.gg/ij-psoc
+2025-06-05 09:10:31,605 [ 792647]   WARN - #c.i.u.x.Binding - No accessors for com.intellij.platform.feedback.impl.state.CommonFeedbackSurveysState. This means that state class cannot be serialized properly. Please see https://jb.gg/ij-psoc
+2025-06-05 09:26:08,225 [1729267]   WARN - org.apache.velocity.deprecation - configuration key 'resource.loader' has been deprecated in favor of 'resource.loaders'
+2025-06-05 09:26:08,227 [1729269]   WARN - org.apache.velocity.deprecation - configuration key 'includes.resource.loader.instance' has been deprecated in favor of 'resource.loader.includes.instance'
+2025-06-05 09:28:21,711 [1862753]   WARN - #c.j.p.PhpIndex - Invalid Signature '.getRowIterator'
+2025-06-05 09:28:21,712 [1862754]   WARN - #c.j.p.PhpIndex - Invalid Signature '.getActiveSheet'
+2025-06-05 09:28:21,712 [1862754]   WARN - #c.j.p.PhpIndex - Invalid Signature '.getRowIterator'
+2025-06-05 09:28:21,712 [1862754]   WARN - #c.j.p.PhpIndex - Invalid Signature '.getRowIterator'
+2025-06-05 09:28:21,736 [1862778]   WARN - #c.j.p.PhpIndex - Invalid Signature '.getRowIterator.getCellIterator'
+2025-06-05 09:28:21,739 [1862781]   WARN - #c.j.p.PhpIndex - Invalid Signature '.getActiveSheet.getRowIterator'
+2025-06-05 09:28:21,872 [1862914]   WARN - #c.j.p.PhpIndex - Invalid Signature '\Doctrine\ORM\EntityRepository<#ᢐ\T.>'
+2025-06-05 09:28:21,882 [1862924]   WARN - #c.j.p.PhpIndex - Invalid Signature '\Doctrine\ORM\EntityRepository'
+2025-06-05 09:28:21,912 [1862954]   WARN - #c.j.p.PhpIndex - Invalid Signature '\array<\string,\mixed>'
+2025-06-05 09:28:53,390 [1894432]   WARN - #c.j.p.PhpIndex - Invalid Signature '.getRowIterator.getCellIterator'
+2025-06-05 09:28:53,398 [1894440]   WARN - #c.j.p.PhpIndex - Invalid Signature '.getActiveSheet.getRowIterator'
+2025-06-05 09:28:53,415 [1894457]   WARN - #c.j.p.PhpIndex - Invalid Signature '.getRowIterator'
+2025-06-05 09:28:53,416 [1894458]   WARN - #c.j.p.PhpIndex - Invalid Signature '.getActiveSheet'
+2025-06-05 09:28:53,438 [1894480]   WARN - #c.j.p.PhpIndex - Invalid Signature '\Doctrine\ORM\EntityRepository<#ᢐ\T.>'
+2025-06-05 09:28:53,441 [1894483]   WARN - #c.j.p.PhpIndex - Invalid Signature '\Doctrine\ORM\EntityRepository'
+2025-06-05 09:28:53,472 [1894514]   WARN - #c.j.p.PhpIndex - Invalid Signature '\array<\string,\mixed>'
+2025-06-05 09:28:54,531 [1895573]   WARN - #c.j.p.PhpIndex - Invalid Signature '.getRowIterator'
+2025-06-05 09:28:54,532 [1895574]   WARN - #c.j.p.PhpIndex - Invalid Signature '.getActiveSheet'
+2025-06-05 09:28:54,544 [1895586]   WARN - #c.j.p.PhpIndex - Invalid Signature '.getRowIterator.getCellIterator'
+2025-06-05 09:28:54,545 [1895587]   WARN - #c.j.p.PhpIndex - Invalid Signature '.getActiveSheet.getRowIterator'
+2025-06-05 09:29:00,646 [1901688]   WARN - #c.j.p.PhpIndex - Invalid Signature '.getRowIterator.getCellIterator'
+2025-06-05 09:29:00,647 [1901689]   WARN - #c.j.p.PhpIndex - Invalid Signature '.getActiveSheet.getRowIterator'
+2025-06-05 09:29:00,660 [1901702]   WARN - #c.j.p.PhpIndex - Invalid Signature '.getRowIterator'
+2025-06-05 09:29:00,660 [1901702]   WARN - #c.j.p.PhpIndex - Invalid Signature '.getActiveSheet'
+2025-06-05 09:29:00,660 [1901702]   WARN - #c.j.p.PhpIndex - Invalid Signature '.getRowIterator'
+2025-06-05 09:29:00,681 [1901723]   WARN - #c.j.p.PhpIndex - Invalid Signature '\Doctrine\ORM\EntityRepository<#ᢐ\T.>'
+2025-06-05 09:29:00,685 [1901727]   WARN - #c.j.p.PhpIndex - Invalid Signature '\Doctrine\ORM\EntityRepository'
+2025-06-05 09:29:00,710 [1901752]   WARN - #c.j.p.PhpIndex - Invalid Signature '\array<\string,\mixed>'
+2025-06-05 09:29:16,658 [1917700]   WARN - #c.j.p.PhpIndex - Invalid Signature '.getRowIterator.getCellIterator'
+2025-06-05 09:29:16,658 [1917700]   WARN - #c.j.p.PhpIndex - Invalid Signature '.getActiveSheet.getRowIterator'
+2025-06-05 09:29:16,662 [1917704]   WARN - #c.j.p.PhpIndex - Invalid Signature '.getRowIterator'
+2025-06-05 09:29:16,662 [1917704]   WARN - #c.j.p.PhpIndex - Invalid Signature '.getActiveSheet'
+2025-06-05 09:29:16,748 [1917790]   WARN - #c.j.p.PhpIndex - Invalid Signature '\Doctrine\ORM\EntityRepository<#ᢐ\T.>'
+2025-06-05 09:29:16,754 [1917796]   WARN - #c.j.p.PhpIndex - Invalid Signature '\Doctrine\ORM\EntityRepository'
+2025-06-05 09:29:16,782 [1917824]   WARN - #c.j.p.PhpIndex - Invalid Signature '\array<\string,\mixed>'
+2025-06-05 09:29:31,789 [1932831]   WARN - #c.j.p.PhpIndex - Invalid Signature '.getRowIterator.getCellIterator'
+2025-06-05 09:29:31,790 [1932832]   WARN - #c.j.p.PhpIndex - Invalid Signature '.getActiveSheet.getRowIterator'
+2025-06-05 09:29:31,801 [1932843]   WARN - #c.j.p.PhpIndex - Invalid Signature '.getRowIterator'
+2025-06-05 09:29:31,801 [1932843]   WARN - #c.j.p.PhpIndex - Invalid Signature '.getActiveSheet'
+2025-06-05 09:29:31,801 [1932843]   WARN - #c.j.p.PhpIndex - Invalid Signature '.getRowIterator'
+2025-06-05 09:29:31,828 [1932870]   WARN - #c.j.p.PhpIndex - Invalid Signature '\Doctrine\ORM\EntityRepository<#ᢐ\T.>'
+2025-06-05 09:29:31,835 [1932877]   WARN - #c.j.p.PhpIndex - Invalid Signature '\Doctrine\ORM\EntityRepository'
+2025-06-05 09:29:31,873 [1932915]   WARN - #c.j.p.PhpIndex - Invalid Signature '\array<\string,\mixed>'
+2025-06-05 09:29:46,539 [1947581]   WARN - #c.j.p.PhpIndex - Invalid Signature '.getRowIterator'
+2025-06-05 09:29:46,540 [1947582]   WARN - #c.j.p.PhpIndex - Invalid Signature '.getActiveSheet'
+2025-06-05 09:29:46,547 [1947589]   WARN - #c.j.p.PhpIndex - Invalid Signature '.getRowIterator.getCellIterator'
+2025-06-05 09:29:46,547 [1947589]   WARN - #c.j.p.PhpIndex - Invalid Signature '.getActiveSheet.getRowIterator'
+2025-06-05 09:30:01,543 [1962585]   WARN - #c.j.p.PhpIndex - Invalid Signature '.getRowIterator'
+2025-06-05 09:30:01,543 [1962585]   WARN - #c.j.p.PhpIndex - Invalid Signature '.getActiveSheet'
+2025-06-05 09:30:01,549 [1962591]   WARN - #c.j.p.PhpIndex - Invalid Signature '.getRowIterator.getCellIterator'
+2025-06-05 09:30:01,549 [1962591]   WARN - #c.j.p.PhpIndex - Invalid Signature '.getActiveSheet.getRowIterator'
+2025-06-05 09:30:16,582 [1977624]   WARN - #c.j.p.PhpIndex - Invalid Signature '.getRowIterator'
+2025-06-05 09:30:16,583 [1977625]   WARN - #c.j.p.PhpIndex - Invalid Signature '.getActiveSheet'
+2025-06-05 09:30:16,596 [1977638]   WARN - #c.j.p.PhpIndex - Invalid Signature '.getRowIterator.getCellIterator'
+2025-06-05 09:30:16,597 [1977639]   WARN - #c.j.p.PhpIndex - Invalid Signature '.getActiveSheet.getRowIterator'
+2025-06-05 09:30:31,570 [1992612]   WARN - #c.j.p.PhpIndex - Invalid Signature '.getRowIterator'
+2025-06-05 09:30:31,570 [1992612]   WARN - #c.j.p.PhpIndex - Invalid Signature '.getActiveSheet'
+2025-06-05 09:30:31,581 [1992623]   WARN - #c.j.p.PhpIndex - Invalid Signature '.getRowIterator.getCellIterator'
+2025-06-05 09:30:31,581 [1992623]   WARN - #c.j.p.PhpIndex - Invalid Signature '.getActiveSheet.getRowIterator'
+2025-06-05 09:30:46,567 [2007609]   WARN - #c.j.p.PhpIndex - Invalid Signature '.getRowIterator'
+2025-06-05 09:30:46,567 [2007609]   WARN - #c.j.p.PhpIndex - Invalid Signature '.getActiveSheet'
+2025-06-05 09:30:46,576 [2007618]   WARN - #c.j.p.PhpIndex - Invalid Signature '.getRowIterator.getCellIterator'
+2025-06-05 09:30:46,576 [2007618]   WARN - #c.j.p.PhpIndex - Invalid Signature '.getActiveSheet.getRowIterator'
+2025-06-05 09:31:01,589 [2022631]   WARN - #c.j.p.PhpIndex - Invalid Signature '.getRowIterator'
+2025-06-05 09:31:01,590 [2022632]   WARN - #c.j.p.PhpIndex - Invalid Signature '.getActiveSheet'
+2025-06-05 09:31:01,595 [2022637]   WARN - #c.j.p.PhpIndex - Invalid Signature '.getRowIterator.getCellIterator'
+2025-06-05 09:31:01,595 [2022637]   WARN - #c.j.p.PhpIndex - Invalid Signature '.getActiveSheet.getRowIterator'
+2025-06-05 09:31:16,592 [2037634]   WARN - #c.j.p.PhpIndex - Invalid Signature '.getRowIterator'
+2025-06-05 09:31:16,592 [2037634]   WARN - #c.j.p.PhpIndex - Invalid Signature '.getActiveSheet'
+2025-06-05 09:31:16,598 [2037640]   WARN - #c.j.p.PhpIndex - Invalid Signature '.getRowIterator.getCellIterator'
+2025-06-05 09:31:16,598 [2037640]   WARN - #c.j.p.PhpIndex - Invalid Signature '.getActiveSheet.getRowIterator'
+2025-06-05 09:31:31,619 [2052661]   WARN - #c.j.p.PhpIndex - Invalid Signature '.getRowIterator'
+2025-06-05 09:31:31,619 [2052661]   WARN - #c.j.p.PhpIndex - Invalid Signature '.getActiveSheet'
+2025-06-05 09:31:31,627 [2052669]   WARN - #c.j.p.PhpIndex - Invalid Signature '.getRowIterator.getCellIterator'
+2025-06-05 09:31:31,628 [2052670]   WARN - #c.j.p.PhpIndex - Invalid Signature '.getActiveSheet.getRowIterator'
+2025-06-05 09:31:46,601 [2067643]   WARN - #c.j.p.PhpIndex - Invalid Signature '.getRowIterator'
+2025-06-05 09:31:46,602 [2067644]   WARN - #c.j.p.PhpIndex - Invalid Signature '.getActiveSheet'
+2025-06-05 09:31:46,606 [2067648]   WARN - #c.j.p.PhpIndex - Invalid Signature '.getRowIterator.getCellIterator'
+2025-06-05 09:31:46,606 [2067648]   WARN - #c.j.p.PhpIndex - Invalid Signature '.getActiveSheet.getRowIterator'
+2025-06-05 09:32:01,612 [2082654]   WARN - #c.j.p.PhpIndex - Invalid Signature '.getRowIterator'
+2025-06-05 09:32:01,612 [2082654]   WARN - #c.j.p.PhpIndex - Invalid Signature '.getActiveSheet'
+2025-06-05 09:32:01,620 [2082662]   WARN - #c.j.p.PhpIndex - Invalid Signature '.getRowIterator.getCellIterator'
+2025-06-05 09:32:01,620 [2082662]   WARN - #c.j.p.PhpIndex - Invalid Signature '.getActiveSheet.getRowIterator'
+2025-06-05 09:32:16,646 [2097688]   WARN - #c.j.p.PhpIndex - Invalid Signature '.getRowIterator'
+2025-06-05 09:32:16,646 [2097688]   WARN - #c.j.p.PhpIndex - Invalid Signature '.getActiveSheet'
+2025-06-05 09:32:16,653 [2097695]   WARN - #c.j.p.PhpIndex - Invalid Signature '.getRowIterator.getCellIterator'
+2025-06-05 09:32:16,653 [2097695]   WARN - #c.j.p.PhpIndex - Invalid Signature '.getActiveSheet.getRowIterator'
+2025-06-05 09:32:31,626 [2112668]   WARN - #c.j.p.PhpIndex - Invalid Signature '.getRowIterator'
+2025-06-05 09:32:31,627 [2112669]   WARN - #c.j.p.PhpIndex - Invalid Signature '.getActiveSheet'
+2025-06-05 09:32:31,634 [2112676]   WARN - #c.j.p.PhpIndex - Invalid Signature '.getRowIterator.getCellIterator'
+2025-06-05 09:32:31,634 [2112676]   WARN - #c.j.p.PhpIndex - Invalid Signature '.getActiveSheet.getRowIterator'
+2025-06-05 09:32:46,829 [2127871]   WARN - #c.j.p.PhpIndex - Invalid Signature '.getRowIterator'
+2025-06-05 09:32:46,829 [2127871]   WARN - #c.j.p.PhpIndex - Invalid Signature '.getActiveSheet'
+2025-06-05 09:32:46,831 [2127873]   WARN - #c.j.p.PhpIndex - Invalid Signature '.getRowIterator.getCellIterator'
+2025-06-05 09:32:46,831 [2127873]   WARN - #c.j.p.PhpIndex - Invalid Signature '.getRowIterator.getCellIterator'
+2025-06-05 09:32:46,831 [2127873]   WARN - #c.j.p.PhpIndex - Invalid Signature '.getActiveSheet.getRowIterator'
+2025-06-05 09:32:46,831 [2127873]   WARN - #c.j.p.PhpIndex - Invalid Signature '.getActiveSheet.getRowIterator'
+2025-06-05 09:32:46,864 [2127906]   WARN - #c.j.p.PhpIndex - Invalid Signature '\Doctrine\ORM\EntityRepository<#ᢐ\T.>'
+2025-06-05 09:32:46,870 [2127912]   WARN - #c.j.p.PhpIndex - Invalid Signature '\Doctrine\ORM\EntityRepository'
+2025-06-05 09:32:46,905 [2127947]   WARN - #c.j.p.PhpIndex - Invalid Signature '\array<\string,\mixed>'
+2025-06-05 09:33:01,662 [2142704]   WARN - #c.j.p.PhpIndex - Invalid Signature '.getRowIterator'
+2025-06-05 09:33:01,663 [2142705]   WARN - #c.j.p.PhpIndex - Invalid Signature '.getActiveSheet'
+2025-06-05 09:33:01,668 [2142710]   WARN - #c.j.p.PhpIndex - Invalid Signature '.getRowIterator.getCellIterator'
+2025-06-05 09:33:01,669 [2142711]   WARN - #c.j.p.PhpIndex - Invalid Signature '.getActiveSheet.getRowIterator'
+2025-06-05 09:33:16,666 [2157708]   WARN - #c.j.p.PhpIndex - Invalid Signature '.getRowIterator'
+2025-06-05 09:33:16,666 [2157708]   WARN - #c.j.p.PhpIndex - Invalid Signature '.getActiveSheet'
+2025-06-05 09:33:16,673 [2157715]   WARN - #c.j.p.PhpIndex - Invalid Signature '.getRowIterator.getCellIterator'
+2025-06-05 09:33:16,673 [2157715]   WARN - #c.j.p.PhpIndex - Invalid Signature '.getActiveSheet.getRowIterator'
+2025-06-05 09:33:31,687 [2172729]   WARN - #c.j.p.PhpIndex - Invalid Signature '.getRowIterator'
+2025-06-05 09:33:31,687 [2172729]   WARN - #c.j.p.PhpIndex - Invalid Signature '.getActiveSheet'
+2025-06-05 09:33:31,694 [2172736]   WARN - #c.j.p.PhpIndex - Invalid Signature '.getRowIterator.getCellIterator'
+2025-06-05 09:33:31,695 [2172737]   WARN - #c.j.p.PhpIndex - Invalid Signature '.getActiveSheet.getRowIterator'
+2025-06-05 09:33:46,690 [2187732]   WARN - #c.j.p.PhpIndex - Invalid Signature '.getRowIterator'
+2025-06-05 09:33:46,691 [2187733]   WARN - #c.j.p.PhpIndex - Invalid Signature '.getActiveSheet'
+2025-06-05 09:33:46,707 [2187749]   WARN - #c.j.p.PhpIndex - Invalid Signature '.getRowIterator.getCellIterator'
+2025-06-05 09:33:46,707 [2187749]   WARN - #c.j.p.PhpIndex - Invalid Signature '.getActiveSheet.getRowIterator'
+2025-06-05 09:34:01,691 [2202733]   WARN - #c.j.p.PhpIndex - Invalid Signature '.getRowIterator'
+2025-06-05 09:34:01,691 [2202733]   WARN - #c.j.p.PhpIndex - Invalid Signature '.getActiveSheet'
+2025-06-05 09:34:01,697 [2202739]   WARN - #c.j.p.PhpIndex - Invalid Signature '.getRowIterator.getCellIterator'
+2025-06-05 09:34:01,698 [2202740]   WARN - #c.j.p.PhpIndex - Invalid Signature '.getActiveSheet.getRowIterator'
+2025-06-05 09:34:16,691 [2217733]   WARN - #c.j.p.PhpIndex - Invalid Signature '.getRowIterator'
+2025-06-05 09:34:16,691 [2217733]   WARN - #c.j.p.PhpIndex - Invalid Signature '.getActiveSheet'
+2025-06-05 09:34:16,695 [2217737]   WARN - #c.j.p.PhpIndex - Invalid Signature '.getRowIterator.getCellIterator'
+2025-06-05 09:34:16,695 [2217737]   WARN - #c.j.p.PhpIndex - Invalid Signature '.getActiveSheet.getRowIterator'
+2025-06-05 09:34:21,224 [2222266]   WARN - #c.j.p.PhpIndex - Invalid Signature '.getRowIterator'
+2025-06-05 09:34:21,224 [2222266]   WARN - #c.j.p.PhpIndex - Invalid Signature '.getActiveSheet'
+2025-06-05 09:34:21,229 [2222271]   WARN - #c.j.p.PhpIndex - Invalid Signature '.getRowIterator.getCellIterator'
+2025-06-05 09:34:21,229 [2222271]   WARN - #c.j.p.PhpIndex - Invalid Signature '.getActiveSheet.getRowIterator'
+2025-06-05 09:34:35,203 [2236245]   WARN - #c.j.p.PhpIndex - Invalid Signature '.getRowIterator'
+2025-06-05 09:34:35,203 [2236245]   WARN - #c.j.p.PhpIndex - Invalid Signature '.getActiveSheet'
+2025-06-05 09:34:35,203 [2236245]   WARN - #c.j.p.PhpIndex - Invalid Signature '.getRowIterator'
+2025-06-05 09:34:35,208 [2236250]   WARN - #c.j.p.PhpIndex - Invalid Signature '.getRowIterator.getCellIterator'
+2025-06-05 09:34:35,209 [2236251]   WARN - #c.j.p.PhpIndex - Invalid Signature '.getActiveSheet.getRowIterator'
+2025-06-05 09:34:35,208 [2236250]   WARN - #c.j.p.PhpIndex - Invalid Signature '.getRowIterator.getCellIterator'
+2025-06-05 09:34:35,270 [2236312]   WARN - #c.j.p.PhpIndex - Invalid Signature '\array<\string,\mixed>'
+2025-06-05 09:34:35,279 [2236321]   WARN - #c.j.p.PhpIndex - Invalid Signature '\Doctrine\ORM\EntityRepository<#ᢐ\T.>'
+2025-06-05 09:34:35,281 [2236323]   WARN - #c.j.p.PhpIndex - Invalid Signature '\Doctrine\ORM\EntityRepository'
+2025-06-05 09:34:36,137 [2237179]   WARN - #c.j.p.PhpIndex - Invalid Signature '.getRowIterator'
+2025-06-05 09:34:36,137 [2237179]   WARN - #c.j.p.PhpIndex - Invalid Signature '.getActiveSheet'
+2025-06-05 09:34:36,137 [2237179]   WARN - #c.j.p.PhpIndex - Invalid Signature '.getRowIterator'
+2025-06-05 09:34:36,144 [2237186]   WARN - #c.j.p.PhpIndex - Invalid Signature '.getRowIterator.getCellIterator'
+2025-06-05 09:34:36,144 [2237186]   WARN - #c.j.p.PhpIndex - Invalid Signature '.getActiveSheet.getRowIterator'
+2025-06-05 09:34:36,210 [2237252]   WARN - #c.j.p.PhpIndex - Invalid Signature '\array<\string,\mixed>'
+2025-06-05 09:34:36,231 [2237273]   WARN - #c.j.p.PhpIndex - Invalid Signature '\Doctrine\ORM\EntityRepository<#ᢐ\T.>'
+2025-06-05 09:34:36,233 [2237275]   WARN - #c.j.p.PhpIndex - Invalid Signature '\Doctrine\ORM\EntityRepository'
+2025-06-05 09:34:40,872 [2241914]   WARN - #c.j.p.PhpIndex - Invalid Signature '.getRowIterator'
+2025-06-05 09:34:40,877 [2241919]   WARN - #c.j.p.PhpIndex - Invalid Signature '.getActiveSheet'
+2025-06-05 09:34:40,887 [2241929]   WARN - #c.j.p.PhpIndex - Invalid Signature '.getRowIterator.getCellIterator'
+2025-06-05 09:34:40,888 [2241930]   WARN - #c.j.p.PhpIndex - Invalid Signature '.getActiveSheet.getRowIterator'
+2025-06-05 09:34:40,887 [2241929]   WARN - #c.j.p.PhpIndex - Invalid Signature '.getRowIterator.getCellIterator'
+2025-06-05 09:34:40,888 [2241930]   WARN - #c.j.p.PhpIndex - Invalid Signature '.getActiveSheet.getRowIterator'
+2025-06-05 09:34:41,643 [2242685]   WARN - #c.j.p.PhpIndex - Invalid Signature '.getRowIterator'
+2025-06-05 09:34:41,644 [2242686]   WARN - #c.j.p.PhpIndex - Invalid Signature '.getActiveSheet'
+2025-06-05 09:34:41,707 [2242749]   WARN - #c.j.p.PhpIndex - Invalid Signature '.getRowIterator.getCellIterator'
+2025-06-05 09:34:41,707 [2242749]   WARN - #c.j.p.PhpIndex - Invalid Signature '.getActiveSheet.getRowIterator'
+2025-06-05 09:34:41,769 [2242811]   WARN - #c.j.p.PhpIndex - Invalid Signature '\array<\string,\mixed>'
+2025-06-05 09:34:41,795 [2242837]   WARN - #c.j.p.PhpIndex - Invalid Signature '\Doctrine\ORM\EntityRepository<#ᢐ\T.>'
+2025-06-05 09:34:41,797 [2242839]   WARN - #c.j.p.PhpIndex - Invalid Signature '\Doctrine\ORM\EntityRepository'
+2025-06-05 09:35:19,595 [2280637]   WARN - #c.j.p.PhpIndex - Invalid Signature '.getRowIterator'
+2025-06-05 09:35:19,595 [2280637]   WARN - #c.j.p.PhpIndex - Invalid Signature '.getActiveSheet'
+2025-06-05 09:35:19,599 [2280641]   WARN - #c.j.p.PhpIndex - Invalid Signature '.getRowIterator.getCellIterator'
+2025-06-05 09:35:19,599 [2280641]   WARN - #c.j.p.PhpIndex - Invalid Signature '.getActiveSheet.getRowIterator'
+2025-06-05 09:35:34,617 [2295659]   WARN - #c.j.p.PhpIndex - Invalid Signature '.getRowIterator'
+2025-06-05 09:35:34,617 [2295659]   WARN - #c.j.p.PhpIndex - Invalid Signature '.getActiveSheet'
+2025-06-05 09:35:34,622 [2295664]   WARN - #c.j.p.PhpIndex - Invalid Signature '.getRowIterator.getCellIterator'
+2025-06-05 09:35:34,623 [2295665]   WARN - #c.j.p.PhpIndex - Invalid Signature '.getActiveSheet.getRowIterator'
+2025-06-05 09:35:49,609 [2310651]   WARN - #c.j.p.PhpIndex - Invalid Signature '.getRowIterator'
+2025-06-05 09:35:49,610 [2310652]   WARN - #c.j.p.PhpIndex - Invalid Signature '.getActiveSheet'
+2025-06-05 09:35:49,619 [2310661]   WARN - #c.j.p.PhpIndex - Invalid Signature '.getRowIterator.getCellIterator'
+2025-06-05 09:35:49,619 [2310661]   WARN - #c.j.p.PhpIndex - Invalid Signature '.getActiveSheet.getRowIterator'
+2025-06-05 09:36:04,828 [2325870]   WARN - #c.j.p.PhpIndex - Invalid Signature '.getRowIterator'
+2025-06-05 09:36:04,828 [2325870]   WARN - #c.j.p.PhpIndex - Invalid Signature '.getRowIterator'
+2025-06-05 09:36:04,828 [2325870]   WARN - #c.j.p.PhpIndex - Invalid Signature '.getActiveSheet'
+2025-06-05 09:36:04,828 [2325870]   WARN - #c.j.p.PhpIndex - Invalid Signature '.getActiveSheet'
+2025-06-05 09:36:04,828 [2325870]   WARN - #c.j.p.PhpIndex - Invalid Signature '.getRowIterator'
+2025-06-05 09:36:04,833 [2325875]   WARN - #c.j.p.PhpIndex - Invalid Signature '.getRowIterator.getCellIterator'
+2025-06-05 09:36:04,833 [2325875]   WARN - #c.j.p.PhpIndex - Invalid Signature '.getActiveSheet.getRowIterator'
+2025-06-05 09:36:04,875 [2325917]   WARN - #c.j.p.PhpIndex - Invalid Signature '\array<\string,\mixed>'
+2025-06-05 09:36:04,891 [2325933]   WARN - #c.j.p.PhpIndex - Invalid Signature '\Doctrine\ORM\EntityRepository<#ᢐ\T.>'
+2025-06-05 09:36:04,892 [2325934]   WARN - #c.j.p.PhpIndex - Invalid Signature '\Doctrine\ORM\EntityRepository'
+2025-06-05 09:36:19,638 [2340680]   WARN - #c.j.p.PhpIndex - Invalid Signature '.getRowIterator'
+2025-06-05 09:36:19,638 [2340680]   WARN - #c.j.p.PhpIndex - Invalid Signature '.getActiveSheet'
+2025-06-05 09:36:19,643 [2340685]   WARN - #c.j.p.PhpIndex - Invalid Signature '.getRowIterator.getCellIterator'
+2025-06-05 09:36:19,643 [2340685]   WARN - #c.j.p.PhpIndex - Invalid Signature '.getActiveSheet.getRowIterator'
+2025-06-05 09:36:34,744 [2355786]   WARN - #c.j.p.PhpIndex - Invalid Signature '.getRowIterator'
+2025-06-05 09:36:34,744 [2355786]   WARN - #c.j.p.PhpIndex - Invalid Signature '.getActiveSheet'
+2025-06-05 09:36:34,744 [2355786]   WARN - #c.j.p.PhpIndex - Invalid Signature '.getRowIterator'
+2025-06-05 09:36:34,744 [2355786]   WARN - #c.j.p.PhpIndex - Invalid Signature '.getRowIterator'
+2025-06-05 09:36:34,749 [2355791]   WARN - #c.j.p.PhpIndex - Invalid Signature '.getRowIterator.getCellIterator'
+2025-06-05 09:36:34,750 [2355792]   WARN - #c.j.p.PhpIndex - Invalid Signature '.getActiveSheet.getRowIterator'
+2025-06-05 09:36:34,749 [2355791]   WARN - #c.j.p.PhpIndex - Invalid Signature '.getRowIterator.getCellIterator'
+2025-06-05 09:36:34,781 [2355823]   WARN - #c.j.p.PhpIndex - Invalid Signature '\array<\string,\mixed>'
+2025-06-05 09:36:34,792 [2355834]   WARN - #c.j.p.PhpIndex - Invalid Signature '\Doctrine\ORM\EntityRepository<#ᢐ\T.>'
+2025-06-05 09:36:34,794 [2355836]   WARN - #c.j.p.PhpIndex - Invalid Signature '\Doctrine\ORM\EntityRepository'
+2025-06-05 09:36:49,713 [2370755]   WARN - #c.j.p.PhpIndex - Invalid Signature '.getRowIterator'
+2025-06-05 09:36:49,713 [2370755]   WARN - #c.j.p.PhpIndex - Invalid Signature '.getActiveSheet'
+2025-06-05 09:36:49,720 [2370762]   WARN - #c.j.p.PhpIndex - Invalid Signature '.getRowIterator.getCellIterator'
+2025-06-05 09:36:49,721 [2370763]   WARN - #c.j.p.PhpIndex - Invalid Signature '.getActiveSheet.getRowIterator'
+2025-06-05 09:37:04,677 [2385719]   WARN - #c.j.p.PhpIndex - Invalid Signature '.getRowIterator'
+2025-06-05 09:37:04,677 [2385719]   WARN - #c.j.p.PhpIndex - Invalid Signature '.getActiveSheet'
+2025-06-05 09:37:04,682 [2385724]   WARN - #c.j.p.PhpIndex - Invalid Signature '.getRowIterator.getCellIterator'
+2025-06-05 09:37:04,682 [2385724]   WARN - #c.j.p.PhpIndex - Invalid Signature '.getActiveSheet.getRowIterator'
+2025-06-05 09:37:19,714 [2400756]   WARN - #c.j.p.PhpIndex - Invalid Signature '.getRowIterator'
+2025-06-05 09:37:19,714 [2400756]   WARN - #c.j.p.PhpIndex - Invalid Signature '.getActiveSheet'
+2025-06-05 09:37:19,720 [2400762]   WARN - #c.j.p.PhpIndex - Invalid Signature '.getRowIterator.getCellIterator'
+2025-06-05 09:37:19,721 [2400763]   WARN - #c.j.p.PhpIndex - Invalid Signature '.getActiveSheet.getRowIterator'
+2025-06-05 09:37:30,234 [2411276]   WARN - #c.j.p.PhpIndex - Invalid Signature '.getRowIterator'
+2025-06-05 09:37:30,234 [2411276]   WARN - #c.j.p.PhpIndex - Invalid Signature '.getActiveSheet'
+2025-06-05 09:37:30,240 [2411282]   WARN - #c.j.p.PhpIndex - Invalid Signature '.getRowIterator.getCellIterator'
+2025-06-05 09:37:30,240 [2411282]   WARN - #c.j.p.PhpIndex - Invalid Signature '.getActiveSheet.getRowIterator'
+2025-06-05 09:39:27,953 [2528995]   WARN - #c.j.p.PhpIndex - Invalid Signature '\Doctrine\Bundle\DoctrineBundle\Repository\class-string<#ᢐ\T.>'
+2025-06-05 09:39:27,954 [2528996]   WARN - #c.j.p.PhpIndex - Invalid Signature '\Doctrine\ORM\Mapping\ClassMetadata<#ᢐ\T.>'
+2025-06-05 09:39:33,337 [2534379]   WARN - #c.j.p.PhpIndex - Invalid Signature '\Doctrine\Bundle\DoctrineBundle\Repository\class-string<#ᢐ\T.>'
+2025-06-05 09:39:33,337 [2534379]   WARN - #c.j.p.PhpIndex - Invalid Signature '\Doctrine\Bundle\DoctrineBundle\Repository\class-string<#ᢐ\T.>'
+2025-06-05 09:39:33,339 [2534381]   WARN - #c.j.p.PhpIndex - Invalid Signature '\Doctrine\ORM\Mapping\ClassMetadata<#ᢐ\T.>'
+2025-06-05 09:39:35,433 [2536475]   WARN - #c.j.p.PhpIndex - Invalid Signature '\Doctrine\Bundle\DoctrineBundle\Repository\class-string<#ᢐ\T.>'
+2025-06-05 09:39:35,434 [2536476]   WARN - #c.j.p.PhpIndex - Invalid Signature '\Doctrine\ORM\Mapping\ClassMetadata<#ᢐ\T.>'
+2025-06-05 09:39:36,959 [2538001]   WARN - #c.j.p.PhpIndex - Invalid Signature '\Doctrine\Bundle\DoctrineBundle\Repository\class-string<#ᢐ\T.>'
+2025-06-05 09:39:36,959 [2538001]   WARN - #c.j.p.PhpIndex - Invalid Signature '\Doctrine\Bundle\DoctrineBundle\Repository\class-string<#ᢐ\T.>'
+2025-06-05 09:39:36,964 [2538006]   WARN - #c.j.p.PhpIndex - Invalid Signature '\Doctrine\ORM\Mapping\ClassMetadata<#ᢐ\T.>'

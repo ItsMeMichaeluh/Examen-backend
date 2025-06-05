@@ -108,16 +108,11 @@ final readonly class ExcelImportProcessor implements ProcessorInterface
                 $skipRow = true;
             }
 
-            dump($errorMessages);
             if ($skipRow) {
-                dump('skipping row');
                 continue;
             }
 
             if ($dto->year !== $fileNameYear || $dto->week !== $fileNameWeek) {
-                dump('year or week dont match file name');
-                dump('fileWeek: ' . $fileNameWeek . ', valueWeek:'. $dto->week . ' fileYear: ' . $fileNameYear . ', valueYear:'. $dto->year);
-
                 continue;
             }
 

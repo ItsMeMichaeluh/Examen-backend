@@ -2,6 +2,8 @@
 
 namespace App\Entity;
 
+use ApiPlatform\Doctrine\Orm\Filter\BooleanFilter;
+use ApiPlatform\Metadata\ApiFilter;
 use ApiPlatform\Metadata\ApiResource;
 use ApiPlatform\Metadata\Get;
 use ApiPlatform\Metadata\GetCollection;
@@ -35,6 +37,7 @@ use Symfony\Component\Serializer\Attribute\Groups;
         'groups' => ['student:read']
     ]
 )]
+#[ApiFilter(BooleanFilter::class, properties: ['active'])]
 class Student
 {
     #[ORM\Id]

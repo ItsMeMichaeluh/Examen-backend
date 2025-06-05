@@ -10,7 +10,7 @@ use Doctrine\Migrations\AbstractMigration;
 /**
  * Auto-generated Migration: Please modify to your needs!
  */
-final class Version20250604131918 extends AbstractMigration
+final class Version20250605065811 extends AbstractMigration
 {
     public function getDescription(): string
     {
@@ -21,7 +21,7 @@ final class Version20250604131918 extends AbstractMigration
     {
         // this up() migration is auto-generated, please modify it to your needs
         $this->addSql(<<<'SQL'
-            CREATE TABLE attendance (id INT AUTO_INCREMENT NOT NULL, student_id VARCHAR(45) NOT NULL, year INT NOT NULL, week INT NOT NULL, scheduled INT NOT NULL, logged INT NOT NULL, INDEX IDX_6DE30D91CB944F1A (student_id), UNIQUE INDEX UNIQ_6DE30D91CB944F1ABB8273375B5A69C0 (student_id, year, week), PRIMARY KEY(id)) DEFAULT CHARACTER SET utf8mb4 COLLATE `utf8mb4_unicode_ci` ENGINE = InnoDB
+            CREATE TABLE attendance (id INT AUTO_INCREMENT NOT NULL, student_id VARCHAR(45) NOT NULL, year INT NOT NULL, week INT NOT NULL, scheduled INT NOT NULL, logged INT NOT NULL, INDEX IDX_6DE30D91CB944F1A (student_id), PRIMARY KEY(id)) DEFAULT CHARACTER SET utf8mb4 COLLATE `utf8mb4_unicode_ci` ENGINE = InnoDB
         SQL);
         $this->addSql(<<<'SQL'
             CREATE TABLE log (id INT AUTO_INCREMENT NOT NULL, media_object_id INT NOT NULL, UNIQUE INDEX UNIQ_8F3F68C564DE5A5 (media_object_id), PRIMARY KEY(id)) DEFAULT CHARACTER SET utf8mb4 COLLATE `utf8mb4_unicode_ci` ENGINE = InnoDB

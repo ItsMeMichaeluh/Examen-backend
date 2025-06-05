@@ -10,6 +10,7 @@ use App\Dto\ExcelImportDto;
 use App\Entity\Attendance;
 use App\Entity\MediaObject;
 use App\Entity\Student;
+use App\Repository\AttendanceRepository;
 use App\Repository\StudentRepository;
 use Doctrine\ORM\EntityManagerInterface;
 use PhpOffice\PhpSpreadsheet\IOFactory;
@@ -26,6 +27,7 @@ final readonly class ExcelImportProcessor implements ProcessorInterface
         private RequestStack           $requestStack,
         private ValidatorInterface $validator,
         private StudentRepository $studentRepository,
+        private AttendanceRepository $attendanceRepository,
     )
     {
     }
@@ -73,25 +75,21 @@ final readonly class ExcelImportProcessor implements ProcessorInterface
 
         $sheetData = [];
         foreach ($worksheet->getRowIterator(2) as $row) {
-            $rowData = [];
-            $cellIterator = $row->getCellIterator();
-            $cellIterator->setIterateOnlyExistingCells(true);
-
-            $columns = [
-                'student_number',
-                'year',
-                'week',
-                'scheduled',
-                'logged',
+            $rowIndex = $row->getRowIndex();
+            $rowData = [
+                'student_number' => $worksheet->getCell('A' . $rowIndex)->getValue(),
+                'year' => $worksheet->getCell('B' . $rowIndex)->getValue(),
+                'week' => $worksheet->getCell('C' . $rowIndex)->getValue(),
+                'scheduled' => $worksheet->getCell('D' . $rowIndex)->getValue(),
+                'logged' => $worksheet->getCell('E' . $rowIndex)->getValue(),
             ];
-            foreach ($cellIterator as $cell) {
-                $rowData[] = $cell->getValue();
-            }
-            $sheetData[] = array_combine($columns, $rowData);
+            $sheetData[] = $rowData;
         }
 
         foreach ($sheetData as $row) {
+            if (count(array_filter($row)) === 0) { continue; }
             $errorMessages = [];
+
             $dto = new ExcelImportDto();
             $dto->studentNumber = $row['student_number'];
             $dto->year = $row['year'];
@@ -100,7 +98,6 @@ final readonly class ExcelImportProcessor implements ProcessorInterface
             $dto->logged = $row['logged'];
 
             $errors = $this->validator->validate($dto);
-
             $skipRow = false;
             if ($errors->count() > 0) {
                 foreach ($errors as $error) {
@@ -114,7 +111,8 @@ final readonly class ExcelImportProcessor implements ProcessorInterface
                 continue;
             }
 
-            if (!$this->studentRepository->findOneBy(['studentNumber' => $row['student_number']])) {
+            $student = $this->studentRepository->findOneBy(['studentNumber' => $row['student_number']]);
+            if (!$student) {
                 $student = new Student();
                 $student->setStudentNumber($row['student_number']);
 
@@ -122,13 +120,25 @@ final readonly class ExcelImportProcessor implements ProcessorInterface
                 $this->entityManager->flush();
             }
 
-            $attendance = new Attendance();
-            $attendance->setStudent($this->studentRepository->find($row['student_number']));
-            $attendance->setYear($row['year']);
-            $attendance->setWeek($row['week']);
-            $attendance->setScheduled($row['scheduled']);
-            $attendance->setLogged($row['logged']);
+            $attendance = $this->attendanceRepository->findOneBy([
+                'student' => $student,
+                'year' => $row['year'],
+                'week' => $row['week'],
+            ]);
 
+            if ($attendance) {
+                if ($attendance->getScheduled() !== $row['scheduled'] || $attendance->getLogged() !== $row['logged']) {
+                    $attendance->setScheduled($row['scheduled']);
+                    $attendance->setLogged($row['logged']);
+                }
+            } else {
+                $attendance = new Attendance();
+                $attendance->setStudent($student);
+                $attendance->setYear($row['year']);
+                $attendance->setWeek($row['week']);
+                $attendance->setScheduled($row['scheduled']);
+                $attendance->setLogged($row['logged']);
+            }
             $this->entityManager->persist($attendance);
         }
 

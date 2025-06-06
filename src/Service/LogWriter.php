@@ -4,7 +4,7 @@ namespace App\Service;
 
 use App\Entity\Log;
 use App\Entity\MediaObject;
-use App\Enum\LogTypeEnum;
+use App\Enum\LogDirEnum;
 use Doctrine\ORM\EntityManagerInterface;
 use Symfony\Component\Filesystem\Filesystem;
 
@@ -14,7 +14,7 @@ class LogWriter
         private EntityManagerInterface $entityManager,
     ) {}
 
-    public function CreateEntry(LogTypeEnum $type, array $logLines)
+    public function CreateEntry(LogDirEnum $type, array $logLines)
     {
         $log = new Log();
         $log->setType($type);

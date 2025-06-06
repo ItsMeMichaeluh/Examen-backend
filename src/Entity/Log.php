@@ -3,12 +3,20 @@
 namespace App\Entity;
 
 use ApiPlatform\Metadata\ApiResource;
-use App\Enum\LogTypeEnum;
+use ApiPlatform\Metadata\Get;
+use ApiPlatform\Metadata\GetCollection;
+use App\Enum\LogDirEnum;
 use App\Repository\LogRepository;
 use Doctrine\ORM\Mapping as ORM;
 
 #[ORM\Entity(repositoryClass: LogRepository::class)]
-#[ApiResource]
+#[ApiResource(
+    operations: [
+        new GetCollection(),
+        new Get(),
+    ],
+
+)]
 class Log
 {
     #[ORM\Id]
@@ -19,9 +27,6 @@ class Log
     #[ORM\OneToOne(cascade: ['persist', 'remove'])]
     #[ORM\JoinColumn(nullable: false)]
     private ?MediaObject $mediaObject = null;
-
-    #[ORM\Column(type: 'string', enumType: LogTypeEnum::class)]
-    private ?LogTypeEnum $type = null;
 
     #[ORM\Column]
     private ?\DateTimeImmutable $createdAt = null;
@@ -44,16 +49,6 @@ class Log
         $this->mediaObject = $mediaObject;
 
         return $this;
-    }
-
-    public function getType(): ?LogTypeEnum
-    {
-        return $this->type;
-    }
-
-    public function setType(?LogTypeEnum $type): void
-    {
-        $this->type = $type;
     }
 
     public function getCreatedAt(): ?\DateTimeImmutable

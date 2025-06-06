@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Service;
+namespace App\Service\Namer;
 
 use JetBrains\PhpStorm\NoReturn;
 use Vich\UploaderBundle\Mapping\PropertyMapping;
@@ -16,7 +16,6 @@ class CustomDirectoryNamer implements DirectoryNamerInterface
     #[NoReturn]
     public function directoryName(object|array $object, PropertyMapping $mapping): string
     {
-        dump("HALLO?");
-        dd($object, $mapping);
+        dump($object, $mapping);
     }
 }

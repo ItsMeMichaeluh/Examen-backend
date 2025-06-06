@@ -10,6 +10,7 @@ use App\Dto\ExcelImportDto;
 use App\Entity\Attendance;
 use App\Entity\MediaObject;
 use App\Entity\Student;
+use App\Enum\MediaTypeEnum;
 use App\Repository\AttendanceRepository;
 use App\Repository\StudentRepository;
 use Doctrine\ORM\EntityManagerInterface;
@@ -63,6 +64,7 @@ final readonly class ExcelImportProcessor implements ProcessorInterface
 
         $mediaObject = new MediaObject();
         $mediaObject->file = $uploadedFile;
+        $mediaObject->type = MediaTypeEnum::tryFrom($request->get('type'));
 
 
         $fileName = $uploadedFile->getPathname();

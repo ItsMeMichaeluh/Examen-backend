@@ -14,9 +14,9 @@ use Symfony\Component\HttpKernel\Exception\NotFoundHttpException;
 class StudentGroupProcessor implements ProcessorInterface
 {
     public function __construct(
-        private EntityManagerInterface $entityManager,
-        private StudentRepository $studentRepository,
-        private GroupRepository $groupRepository,
+        private readonly EntityManagerInterface $entityManager,
+        private readonly StudentRepository      $studentRepository,
+        private readonly GroupRepository        $groupRepository,
     )
     {
     }

@@ -26,9 +26,9 @@ readonly class MediaObjectProcessor implements ProcessorInterface
                 return $this->excelImportProcessor->process($data, $operation, $uriVariables, $context);
             case MediaTypeEnum::LOG_ENTRY:
                 return $this->logEntryProcessor->process($data, $operation, $uriVariables, $context);
-            case null:
-                dump('hello');
-                $request->files->get('file');
+            case default:
+
+
         }
 
         throw new BadRequestHttpException('invalid data?');

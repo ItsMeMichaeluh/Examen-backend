@@ -21,16 +21,10 @@ readonly class MediaObjectProcessor implements ProcessorInterface
     public function process(mixed $data, Operation $operation, array $uriVariables = [], array $context = []): MediaObject
     {
         $request = $this->requestStack->getCurrentRequest();
-        switch (MediaTypeEnum::tryFrom($request->get('type'))) {
-            case MediaTypeEnum::EXCEL_IMPORT:
-                return $this->excelImportProcessor->process($data, $operation, $uriVariables, $context);
-            case MediaTypeEnum::LOG_ENTRY:
-                return $this->logEntryProcessor->process($data, $operation, $uriVariables, $context);
-            default:
-                throw new BadRequestHttpException('invalid data?');
-
-        }
-
-        throw new BadRequestHttpException('invalid data?');
+        return match (MediaTypeEnum::tryFrom($request->get('type'))) {
+            MediaTypeEnum::EXCEL_IMPORT => $this->excelImportProcessor->process($data, $operation, $uriVariables, $context),
+            MediaTypeEnum::LOG_ENTRY => $this->logEntryProcessor->process($data, $operation, $uriVariables, $context),
+            default => throw new BadRequestHttpException('invalid data?'),
+        };
     }
 }

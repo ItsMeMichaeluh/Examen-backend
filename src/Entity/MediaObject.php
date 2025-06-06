@@ -88,4 +88,24 @@ class MediaObject
     {
         return $this->id;
     }
+
+    public function getFile(): ?File
+    {
+        return $this->file;
+    }
+
+    public function setFile(?File $file): void
+    {
+        $this->file = $file;
+    }
+
+    public function getType(): ?MediaTypeEnum
+    {
+        return $this->type;
+    }
+
+    public function setType(?MediaTypeEnum $type): void
+    {
+        $this->type = $type;
+    }
 }

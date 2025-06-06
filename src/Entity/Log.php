@@ -34,6 +34,14 @@ class Log
     #[ORM\Column]
     private ?\DateTimeImmutable $updatedAt = null;
 
+    public function __construct()
+    {
+        if ($this->createdAt === null) {
+            $this->createdAt = new \DateTimeImmutable("now");
+        }
+        $this->updatedAt = new \DateTimeImmutable("now");
+    }
+
     public function getId(): ?int
     {
         return $this->id;

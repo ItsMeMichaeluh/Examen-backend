@@ -2,28 +2,57 @@
 
 namespace App\Service;
 
+use ApiPlatform\Metadata\Operation;
 use App\Entity\Log;
 use App\Entity\MediaObject;
-use App\Enum\LogDirEnum;
+use App\Enum\MediaTypeEnum;
+use App\State\MediaObjectProcessor;
 use Doctrine\ORM\EntityManagerInterface;
 use Symfony\Component\Filesystem\Filesystem;
 
-class LogWriter
+readonly class LogWriter
 {
     public function __construct(
         private EntityManagerInterface $entityManager,
     ) {}
 
-    public function CreateEntry(LogDirEnum $type, array $logLines)
+    public function CreateEntry(string $fileName, MediaTypeEnum $type, array $logLines): void
     {
-        $log = new Log();
-        $log->setType($type);
+        $fs = new Filesystem();
+        $path = sys_get_temp_dir().'/'.$fileName.'.txt';
+
+        $normalizedLogLines = array_map(
+        /**
+         * @throws \JsonException
+         */
+        function ($line) {
+            if (is_scalar($line)) {
+                return (string)$line;
+            }
+            return json_encode($line, JSON_THROW_ON_ERROR | JSON_UNESCAPED_UNICODE);
+        }, $logLines);
+        $fs->dumpFile($path, implode("\n", $normalizedLogLines));
 
         $mediaObject = new MediaObject();
-        $fs = new Filesystem();
-        $fs->dumpFile(__DIR__.'/var/temp/log.txt', ...$logLines);
-        $fs->remove(__DIR__.'/var/temp/log.txt');
-        // create log file and set mediaObject
-        // link mediaobject to log
+        $mediaObject->setFile(new \Symfony\Component\HttpFoundation\File\UploadedFile(
+            $path,
+            $fileName,
+            'text/plain',
+            null,
+            true // $test = true allows non-HTTP-uploaded files
+        ));
+
+        // Optionally set the type if MediaObject has a type or similar flag
+        $mediaObject->setType($type);
+        
+        $this->entityManager->persist($mediaObject);
+
+        $log = new Log();
+        $log->setMediaObject($mediaObject);
+
+        $this->entityManager->persist($log);
+        $this->entityManager->flush();
+
+        $fs->remove($path);
     }
 }

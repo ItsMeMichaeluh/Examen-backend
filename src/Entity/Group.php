@@ -7,11 +7,13 @@ use App\Repository\GroupRepository;
 use Doctrine\Common\Collections\ArrayCollection;
 use Doctrine\Common\Collections\Collection;
 use Doctrine\ORM\Mapping as ORM;
+use Symfony\Bridge\Doctrine\Validator\Constraints\UniqueEntity;
 use Symfony\Component\Serializer\Attribute\Groups;
 
 #[ORM\Entity(repositoryClass: GroupRepository::class)]
 #[ORM\Table(name: '`group`')]
 #[ORM\UniqueConstraint(name: 'UNIQ_GROUP_NAME', columns: ['name'])]
+#[UniqueEntity(fields: ['name'], message: 'The name is already in use.')]
 #[ApiResource(
     normalizationContext: ['groups' => ['group:read']],
     denormalizationContext: ['groups' => ['group:write']],

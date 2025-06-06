@@ -4,6 +4,7 @@ namespace App\Entity;
 
 use ApiPlatform\Doctrine\Orm\Filter\BooleanFilter;
 use ApiPlatform\Metadata\ApiFilter;
+use ApiPlatform\Metadata\ApiProperty;
 use ApiPlatform\Metadata\ApiResource;
 use ApiPlatform\Metadata\Get;
 use ApiPlatform\Metadata\GetCollection;
@@ -36,7 +37,9 @@ use Symfony\Component\Serializer\Attribute\SerializedName;
         ),
         new Patch(
             uriTemplate: '/students/{studentNumber}/group/{groupId}',
+            input: false,
             processor: StudentGroupProcessor::class,
+            read: false,
         ),
     ],
     normalizationContext: [
@@ -48,18 +51,22 @@ class Student
 {
     #[ORM\Id]
     #[ORM\Column(length: 45)]
-    #[Groups(['student:read'])]
+    #[Groups(['student:read', 'group:read'])]
+    #[ApiProperty(identifier: true)]
     private ?string $studentNumber = null;
 
     #[ORM\Column]
-    #[Groups(['student:read'])]
+    #[Groups(['student:read', 'group:read'])]
     private bool $active = true;
+
+    #[ORM\Column(nullable: true)]
+    private ?\DateTimeImmutable $StoppedAt = null;
 
     /**
      * @var Collection<int, Attendance>
      */
     #[ORM\OneToMany(targetEntity: Attendance::class, mappedBy: 'student', fetch: "EAGER")]
-    #[Groups(['student:read'])]
+    #[Groups(['student:read', 'group:read'])]
     private Collection $attendances;
 
     #[ORM\Column]
@@ -75,9 +82,6 @@ class Student
     #[Groups(['student:read'])]
     private ?Group $referencedGroup = null;
 
-    #[ORM\Column(nullable: true)]
-    private ?\DateTimeImmutable $StoppedAt = null;
-
     public function __construct()
     {
         if ($this->createdAt === null) {
@@ -92,23 +96,39 @@ class Student
         return $this->studentNumber;
     }
 
-    public function setStudentNumber(string $studentNumber): static
+    public function setStudentNumber(?string $studentNumber): void
     {
         $this->studentNumber = $studentNumber;
-
-        return $this;
     }
 
-    public function getActive(): ?bool
+    public function isActive(): bool
     {
         return $this->active;
     }
 
-    public function setActive(bool $active): static
+    public function setActive(bool $active): void
     {
         $this->active = $active;
+    }
 
-        return $this;
+    public function getStoppedAt(): ?\DateTimeImmutable
+    {
+        return $this->StoppedAt;
+    }
+
+    public function setStoppedAt(?\DateTimeImmutable $StoppedAt): void
+    {
+        $this->StoppedAt = $StoppedAt;
+    }
+
+    public function getAttendances(): Collection
+    {
+        return $this->attendances;
+    }
+
+    public function setAttendances(Collection $attendances): void
+    {
+        $this->attendances = $attendances;
     }
 
     public function getCreatedAt(): ?\DateTimeImmutable
@@ -116,46 +136,19 @@ class Student
         return $this->createdAt;
     }
 
+    public function setCreatedAt(?\DateTimeImmutable $createdAt): void
+    {
+        $this->createdAt = $createdAt;
+    }
+
     public function getUpdatedAt(): ?\DateTimeImmutable
     {
         return $this->updatedAt;
     }
 
-    public function setUpdatedAt(\DateTimeImmutable $updatedAt): static
+    public function setUpdatedAt(?\DateTimeImmutable $updatedAt): void
     {
         $this->updatedAt = $updatedAt;
-
-        return $this;
-    }
-
-    /**
-     * @return Collection<int, Attendance>
-     */
-    public function getAttendances(): Collection
-    {
-        return $this->attendances;
-    }
-
-    public function addAttendance(Attendance $attendance): static
-    {
-        if (!$this->attendances->contains($attendance)) {
-            $this->attendances->add($attendance);
-            $attendance->setStudent($this);
-        }
-
-        return $this;
-    }
-
-    public function removeAttendance(Attendance $attendance): static
-    {
-        if ($this->attendances->removeElement($attendance)) {
-            // set the owning side to null (unless already changed)
-            if ($attendance->getStudent() === $this) {
-                $attendance->setStudent(null);
-            }
-        }
-
-        return $this;
     }
 
     public function getReferencedGroup(): ?Group
@@ -166,17 +159,5 @@ class Student
     public function setReferencedGroup(?Group $referencedGroup): void
     {
         $this->referencedGroup = $referencedGroup;
-    }
-
-    public function getStoppedAt(): ?\DateTimeImmutable
-    {
-        return $this->StoppedAt;
-    }
-
-    public function setStoppedAt(?\DateTimeImmutable $StoppedAt): static
-    {
-        $this->StoppedAt = $StoppedAt;
-
-        return $this;
     }
 }

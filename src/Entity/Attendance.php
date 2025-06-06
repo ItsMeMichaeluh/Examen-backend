@@ -23,19 +23,19 @@ class Attendance
     private ?Student $student = null;
 
     #[ORM\Column]
-    #[Groups(['student:read'])]
+    #[Groups(['student:read', 'group:read'])]
     private ?int $logged = null;
 
     #[ORM\Column]
-    #[Groups(['student:read'])]
+    #[Groups(['student:read', 'group:read'])]
     private ?int $scheduled = null;
 
     #[ORM\Column]
-    #[Groups(['student:read'])]
+    #[Groups(['student:read', 'group:read'])]
     private ?int $week = null;
 
     #[ORM\Column]
-    #[Groups(['student:read'])]
+    #[Groups(['student:read', 'group:read'])]
     private ?int $year = null;
 
     public function getId(): ?int

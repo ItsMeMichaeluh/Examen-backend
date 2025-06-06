@@ -82,6 +82,7 @@ class MediaObject
 
     #[ApiProperty(writable: false)]
     #[ORM\Column(nullable: true)]
+    #[Groups(['log:read'])]
     public ?string $filePath = null;
 
     public function getId(): ?int

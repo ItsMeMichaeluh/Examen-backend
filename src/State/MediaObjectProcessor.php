@@ -10,12 +10,12 @@ use Symfony\Component\HttpFoundation\JsonResponse;
 use Symfony\Component\HttpFoundation\RequestStack;
 use Symfony\Component\HttpKernel\Exception\BadRequestHttpException;
 
-class MediaObjectProcessor implements ProcessorInterface
+readonly class MediaObjectProcessor implements ProcessorInterface
 {
     public function __construct(
-        private readonly ExcelImportProcessor $excelImportProcessor,
-        private readonly LogEntryProcessor $logEntryProcessor,
-        private readonly RequestStack $requestStack
+        private ExcelImportProcessor $excelImportProcessor,
+        private LogEntryProcessor    $logEntryProcessor,
+        private RequestStack         $requestStack
     ) {}
 
     public function process(mixed $data, Operation $operation, array $uriVariables = [], array $context = []): MediaObject

@@ -5,9 +5,9 @@ namespace App\Entity;
 use ApiPlatform\Metadata\ApiResource;
 use ApiPlatform\Metadata\Get;
 use ApiPlatform\Metadata\GetCollection;
-use App\Enum\LogDirEnum;
 use App\Repository\LogRepository;
 use Doctrine\ORM\Mapping as ORM;
+use Symfony\Component\Serializer\Attribute\Groups;
 
 #[ORM\Entity(repositoryClass: LogRepository::class)]
 #[ApiResource(
@@ -15,7 +15,9 @@ use Doctrine\ORM\Mapping as ORM;
         new GetCollection(),
         new Get(),
     ],
-
+    normalizationContext: [
+        'groups' => ['log:read']
+    ]
 )]
 class Log
 {
@@ -26,12 +28,15 @@ class Log
 
     #[ORM\OneToOne(cascade: ['persist', 'remove'])]
     #[ORM\JoinColumn(nullable: false)]
+    #[Groups(['log:read'])]
     private ?MediaObject $mediaObject = null;
 
     #[ORM\Column]
+    #[Groups(['log:read'])]
     private ?\DateTimeImmutable $createdAt = null;
 
     #[ORM\Column]
+    #[Groups(['log:read'])]
     private ?\DateTimeImmutable $updatedAt = null;
 
     public function __construct()

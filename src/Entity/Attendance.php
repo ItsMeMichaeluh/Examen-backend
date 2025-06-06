@@ -23,72 +23,29 @@ class Attendance
     private ?Student $student = null;
 
     #[ORM\Column]
-    #[Groups(['student:read'])]
-    private ?int $year = null;
+    #[Groups(['student:read', 'group:read'])]
+    private ?int $logged = null;
 
     #[ORM\Column]
-    #[Groups(['student:read'])]
-    private ?int $week = null;
-
-    #[ORM\Column]
-    #[Groups(['student:read'])]
+    #[Groups(['student:read', 'group:read'])]
     private ?int $scheduled = null;
 
     #[ORM\Column]
-    #[Groups(['student:read'])]
-    private ?int $logged = null;
+    #[Groups(['student:read', 'group:read'])]
+    private ?int $week = null;
+
+    #[ORM\Column]
+    #[Groups(['student:read', 'group:read'])]
+    private ?int $year = null;
 
     public function getId(): ?int
     {
         return $this->id;
     }
 
-    public function getYear(): ?int
+    public function setId(?int $id): void
     {
-        return $this->year;
-    }
-
-    public function setYear(int $year): static
-    {
-        $this->year = $year;
-
-        return $this;
-    }
-
-    public function getWeek(): ?int
-    {
-        return $this->week;
-    }
-
-    public function setWeek(int $week): static
-    {
-        $this->week = $week;
-
-        return $this;
-    }
-
-    public function getScheduled(): ?int
-    {
-        return $this->scheduled;
-    }
-
-    public function setScheduled(int $scheduled): static
-    {
-        $this->scheduled = $scheduled;
-
-        return $this;
-    }
-
-    public function getLogged(): ?int
-    {
-        return $this->logged;
-    }
-
-    public function setLogged(int $logged): static
-    {
-        $this->logged = $logged;
-
-        return $this;
+        $this->id = $id;
     }
 
     public function getStudent(): ?Student
@@ -96,10 +53,48 @@ class Attendance
         return $this->student;
     }
 
-    public function setStudent(?Student $student): static
+    public function setStudent(?Student $student): void
     {
         $this->student = $student;
+    }
 
-        return $this;
+    public function getLogged(): ?int
+    {
+        return $this->logged;
+    }
+
+    public function setLogged(?int $logged): void
+    {
+        $this->logged = $logged;
+    }
+
+    public function getScheduled(): ?int
+    {
+        return $this->scheduled;
+    }
+
+    public function setScheduled(?int $scheduled): void
+    {
+        $this->scheduled = $scheduled;
+    }
+
+    public function getWeek(): ?int
+    {
+        return $this->week;
+    }
+
+    public function setWeek(?int $week): void
+    {
+        $this->week = $week;
+    }
+
+    public function getYear(): ?int
+    {
+        return $this->year;
+    }
+
+    public function setYear(?int $year): void
+    {
+        $this->year = $year;
     }
 }

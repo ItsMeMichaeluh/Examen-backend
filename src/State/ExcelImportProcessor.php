@@ -26,9 +26,9 @@ final readonly class ExcelImportProcessor implements ProcessorInterface
     public function __construct(
         private EntityManagerInterface $entityManager,
         private RequestStack           $requestStack,
-        private ValidatorInterface $validator,
-        private StudentRepository $studentRepository,
-        private AttendanceRepository $attendanceRepository,
+        private ValidatorInterface     $validator,
+        private StudentRepository      $studentRepository,
+        private AttendanceRepository   $attendanceRepository,
     )
     {
     }
@@ -67,7 +67,6 @@ final readonly class ExcelImportProcessor implements ProcessorInterface
         $mediaObject->type = MediaTypeEnum::tryFrom($request->get('type'));
 
 
-
         $fileName = $uploadedFile->getPathname();
         $formats = [
             \PhpOffice\PhpSpreadsheet\IOFactory::READER_XLSX,
@@ -91,7 +90,9 @@ final readonly class ExcelImportProcessor implements ProcessorInterface
         }
 
         foreach ($sheetData as $row) {
-            if (count(array_filter($row)) === 0) { continue; }
+            if (count(array_filter($row)) === 0) {
+                continue;
+            }
             $errorMessages = [];
 
             $dto = new ExcelImportDto();
@@ -110,16 +111,11 @@ final readonly class ExcelImportProcessor implements ProcessorInterface
                 $skipRow = true;
             }
 
-            dump($errorMessages);
             if ($skipRow) {
-                dump('skipping row');
                 continue;
             }
 
             if ($dto->year !== $fileNameYear || $dto->week !== $fileNameWeek) {
-                dump('year or week dont match file name');
-                dump('fileWeek: ' . $fileNameWeek . ', valueWeek:'. $dto->week . ' fileYear: ' . $fileNameYear . ', valueYear:'. $dto->year);
-
                 continue;
             }
 

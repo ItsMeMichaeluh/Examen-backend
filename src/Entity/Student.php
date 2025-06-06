@@ -2,35 +2,71 @@
 
 namespace App\Entity;
 
+use ApiPlatform\Doctrine\Orm\Filter\BooleanFilter;
+use ApiPlatform\Metadata\ApiFilter;
+use ApiPlatform\Metadata\ApiProperty;
 use ApiPlatform\Metadata\ApiResource;
+use ApiPlatform\Metadata\Get;
+use ApiPlatform\Metadata\GetCollection;
+use ApiPlatform\Metadata\Patch;
 use App\Repository\StudentRepository;
+use App\State\StudentActivityProcessor;
+use App\State\StudentGroupProcessor;
 use Doctrine\Common\Collections\ArrayCollection;
 use Doctrine\Common\Collections\Collection;
 use Doctrine\ORM\Mapping as ORM;
 use Symfony\Component\Serializer\Attribute\Groups;
+use Symfony\Component\Serializer\Attribute\SerializedName;
 
 #[ORM\Entity(repositoryClass: StudentRepository::class)]
 #[ApiResource(
+    operations: [
+        new GetCollection(),
+        new Get(),
+        new Patch(
+            uriTemplate: '/students/{studentNumber}/start',
+            input: false,
+            processor: StudentActivityProcessor::class,
+            extraProperties: ['action' => 'start'],
+        ),
+        new Patch(
+            uriTemplate: '/students/{studentNumber}/stop',
+            input: false,
+            processor: StudentActivityProcessor::class,
+            extraProperties: ['action' => 'stop'],
+        ),
+        new Patch(
+            uriTemplate: '/students/{studentNumber}/group/{groupId}',
+            input: false,
+            processor: StudentGroupProcessor::class,
+            read: false,
+        ),
+    ],
     normalizationContext: [
         'groups' => ['student:read']
-    ]
+    ],
 )]
+#[ApiFilter(BooleanFilter::class, properties: ['active'])]
 class Student
 {
     #[ORM\Id]
     #[ORM\Column(length: 45)]
-    #[Groups(['student:read'])]
+    #[Groups(['student:read', 'group:read'])]
+    #[ApiProperty(identifier: true)]
     private ?string $studentNumber = null;
 
     #[ORM\Column]
-    #[Groups(['student:read'])]
+    #[Groups(['student:read', 'group:read'])]
     private bool $active = true;
+
+    #[ORM\Column(nullable: true)]
+    private ?\DateTimeImmutable $StoppedAt = null;
 
     /**
      * @var Collection<int, Attendance>
      */
     #[ORM\OneToMany(targetEntity: Attendance::class, mappedBy: 'student', fetch: "EAGER")]
-    #[Groups(['student:read'])]
+    #[Groups(['student:read', 'group:read'])]
     private Collection $attendances;
 
     #[ORM\Column]
@@ -40,6 +76,11 @@ class Student
     #[ORM\Column]
     #[Groups(['student:read'])]
     private ?\DateTimeImmutable $updatedAt = null;
+
+    #[ORM\ManyToOne(inversedBy: 'students')]
+    #[SerializedName('group')]
+    #[Groups(['student:read'])]
+    private ?Group $referencedGroup = null;
 
     public function __construct()
     {
@@ -55,23 +96,39 @@ class Student
         return $this->studentNumber;
     }
 
-    public function setStudentNumber(string $studentNumber): static
+    public function setStudentNumber(?string $studentNumber): void
     {
         $this->studentNumber = $studentNumber;
-
-        return $this;
     }
 
-    public function getActive(): ?bool
+    public function isActive(): bool
     {
         return $this->active;
     }
 
-    public function setActive(bool $active): static
+    public function setActive(bool $active): void
     {
         $this->active = $active;
+    }
 
-        return $this;
+    public function getStoppedAt(): ?\DateTimeImmutable
+    {
+        return $this->StoppedAt;
+    }
+
+    public function setStoppedAt(?\DateTimeImmutable $StoppedAt): void
+    {
+        $this->StoppedAt = $StoppedAt;
+    }
+
+    public function getAttendances(): Collection
+    {
+        return $this->attendances;
+    }
+
+    public function setAttendances(Collection $attendances): void
+    {
+        $this->attendances = $attendances;
     }
 
     public function getCreatedAt(): ?\DateTimeImmutable
@@ -79,38 +136,28 @@ class Student
         return $this->createdAt;
     }
 
+    public function setCreatedAt(?\DateTimeImmutable $createdAt): void
+    {
+        $this->createdAt = $createdAt;
+    }
+
     public function getUpdatedAt(): ?\DateTimeImmutable
     {
         return $this->updatedAt;
     }
 
-    /**
-     * @return Collection<int, Attendance>
-     */
-    public function getAttendances(): Collection
+    public function setUpdatedAt(?\DateTimeImmutable $updatedAt): void
     {
-        return $this->attendances;
+        $this->updatedAt = $updatedAt;
     }
 
-    public function addAttendance(Attendance $attendance): static
+    public function getReferencedGroup(): ?Group
     {
-        if (!$this->attendances->contains($attendance)) {
-            $this->attendances->add($attendance);
-            $attendance->setStudent($this);
-        }
-
-        return $this;
+        return $this->referencedGroup;
     }
 
-    public function removeAttendance(Attendance $attendance): static
+    public function setReferencedGroup(?Group $referencedGroup): void
     {
-        if ($this->attendances->removeElement($attendance)) {
-            // set the owning side to null (unless already changed)
-            if ($attendance->getStudent() === $this) {
-                $attendance->setStudent(null);
-            }
-        }
-
-        return $this;
+        $this->referencedGroup = $referencedGroup;
     }
 }

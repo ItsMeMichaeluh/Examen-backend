@@ -8,8 +8,8 @@ use ApiPlatform\Metadata\ApiProperty;
 use ApiPlatform\Metadata\ApiResource;
 use ApiPlatform\Metadata\Get;
 use ApiPlatform\Metadata\GetCollection;
-use ApiPlatform\Metadata\Link;
 use ApiPlatform\Metadata\Patch;
+use App\Dto\BulkStudentInputDto;
 use App\Repository\StudentRepository;
 use App\State\StudentActivityProcessor;
 use App\State\StudentGroupProcessor;
@@ -35,12 +35,6 @@ use Symfony\Component\Serializer\Attribute\SerializedName;
             input: false,
             processor: StudentActivityProcessor::class,
             extraProperties: ['action' => 'stop'],
-        ),
-        new Patch(
-            uriTemplate: '/students/{studentNumber}/group/{groupId}',
-            input: false,
-            read: false,
-            processor: StudentGroupProcessor::class,
         ),
     ],
     normalizationContext: [

@@ -10,10 +10,12 @@ use ApiPlatform\Metadata\GetCollection;
 use ApiPlatform\Metadata\Patch;
 use App\Repository\StudentRepository;
 use App\State\StudentActivityProcessor;
+use App\State\StudentGroupProcessor;
 use Doctrine\Common\Collections\ArrayCollection;
 use Doctrine\Common\Collections\Collection;
 use Doctrine\ORM\Mapping as ORM;
 use Symfony\Component\Serializer\Attribute\Groups;
+use Symfony\Component\Serializer\Attribute\SerializedName;
 
 #[ORM\Entity(repositoryClass: StudentRepository::class)]
 #[ApiResource(
@@ -32,10 +34,14 @@ use Symfony\Component\Serializer\Attribute\Groups;
             processor: StudentActivityProcessor::class,
             extraProperties: ['action' => 'stop'],
         ),
+        new Patch(
+            uriTemplate: '/students/{studentNumber}/group/{groupId}',
+            processor: StudentGroupProcessor::class,
+        ),
     ],
     normalizationContext: [
         'groups' => ['student:read']
-    ]
+    ],
 )]
 #[ApiFilter(BooleanFilter::class, properties: ['active'])]
 class Student
@@ -63,6 +69,14 @@ class Student
     #[ORM\Column]
     #[Groups(['student:read'])]
     private ?\DateTimeImmutable $updatedAt = null;
+
+    #[ORM\ManyToOne(inversedBy: 'students')]
+    #[SerializedName('group')]
+    #[Groups(['student:read'])]
+    private ?Group $referencedGroup = null;
+
+    #[ORM\Column(nullable: true)]
+    private ?\DateTimeImmutable $StoppedAt = null;
 
     public function __construct()
     {
@@ -140,6 +154,28 @@ class Student
                 $attendance->setStudent(null);
             }
         }
+
+        return $this;
+    }
+
+    public function getReferencedGroup(): ?Group
+    {
+        return $this->referencedGroup;
+    }
+
+    public function setReferencedGroup(?Group $referencedGroup): void
+    {
+        $this->referencedGroup = $referencedGroup;
+    }
+
+    public function getStoppedAt(): ?\DateTimeImmutable
+    {
+        return $this->StoppedAt;
+    }
+
+    public function setStoppedAt(?\DateTimeImmutable $StoppedAt): static
+    {
+        $this->StoppedAt = $StoppedAt;
 
         return $this;
     }

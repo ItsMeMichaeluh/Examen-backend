@@ -10,7 +10,7 @@ use Doctrine\Migrations\AbstractMigration;
 /**
  * Auto-generated Migration: Please modify to your needs!
  */
-final class Version20250605092927 extends AbstractMigration
+final class Version20250606083725 extends AbstractMigration
 {
     public function getDescription(): string
     {
@@ -24,19 +24,25 @@ final class Version20250605092927 extends AbstractMigration
             CREATE TABLE attendance (id INT AUTO_INCREMENT NOT NULL, student_id VARCHAR(45) NOT NULL, year INT NOT NULL, week INT NOT NULL, scheduled INT NOT NULL, logged INT NOT NULL, INDEX IDX_6DE30D91CB944F1A (student_id), UNIQUE INDEX UNIQ_6DE30D91CB944F1ABB8273375B5A69C0 (student_id, year, week), PRIMARY KEY(id)) DEFAULT CHARACTER SET utf8mb4 COLLATE `utf8mb4_unicode_ci` ENGINE = InnoDB
         SQL);
         $this->addSql(<<<'SQL'
+            CREATE TABLE `group` (id INT AUTO_INCREMENT NOT NULL, name VARCHAR(45) NOT NULL, UNIQUE INDEX UNIQ_GROUP_NAME (name), PRIMARY KEY(id)) DEFAULT CHARACTER SET utf8mb4 COLLATE `utf8mb4_unicode_ci` ENGINE = InnoDB
+        SQL);
+        $this->addSql(<<<'SQL'
             CREATE TABLE log (id INT AUTO_INCREMENT NOT NULL, media_object_id INT NOT NULL, UNIQUE INDEX UNIQ_8F3F68C564DE5A5 (media_object_id), PRIMARY KEY(id)) DEFAULT CHARACTER SET utf8mb4 COLLATE `utf8mb4_unicode_ci` ENGINE = InnoDB
         SQL);
         $this->addSql(<<<'SQL'
             CREATE TABLE media_object (id INT AUTO_INCREMENT NOT NULL, file_path VARCHAR(255) DEFAULT NULL, PRIMARY KEY(id)) DEFAULT CHARACTER SET utf8mb4 COLLATE `utf8mb4_unicode_ci` ENGINE = InnoDB
         SQL);
         $this->addSql(<<<'SQL'
-            CREATE TABLE student (student_number VARCHAR(45) NOT NULL, active TINYINT(1) NOT NULL, created_at DATETIME NOT NULL COMMENT '(DC2Type:datetime_immutable)', updated_at DATETIME NOT NULL COMMENT '(DC2Type:datetime_immutable)', PRIMARY KEY(student_number)) DEFAULT CHARACTER SET utf8mb4 COLLATE `utf8mb4_unicode_ci` ENGINE = InnoDB
+            CREATE TABLE student (student_number VARCHAR(45) NOT NULL, referenced_group_id INT DEFAULT NULL, active TINYINT(1) NOT NULL, created_at DATETIME NOT NULL COMMENT '(DC2Type:datetime_immutable)', updated_at DATETIME NOT NULL COMMENT '(DC2Type:datetime_immutable)', stopped_at DATETIME DEFAULT NULL COMMENT '(DC2Type:datetime_immutable)', INDEX IDX_B723AF3380E5831E (referenced_group_id), PRIMARY KEY(student_number)) DEFAULT CHARACTER SET utf8mb4 COLLATE `utf8mb4_unicode_ci` ENGINE = InnoDB
         SQL);
         $this->addSql(<<<'SQL'
             ALTER TABLE attendance ADD CONSTRAINT FK_6DE30D91CB944F1A FOREIGN KEY (student_id) REFERENCES student (student_number)
         SQL);
         $this->addSql(<<<'SQL'
             ALTER TABLE log ADD CONSTRAINT FK_8F3F68C564DE5A5 FOREIGN KEY (media_object_id) REFERENCES media_object (id)
+        SQL);
+        $this->addSql(<<<'SQL'
+            ALTER TABLE student ADD CONSTRAINT FK_B723AF3380E5831E FOREIGN KEY (referenced_group_id) REFERENCES `group` (id)
         SQL);
     }
 
@@ -50,7 +56,13 @@ final class Version20250605092927 extends AbstractMigration
             ALTER TABLE log DROP FOREIGN KEY FK_8F3F68C564DE5A5
         SQL);
         $this->addSql(<<<'SQL'
+            ALTER TABLE student DROP FOREIGN KEY FK_B723AF3380E5831E
+        SQL);
+        $this->addSql(<<<'SQL'
             DROP TABLE attendance
+        SQL);
+        $this->addSql(<<<'SQL'
+            DROP TABLE `group`
         SQL);
         $this->addSql(<<<'SQL'
             DROP TABLE log

@@ -31,10 +31,11 @@ final readonly class ExcelImportProcessor implements ProcessorInterface
         private StudentRepository      $studentRepository,
         private AttendanceRepository   $attendanceRepository,
         private LogWriter $logWriter
-    )
-    {
-    }
+    ) {}
 
+    /**
+     * @throws \JsonException
+     */
     public function process($data, Operation $operation, array $uriVariables = [], array $context = []): MediaObject
     {
         $request = $this->requestStack->getCurrentRequest();
@@ -44,13 +45,11 @@ final readonly class ExcelImportProcessor implements ProcessorInterface
         $dto->file = $uploadedFile;
 
         $errors = $this->validator->validate($dto);
-
         if (count($errors) > 0) {
             $errorMessages = [];
             foreach ($errors as $error) {
                 $errorMessages[] = $error->getPropertyPath() . ': ' . $error->getMessage();
             }
-
             throw new BadRequestHttpException(implode("\n", $errorMessages));
         }
 
@@ -61,13 +60,13 @@ final readonly class ExcelImportProcessor implements ProcessorInterface
         if (!preg_match_all('/^AAR_(\d{4})_W(\d{2})_.+\.(ods|xlsx)$/', $uploadedFile->getClientOriginalName(), $matches)) {
             throw new BadRequestHttpException('Dit AARbestand volgt niet de vaste naamgevingsconventie. Verwacht: AAR_[JAAR]_W[WEEK]_[CODE].[extensie]');
         }
+
         $fileNameYear = (int)$matches[1][0];
         $fileNameWeek = (int)$matches[2][0];
 
         $mediaObject = new MediaObject();
         $mediaObject->file = $uploadedFile;
         $mediaObject->type = MediaTypeEnum::tryFrom($request->get('type'));
-
 
         $fileName = $uploadedFile->getPathname();
         $formats = [
@@ -78,8 +77,10 @@ final readonly class ExcelImportProcessor implements ProcessorInterface
         $spreadsheet = IOFactory::load($fileName, IReader::READ_DATA_ONLY, $formats);
         $worksheet = $spreadsheet->getActiveSheet();
 
-        $sheetData = [];
         $logLines = [];
+        $logLines[] = sprintf('[%s] Start processing: %s', (new \DateTimeImmutable())->format('c'), $uploadedFile->getClientOriginalName());
+
+        $sheetData = [];
         foreach ($worksheet->getRowIterator(2) as $row) {
             $rowIndex = $row->getRowIndex();
             $rowData = [
@@ -90,16 +91,13 @@ final readonly class ExcelImportProcessor implements ProcessorInterface
                 'year' => $worksheet->getCell('E' . $rowIndex)->getValue(),
             ];
             $sheetData[] = $rowData;
-            $logLines[] = $rowData;
         }
 
-        $this->logWriter->CreateEntry('log.txt', MediaTypeEnum::LOG_ENTRY, $logLines);
-
-        foreach ($sheetData as $row) {
+        foreach ($sheetData as $index => $row) {
             if (count(array_filter($row)) === 0) {
+                $logLines[] = "Row $index skipped: empty row.";
                 continue;
             }
-            $errorMessages = [];
 
             $dto = new ExcelImportDto();
             $dto->studentNumber = $row['student_number'];
@@ -109,19 +107,15 @@ final readonly class ExcelImportProcessor implements ProcessorInterface
             $dto->logged = $row['logged'];
 
             $errors = $this->validator->validate($dto);
-            $skipRow = false;
             if ($errors->count() > 0) {
                 foreach ($errors as $error) {
-                    $errorMessages[] = $error->getPropertyPath() . ': ' . $error->getMessage();
+                    $logLines[] = sprintf("Row %d validation error - %s: %s", $index, $error->getPropertyPath(), $error->getMessage());
                 }
-                $skipRow = true;
-            }
-
-            if ($skipRow) {
                 continue;
             }
 
             if ($dto->year !== $fileNameYear || $dto->week !== $fileNameWeek) {
+                $logLines[] = sprintf("Row %d skipped: year/week mismatch (got Y%d/W%d, expected Y%d/W%d)", $index, $dto->year, $dto->week, $fileNameYear, $fileNameWeek);
                 continue;
             }
 
@@ -129,9 +123,9 @@ final readonly class ExcelImportProcessor implements ProcessorInterface
             if (!$student) {
                 $student = new Student();
                 $student->setStudentNumber($dto->studentNumber);
-
                 $this->entityManager->persist($student);
                 $this->entityManager->flush();
+                $logLines[] = "Row $index: new student created ({$dto->studentNumber})";
             }
 
             $attendance = $this->attendanceRepository->findOneBy([
@@ -141,14 +135,14 @@ final readonly class ExcelImportProcessor implements ProcessorInterface
             ]);
 
             if ($attendance) {
-                $existingScheduled = $attendance->getScheduled();
-                $existingLogged = $attendance->getLogged();
-
-                $existingPercentage = ($existingScheduled > 0) ? ($existingLogged / $existingScheduled) * 100 : 0;
+                $existingPercentage = ($attendance->getScheduled() > 0) ? ($attendance->getLogged() / $attendance->getScheduled()) * 100 : 0;
                 $newPercentage = ($dto->scheduled > 0) ? ($dto->logged / $dto->scheduled) * 100 : 0;
                 if ($newPercentage > $existingPercentage) {
                     $attendance->setScheduled($dto->scheduled);
                     $attendance->setLogged($dto->logged);
+                    $logLines[] = "Row $index: attendance updated for student {$dto->studentNumber} (new % > old %)";
+                } else {
+                    $logLines[] = "Row $index: attendance skipped (existing % >= new %)";
                 }
             } else {
                 $attendance = new Attendance();
@@ -157,9 +151,19 @@ final readonly class ExcelImportProcessor implements ProcessorInterface
                 $attendance->setWeek($dto->week);
                 $attendance->setScheduled($dto->scheduled);
                 $attendance->setLogged($dto->logged);
+                $logLines[] = "Row $index: new attendance record created for {$dto->studentNumber}";
             }
+
             $this->entityManager->persist($attendance);
         }
+
+        $logLines[] = sprintf('[%s] Processing finished.', (new \DateTimeImmutable())->format('c'));
+
+        $this->logWriter->CreateEntry(
+            pathinfo($uploadedFile->getClientOriginalName(), PATHINFO_FILENAME),
+            MediaTypeEnum::LOG_ENTRY,
+            $logLines
+        );
 
         $this->entityManager->persist($mediaObject);
         $this->entityManager->flush();

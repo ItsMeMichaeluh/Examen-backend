@@ -2,11 +2,10 @@
 
 namespace App\Service;
 
-use ApiPlatform\Metadata\Operation;
 use App\Entity\Log;
 use App\Entity\MediaObject;
+use App\Enum\LogTypeEnum;
 use App\Enum\MediaTypeEnum;
-use App\State\MediaObjectProcessor;
 use Doctrine\ORM\EntityManagerInterface;
 use Symfony\Component\Filesystem\Filesystem;
 
@@ -19,7 +18,7 @@ readonly class LogWriter
     public function CreateEntry(string $fileName, MediaTypeEnum $type, array $logLines): void
     {
         $fs = new Filesystem();
-        $path = sys_get_temp_dir().'/'.$fileName.'.txt';
+        $path = sprintf('%s/%s-%s.txt', sys_get_temp_dir(), LogTypeEnum::EXCEL_IMPORT->value, $fileName);
 
         $normalizedLogLines = array_map(
         /**
@@ -44,7 +43,7 @@ readonly class LogWriter
 
         // Optionally set the type if MediaObject has a type or similar flag
         $mediaObject->setType($type);
-        
+
         $this->entityManager->persist($mediaObject);
 
         $log = new Log();

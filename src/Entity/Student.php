@@ -8,6 +8,7 @@ use ApiPlatform\Metadata\ApiProperty;
 use ApiPlatform\Metadata\ApiResource;
 use ApiPlatform\Metadata\Get;
 use ApiPlatform\Metadata\GetCollection;
+use ApiPlatform\Metadata\Link;
 use ApiPlatform\Metadata\Patch;
 use App\Repository\StudentRepository;
 use App\State\StudentActivityProcessor;
@@ -38,8 +39,8 @@ use Symfony\Component\Serializer\Attribute\SerializedName;
         new Patch(
             uriTemplate: '/students/{studentNumber}/group/{groupId}',
             input: false,
-            processor: StudentGroupProcessor::class,
             read: false,
+            processor: StudentGroupProcessor::class,
         ),
     ],
     normalizationContext: [

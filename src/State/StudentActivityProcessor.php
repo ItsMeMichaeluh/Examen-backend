@@ -12,8 +12,8 @@ use Symfony\Component\HttpKernel\Exception\BadRequestHttpException;
 class StudentActivityProcessor implements ProcessorInterface
 {
     public function __construct(
-        private EntityManagerInterface $entityManager,
-        private StudentRepository $studentRepository,
+        private readonly EntityManagerInterface $entityManager,
+        private readonly StudentRepository      $studentRepository,
     )
     {
     }

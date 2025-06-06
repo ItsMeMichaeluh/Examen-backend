@@ -3,12 +3,20 @@
 namespace App\Entity;
 
 use ApiPlatform\Metadata\ApiResource;
-use App\Enum\LogTypeEnum;
+use ApiPlatform\Metadata\Get;
+use ApiPlatform\Metadata\GetCollection;
+use App\Enum\LogDirEnum;
 use App\Repository\LogRepository;
 use Doctrine\ORM\Mapping as ORM;
 
 #[ORM\Entity(repositoryClass: LogRepository::class)]
-#[ApiResource]
+#[ApiResource(
+    operations: [
+        new GetCollection(),
+        new Get(),
+    ],
+
+)]
 class Log
 {
     #[ORM\Id]
@@ -20,7 +28,19 @@ class Log
     #[ORM\JoinColumn(nullable: false)]
     private ?MediaObject $mediaObject = null;
 
-    private ?LogTypeEnum $type = null;
+    #[ORM\Column]
+    private ?\DateTimeImmutable $createdAt = null;
+
+    #[ORM\Column]
+    private ?\DateTimeImmutable $updatedAt = null;
+
+    public function __construct()
+    {
+        if ($this->createdAt === null) {
+            $this->createdAt = new \DateTimeImmutable("now");
+        }
+        $this->updatedAt = new \DateTimeImmutable("now");
+    }
 
     public function getId(): ?int
     {
@@ -35,6 +55,30 @@ class Log
     public function setMediaObject(MediaObject $mediaObject): static
     {
         $this->mediaObject = $mediaObject;
+
+        return $this;
+    }
+
+    public function getCreatedAt(): ?\DateTimeImmutable
+    {
+        return $this->createdAt;
+    }
+
+    public function setCreatedAt(\DateTimeImmutable $createdAt): static
+    {
+        $this->createdAt = $createdAt;
+
+        return $this;
+    }
+
+    public function getUpdatedAt(): ?\DateTimeImmutable
+    {
+        return $this->updatedAt;
+    }
+
+    public function setUpdatedAt(\DateTimeImmutable $updatedAt): static
+    {
+        $this->updatedAt = $updatedAt;
 
         return $this;
     }

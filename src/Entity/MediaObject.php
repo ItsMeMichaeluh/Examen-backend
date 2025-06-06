@@ -10,7 +10,9 @@ use ApiPlatform\Metadata\GetCollection;
 use ApiPlatform\Metadata\Post;
 use ApiPlatform\OpenApi\Model;
 use App\Dto\ExcelFileDto;
+use App\Enum\MediaTypeEnum;
 use App\State\ExcelImportProcessor;
+use App\State\MediaObjectProcessor;
 use Doctrine\ORM\Mapping as ORM;
 use Symfony\Component\HttpFoundation\File\File;
 use Symfony\Component\Serializer\Annotation\Groups;
@@ -37,8 +39,16 @@ use Vich\UploaderBundle\Mapping\Annotation as Vich;
                                     'file' => [
                                         'type' => 'string',
                                         'format' => 'binary'
+                                    ],
+                                    'type' => [
+                                        'type' => 'string',
+                                        'enum' => [
+                                            MediaTypeEnum::EXCEL_IMPORT->value,
+                                            MediaTypeEnum::LOG_ENTRY->value
+                                        ]
                                     ]
-                                ]
+                                ],
+                                'required' => ['file', 'type']
                             ]
                         ]
                     ])
@@ -46,7 +56,7 @@ use Vich\UploaderBundle\Mapping\Annotation as Vich;
             ),
             input: ExcelFileDto::class,
             deserialize: false,
-            processor: ExcelImportProcessor::class
+            processor: MediaObjectProcessor::class
         ),
     ],
     outputFormats: ['jsonld' => ['application/ld+json']],
@@ -61,9 +71,14 @@ class MediaObject
     #[Groups(['media_object:read'])]
     public ?string $contentUrl = null;
 
-    #[Vich\UploadableField(mapping: 'media_object', fileNameProperty: 'filePath')]
+    #[Vich\UploadableField(mapping: 'app_data', fileNameProperty: 'filePath')]
     #[Assert\NotNull]
     public ?File $file = null;
+
+    #[ORM\Column(type: 'string', enumType: MediaTypeEnum::class)]
+    #[Groups(['media_object:read'])]
+    #[Assert\NotNull]
+    public ?MediaTypeEnum $type = null;
 
     #[ApiProperty(writable: false)]
     #[ORM\Column(nullable: true)]
@@ -72,5 +87,25 @@ class MediaObject
     public function getId(): ?int
     {
         return $this->id;
+    }
+
+    public function getFile(): ?File
+    {
+        return $this->file;
+    }
+
+    public function setFile(?File $file): void
+    {
+        $this->file = $file;
+    }
+
+    public function getType(): ?MediaTypeEnum
+    {
+        return $this->type;
+    }
+
+    public function setType(?MediaTypeEnum $type): void
+    {
+        $this->type = $type;
     }
 }

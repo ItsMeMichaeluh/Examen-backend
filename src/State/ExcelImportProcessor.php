@@ -13,6 +13,7 @@ use App\Entity\Student;
 use App\Enum\MediaTypeEnum;
 use App\Repository\AttendanceRepository;
 use App\Repository\StudentRepository;
+use App\Service\LogWriter;
 use Doctrine\ORM\EntityManagerInterface;
 use PhpOffice\PhpSpreadsheet\IOFactory;
 use PhpOffice\PhpSpreadsheet\Reader\IReader;
@@ -29,6 +30,7 @@ final readonly class ExcelImportProcessor implements ProcessorInterface
         private ValidatorInterface     $validator,
         private StudentRepository      $studentRepository,
         private AttendanceRepository   $attendanceRepository,
+        private LogWriter $logWriter
     )
     {
     }
@@ -77,6 +79,7 @@ final readonly class ExcelImportProcessor implements ProcessorInterface
         $worksheet = $spreadsheet->getActiveSheet();
 
         $sheetData = [];
+        $logLines = [];
         foreach ($worksheet->getRowIterator(2) as $row) {
             $rowIndex = $row->getRowIndex();
             $rowData = [
@@ -87,7 +90,10 @@ final readonly class ExcelImportProcessor implements ProcessorInterface
                 'year' => $worksheet->getCell('E' . $rowIndex)->getValue(),
             ];
             $sheetData[] = $rowData;
+            $logLines[] = $rowData;
         }
+
+        $this->logWriter->CreateEntry('log.txt', MediaTypeEnum::LOG_ENTRY, $logLines);
 
         foreach ($sheetData as $row) {
             if (count(array_filter($row)) === 0) {

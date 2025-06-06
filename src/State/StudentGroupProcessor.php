@@ -11,12 +11,12 @@ use Doctrine\ORM\EntityManagerInterface;
 use Symfony\Component\HttpKernel\Exception\BadRequestHttpException;
 use Symfony\Component\HttpKernel\Exception\NotFoundHttpException;
 
-class StudentGroupProcessor implements ProcessorInterface
+readonly class StudentGroupProcessor implements ProcessorInterface
 {
     public function __construct(
-        private readonly EntityManagerInterface $entityManager,
-        private readonly StudentRepository      $studentRepository,
-        private readonly GroupRepository        $groupRepository,
+        private EntityManagerInterface $entityManager,
+        private StudentRepository      $studentRepository,
+        private GroupRepository        $groupRepository,
     )
     {
     }

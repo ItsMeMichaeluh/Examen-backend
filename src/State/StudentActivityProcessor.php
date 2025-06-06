@@ -9,11 +9,11 @@ use App\Repository\StudentRepository;
 use Doctrine\ORM\EntityManagerInterface;
 use Symfony\Component\HttpKernel\Exception\BadRequestHttpException;
 
-class StudentActivityProcessor implements ProcessorInterface
+readonly class StudentActivityProcessor implements ProcessorInterface
 {
     public function __construct(
-        private readonly EntityManagerInterface $entityManager,
-        private readonly StudentRepository      $studentRepository,
+        private EntityManagerInterface $entityManager,
+        private StudentRepository      $studentRepository,
     )
     {
     }

@@ -17,5 +17,7 @@ class CustomDirectoryNamer implements DirectoryNamerInterface
     public function directoryName(object|array $object, PropertyMapping $mapping): string
     {
         dump($object, $mapping);
+
+        return "/media";
     }
 }

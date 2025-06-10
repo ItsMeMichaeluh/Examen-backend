@@ -96,7 +96,7 @@ class Student
         $this->studentNumber = $studentNumber;
     }
 
-    public function isActive(): bool
+    public function getActive(): bool
     {
         return $this->active;
     }

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Student Attendance Report</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 12px;
+        }
+        h1 {
+            text-align: center;
+            font-size: 16px;
+        }
+        .student {
+            margin-bottom: 30px;
+        }
+        .student-header {
+            background-color: #f0f0f0;
+            padding: 8px;
+            font-weight: bold;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 6px;
+        }
+        th, td {
+            border: 1px solid #444;
+            padding: 4px 6px;
+            text-align: center;
+        }
+        th {
+            background-color: #ddd;
+        }
+    </style>
+</head>
+<body>
+<h1>Student Attendance Report</h1>
+
+{% for student in students %}
+    <div class="student">
+        <div class="student-header">
+            Student Number: {{ student.studentNumber }}<br>
+            Active: {{ student.active ? 'Yes' : 'No' }}
+        </div>
+        {% if student.attendances is not empty %}
+            <table>
+                <thead>
+                <tr>
+                    <th>Week</th>
+                    <th>Year</th>
+                    <th>Logged (min)</th>
+                    <th>Scheduled (min)</th>
+                    <th>Attendance (%)</th>
+                </tr>
+                </thead>
+                <tbody>
+                {% for attendance in student.attendances %}
+                    <tr>
+                        <td>{{ attendance.week }}</td>
+                        <td>{{ attendance.year }}</td>
+                        <td>{{ attendance.logged }}</td>
+                        <td>{{ attendance.scheduled }}</td>
+                        <td>
+                            {% if attendance.scheduled > 0 %}
+                                {{ ((attendance.logged / attendance.scheduled) * 100)|round(1) }}%
+                            {% else %}
+                                N/A
+                            {% endif %}
+                        </td>
+                    </tr>
+                {% endfor %}
+                </tbody>
+            </table>
+        {% else %}
+            <p>No attendance records found.</p>
+        {% endif %}
+    </div>
+{% endfor %}
+</body>
+</html>

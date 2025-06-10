@@ -1,0 +1,22 @@
+[2025-06-10T09:00:54+00:00] Start processing file: AAR_2024_W50_b6de3263.xlsx
+[2025-06-10T09:00:54+00:00] [Row 0] new attendance record created for st1121615364
+[2025-06-10T09:00:54+00:00] [Row 1] new attendance record created for st1463641365
+[2025-06-10T09:00:54+00:00] [Row 2] new student created (st1727751642)
+[2025-06-10T09:00:54+00:00] [Row 2] new attendance record created for st1727751642
+[2025-06-10T09:00:54+00:00] [Row 3] new attendance record created for st2473322711
+[2025-06-10T09:00:54+00:00] [Row 4] new attendance record created for st2615331524
+[2025-06-10T09:00:54+00:00] [Row 5] validation error - logged: Aanwezigheid niet in correcte formaat doorgegeven
+[2025-06-10T09:00:54+00:00] [Row 6] new attendance record created for st3725372731
+[2025-06-10T09:00:54+00:00] [Row 7] validation error - scheduled: Roosterminuten niet in correcte formaat doorgegeven
+[2025-06-10T09:00:54+00:00] [Row 8] new attendance record created for st4413532123
+[2025-06-10T09:00:54+00:00] [Row 9] new attendance record created for st4564711124
+[2025-06-10T09:00:54+00:00] [Row 10] new attendance record created for st4635631175
+[2025-06-10T09:00:55+00:00] [Row 11] new attendance record created for st5172541747
+[2025-06-10T09:00:55+00:00] [Row 12] new student created (st5242731315)
+[2025-06-10T09:00:55+00:00] [Row 12] new attendance record created for st5242731315
+[2025-06-10T09:00:55+00:00] [Row 13] new student created (st7271441235)
+[2025-06-10T09:00:55+00:00] [Row 13] new attendance record created for st7271441235
+[2025-06-10T09:00:55+00:00] [Row 14] new student created (st7547154463)
+[2025-06-10T09:00:55+00:00] [Row 14] new attendance record created for st7547154463
+[2025-06-10T09:00:55+00:00] Processing finished.
+[2025-06-10T09:00:55+00:00] Summary: total rows=15, empty skipped=0, validation skipped=2, year/week mismatch=0, new students=4, attendance updated=0, attendance skipped=0, new attendance=13

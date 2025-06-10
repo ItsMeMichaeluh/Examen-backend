@@ -22,7 +22,7 @@ use Symfony\Component\HttpKernel\Exception\BadRequestHttpException;
 use Symfony\Component\HttpFoundation\File\UploadedFile;
 use Symfony\Component\Validator\Validator\ValidatorInterface;
 
-final readonly class ExcelImportProcessor implements ProcessorInterface
+readonly class ExcelImportProcessor implements ProcessorInterface
 {
     public function __construct(
         private EntityManagerInterface $entityManager,

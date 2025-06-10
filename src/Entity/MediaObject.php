@@ -99,9 +99,11 @@ class MediaObject
     public ?string $filePath = null;
 
     #[ORM\Column]
+    #[Groups(['media_object:read'])]
     private ?\DateTimeImmutable $createdAt = null;
 
     #[ORM\Column]
+    #[Groups(['media_object:read'])]
     private ?\DateTimeImmutable $updatedAt = null;
 
     public function __construct()

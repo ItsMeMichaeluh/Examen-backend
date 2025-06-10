@@ -84,6 +84,7 @@ final readonly class ExcelImportProcessor implements ProcessorInterface
         foreach ($worksheet->getRowIterator(2) as $row) {
             $rowIndex = $row->getRowIndex();
             $rowData = [
+                'row_index' => $rowIndex,
                 'student_number' => $worksheet->getCell('A' . $rowIndex)->getValue(),
                 'logged' => $worksheet->getCell('B' . $rowIndex)->getValue(),
                 'scheduled' => $worksheet->getCell('C' . $rowIndex)->getValue(),
@@ -105,11 +106,11 @@ final readonly class ExcelImportProcessor implements ProcessorInterface
             'new_attendance' => 0,
         ];
 
-        foreach ($sheetData as $index => $row) {
+        foreach ($sheetData as $row) {
             $timestamp = (new \DateTimeImmutable())->format('c');
 
             if (count(array_filter($row)) === 0) {
-                $logLines[] = sprintf('[%s] [Row %d] skipped: empty row.', $timestamp, $index);
+                $logLines[] = sprintf('[%s] [Row %d] skipped: empty row.', $timestamp, $row['row_index']);
                 $stats['skipped_empty']++;
                 continue;
             }
@@ -124,14 +125,14 @@ final readonly class ExcelImportProcessor implements ProcessorInterface
             $errors = $this->validator->validate($dto);
             if ($errors->count() > 0) {
                 foreach ($errors as $error) {
-                    $logLines[] = sprintf('[%s] [Row %d] validation error - %s: %s', $timestamp, $index, $error->getPropertyPath(), $error->getMessage());
+                    $logLines[] = sprintf('[%s] [Row %d] validation error - %s: %s', $timestamp, $row['row_index'], $error->getPropertyPath(), $error->getMessage());
                 }
                 $stats['skipped_validation']++;
                 continue;
             }
 
             if ($dto->year !== $fileNameYear || $dto->week !== $fileNameWeek) {
-                $logLines[] = sprintf('[%s] [Row %d] skipped: year/week mismatch (got Y%d/W%d, expected Y%d/W%d)', $timestamp, $index, $dto->year, $dto->week, $fileNameYear, $fileNameWeek);
+                $logLines[] = sprintf('[%s] [Row %d] skipped: year/week mismatch (got Y%d/W%d, expected Y%d/W%d)', $timestamp, $row['row_index'], $dto->year, $dto->week, $fileNameYear, $fileNameWeek);
                 $stats['skipped_year_week_mismatch']++;
                 continue;
             }
@@ -142,7 +143,7 @@ final readonly class ExcelImportProcessor implements ProcessorInterface
                 $student->setStudentNumber($dto->studentNumber);
                 $this->entityManager->persist($student);
                 $this->entityManager->flush();
-                $logLines[] = sprintf('[%s] [Row %d] new student created (%s)', $timestamp, $index, $dto->studentNumber);
+                $logLines[] = sprintf('[%s] [Row %d] new student created (%s)', $timestamp, $row['row_index'], $dto->studentNumber);
                 $stats['new_students']++;
             }
 
@@ -165,7 +166,7 @@ final readonly class ExcelImportProcessor implements ProcessorInterface
                     $logLines[] = sprintf(
                         '[%s] [Row %d] Attendance updated for student %s (%.2f%% → %.2f%%)',
                         $timestamp,
-                        $index,
+                        $row['row_index'],
                         $dto->studentNumber,
                         $existingPercentage,
                         $newPercentage
@@ -175,7 +176,7 @@ final readonly class ExcelImportProcessor implements ProcessorInterface
                     $logLines[] = sprintf(
                         '[%s] [Row %d] Attendance skipped for student %s (existing %.2f%% ≥ new %.2f%%)',
                         $timestamp,
-                        $index,
+                        $row['row_index'],
                         $dto->studentNumber,
                         $existingPercentage,
                         $newPercentage
@@ -189,7 +190,7 @@ final readonly class ExcelImportProcessor implements ProcessorInterface
                 $attendance->setWeek($dto->week);
                 $attendance->setScheduled($dto->scheduled);
                 $attendance->setLogged($dto->logged);
-                $logLines[] = sprintf('[%s] [Row %d] new attendance record created for %s', $timestamp, $index, $dto->studentNumber);
+                $logLines[] = sprintf('[%s] [Row %d] new attendance record created for %s', $timestamp, $row['row_index'], $dto->studentNumber);
                 $stats['new_attendance']++;
             }
 

@@ -1,0 +1,23 @@
+[2025-06-10T09:01:10+00:00] Start processing file: AAR_2025_W03_4ce9daa1.xlsx
+[2025-06-10T09:01:10+00:00] [Row 0] new attendance record created for st1121615364
+[2025-06-10T09:01:10+00:00] [Row 1] new attendance record created for st1463641365
+[2025-06-10T09:01:10+00:00] [Row 2] new attendance record created for st1727751642
+[2025-06-10T09:01:10+00:00] [Row 3] new attendance record created for st2473322711
+[2025-06-10T09:01:10+00:00] [Row 4] new attendance record created for st2615331524
+[2025-06-10T09:01:10+00:00] [Row 5] new attendance record created for st3255555757
+[2025-06-10T09:01:10+00:00] [Row 6] new attendance record created for st3725372731
+[2025-06-10T09:01:10+00:00] [Row 7] new attendance record created for st3741512452
+[2025-06-10T09:01:10+00:00] [Row 8] new attendance record created for st4413532123
+[2025-06-10T09:01:10+00:00] [Row 9] new attendance record created for st4564711124
+[2025-06-10T09:01:10+00:00] [Row 10] new attendance record created for st4635631175
+[2025-06-10T09:01:10+00:00] [Row 11] new attendance record created for st5172541747
+[2025-06-10T09:01:10+00:00] [Row 12] new attendance record created for st5242731315
+[2025-06-10T09:01:10+00:00] [Row 13] new attendance record created for st7271441235
+[2025-06-10T09:01:10+00:00] [Row 14] new attendance record created for st7547154463
+[2025-06-10T09:01:10+00:00] [Row 15] new attendance record created for st4526567777
+[2025-06-10T09:01:10+00:00] [Row 16] new attendance record created for st5135227234
+[2025-06-10T09:01:10+00:00] [Row 17] new attendance record created for st2534161663
+[2025-06-10T09:01:10+00:00] [Row 18] new attendance record created for st7452753321
+[2025-06-10T09:01:10+00:00] [Row 19] new attendance record created for st6512352156
+[2025-06-10T09:01:10+00:00] Processing finished.
+[2025-06-10T09:01:10+00:00] Summary: total rows=20, empty skipped=0, validation skipped=0, year/week mismatch=0, new students=0, attendance updated=0, attendance skipped=0, new attendance=20

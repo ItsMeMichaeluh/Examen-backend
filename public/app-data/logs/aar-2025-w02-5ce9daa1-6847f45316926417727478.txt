@@ -1,0 +1,20 @@
+[2025-06-10T09:01:06+00:00] Start processing file: AAR_2025_W02_5ce9daa1.ods
+[2025-06-10T09:01:06+00:00] [Row 0] Attendance skipped for student st1121615364 (existing 104.21% ≥ new 104.21%)
+[2025-06-10T09:01:06+00:00] [Row 1] Attendance skipped for student st1463641365 (existing 79.37% ≥ new 79.37%)
+[2025-06-10T09:01:06+00:00] [Row 2] Attendance skipped for student st1727751642 (existing 47.58% ≥ new 47.58%)
+[2025-06-10T09:01:06+00:00] [Row 3] Attendance skipped for student st2473322711 (existing 51.89% ≥ new 42.11%)
+[2025-06-10T09:01:06+00:00] [Row 4] Attendance skipped for student st2615331524 (existing 23.16% ≥ new 23.16%)
+[2025-06-10T09:01:06+00:00] [Row 5] Attendance skipped for student st3255555757 (existing 18.74% ≥ new 18.74%)
+[2025-06-10T09:01:06+00:00] [Row 6] Attendance skipped for student st3725372731 (existing 25.58% ≥ new 25.58%)
+[2025-06-10T09:01:06+00:00] [Row 7] Attendance updated for student st3741512452 (10.53% → 15.79%)
+[2025-06-10T09:01:06+00:00] [Row 8] Attendance skipped for student st4413532123 (existing 72.53% ≥ new 72.53%)
+[2025-06-10T09:01:06+00:00] [Row 9] Attendance skipped for student st4564711124 (existing 84.21% ≥ new 84.21%)
+[2025-06-10T09:01:06+00:00] [Row 10] Attendance skipped for student st4635631175 (existing 97.16% ≥ new 97.16%)
+[2025-06-10T09:01:06+00:00] [Row 11] Attendance skipped for student st5172541747 (existing 58.32% ≥ new 58.32%)
+[2025-06-10T09:01:06+00:00] [Row 12] Attendance skipped for student st5242731315 (existing 25.16% ≥ new 25.16%)
+[2025-06-10T09:01:06+00:00] [Row 13] Attendance skipped for student st7271441235 (existing 82.21% ≥ new 82.21%)
+[2025-06-10T09:01:07+00:00] [Row 14] Attendance skipped for student st7547154463 (existing 84.74% ≥ new 84.74%)
+[2025-06-10T09:01:07+00:00] [Row 15] Attendance skipped for student st7452753321 (existing 52.42% ≥ new 52.42%)
+[2025-06-10T09:01:07+00:00] [Row 16] Attendance skipped for student st6512352156 (existing 93.47% ≥ new 93.47%)
+[2025-06-10T09:01:07+00:00] Processing finished.
+[2025-06-10T09:01:07+00:00] Summary: total rows=17, empty skipped=0, validation skipped=0, year/week mismatch=0, new students=0, attendance updated=1, attendance skipped=16, new attendance=0

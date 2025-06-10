@@ -1,0 +1,13 @@
+[2025-06-10T09:00:47+00:00] Start processing file: AAR_2024_W49_f7f84ba3.ods
+[2025-06-10T09:00:47+00:00] [Row 0] Attendance skipped for student st1121615364 (existing 100.00% ≥ new 100.00%)
+[2025-06-10T09:00:48+00:00] [Row 1] Attendance skipped for student st1463641365 (existing 80.00% ≥ new 80.00%)
+[2025-06-10T09:00:48+00:00] [Row 2] Attendance skipped for student st2473322711 (existing 99.00% ≥ new 99.00%)
+[2025-06-10T09:00:48+00:00] [Row 3] Attendance updated for student st2615331524 (0.11% → 11.11%)
+[2025-06-10T09:00:48+00:00] [Row 4] Attendance skipped for student st3255555757 (existing 13.67% ≥ new 13.67%)
+[2025-06-10T09:00:48+00:00] [Row 5] Attendance skipped for student st3725372731 (existing 53.22% ≥ new 53.22%)
+[2025-06-10T09:00:48+00:00] [Row 6] Attendance skipped for student st4413532123 (existing 60.56% ≥ new 60.56%)
+[2025-06-10T09:00:48+00:00] [Row 7] Attendance skipped for student st4564711124 (existing 76.44% ≥ new 66.67%)
+[2025-06-10T09:00:48+00:00] [Row 8] Attendance skipped for student st4635631175 (existing 103.33% ≥ new 103.33%)
+[2025-06-10T09:00:48+00:00] [Row 9] Attendance skipped for student st5172541747 (existing 55.56% ≥ new 55.56%)
+[2025-06-10T09:00:48+00:00] Processing finished.
+[2025-06-10T09:00:48+00:00] Summary: total rows=10, empty skipped=0, validation skipped=0, year/week mismatch=0, new students=0, attendance updated=1, attendance skipped=9, new attendance=0

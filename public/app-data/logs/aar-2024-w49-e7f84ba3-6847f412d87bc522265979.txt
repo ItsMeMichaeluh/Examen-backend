@@ -1,0 +1,23 @@
+[2025-06-10T09:00:01+00:00] Start processing file: AAR_2024_W49_e7f84ba3.xlsx
+[2025-06-10T09:00:01+00:00] [Row 0] new student created (st1121615364)
+[2025-06-10T09:00:01+00:00] [Row 0] new attendance record created for st1121615364
+[2025-06-10T09:00:01+00:00] [Row 1] new student created (st1463641365)
+[2025-06-10T09:00:01+00:00] [Row 1] new attendance record created for st1463641365
+[2025-06-10T09:00:01+00:00] [Row 2] new student created (st2473322711)
+[2025-06-10T09:00:01+00:00] [Row 2] new attendance record created for st2473322711
+[2025-06-10T09:00:02+00:00] [Row 3] new student created (st2615331524)
+[2025-06-10T09:00:02+00:00] [Row 3] new attendance record created for st2615331524
+[2025-06-10T09:00:02+00:00] [Row 4] new student created (st3255555757)
+[2025-06-10T09:00:02+00:00] [Row 4] new attendance record created for st3255555757
+[2025-06-10T09:00:02+00:00] [Row 5] new student created (st3725372731)
+[2025-06-10T09:00:02+00:00] [Row 5] new attendance record created for st3725372731
+[2025-06-10T09:00:02+00:00] [Row 6] new student created (st4413532123)
+[2025-06-10T09:00:02+00:00] [Row 6] new attendance record created for st4413532123
+[2025-06-10T09:00:02+00:00] [Row 7] new student created (st4564711124)
+[2025-06-10T09:00:02+00:00] [Row 7] new attendance record created for st4564711124
+[2025-06-10T09:00:02+00:00] [Row 8] new student created (st4635631175)
+[2025-06-10T09:00:02+00:00] [Row 8] new attendance record created for st4635631175
+[2025-06-10T09:00:02+00:00] [Row 9] new student created (st5172541747)
+[2025-06-10T09:00:02+00:00] [Row 9] new attendance record created for st5172541747
+[2025-06-10T09:00:02+00:00] Processing finished.
+[2025-06-10T09:00:02+00:00] Summary: total rows=10, empty skipped=0, validation skipped=0, year/week mismatch=0, new students=10, attendance updated=0, attendance skipped=0, new attendance=10

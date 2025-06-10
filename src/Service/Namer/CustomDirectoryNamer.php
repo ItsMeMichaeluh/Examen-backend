@@ -26,7 +26,8 @@ class CustomDirectoryNamer implements DirectoryNamerInterface
         return match($object->getType()) {
             MediaTypeEnum::LOG_ENTRY => 'logs',
             MediaTypeEnum::EXCEL_IMPORT => 'imports',
-            default => '/media'
+            MediaTypeEnum::PDF_EXPORT => 'exports',
+            default => 'media'
         };
     }
 }
